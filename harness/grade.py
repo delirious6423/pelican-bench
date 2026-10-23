@@ -150,11 +150,12 @@ rows.push([c.dataset.code,...cols.map(k=>k==="notes"?JSON.stringify(s[k]||""):(s
 navigator.clipboard.writeText(rows.join("\n")).then(()=>alert("CSV copied"),()=>prompt("Copy:",rows.join("\n")));};
 try{S=JSON.parse(localStorage.getItem(KEY)||"{}");D=JSON.parse(localStorage.getItem(KEY+"-pending")||"{}");
 V=+localStorage.getItem(KEY+"-v")||0}catch(e){S={};D={};V=0}
-// edits are ignored until this first sync finishes, so a slow load cannot overwrite them
+// controls stay disabled until this first sync finishes, so a slow load cannot overwrite or swallow edits
+const ctl=on=>{ready=on;document.querySelectorAll("textarea,.seg button").forEach(x=>x.disabled=!on)};ctl(false);
 // PC copy wins, except codes with unconfirmed phone edits (including cleared grades), which are re-sent
 fetch("api/scores").then(r=>r.json()).then(j=>{const P=j.scores||{};for(const c in D){if(S[c]&&Object.keys(S[c]).length)P[c]=S[c];else delete P[c]}
-S=P;keep();ready=true;render();sync(j.saved?"PC copy "+j.saved.slice(9,15):"connected");if(Object.keys(D).length)push();})
-.catch(()=>{ready=true;render();sync("PC unreachable; saving on phone")});
+S=P;keep();ctl(true);render();sync(j.saved?"PC copy "+j.saved.slice(9,15):"connected");if(Object.keys(D).length)push();})
+.catch(()=>{ctl(true);render();sync("PC unreachable; saving on phone")});
 render();
 </script></body></html>'''
 
