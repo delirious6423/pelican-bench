@@ -122,34 +122,39 @@ button.act{min-height:36px;border:1px solid #007aff;background:#fff;color:#007af
 Tap a number to grade (tap again to clear). Grades autosave to the PC and this phone. Tap an image to enlarge.</p>
 __CARDS__
 <script>
-const KEY="pelican-grades-__GID__",TOKEN="__TOKEN__";let S={},D={};let timer=null;
-// D: codes edited on this phone and not yet confirmed by the PC (code -> edit counter); survives reloads
-function keep(){localStorage.setItem(KEY,JSON.stringify(S));localStorage.setItem(KEY+"-pending",JSON.stringify(D));}
+const KEY="pelican-grades-__GID__",TOKEN="__TOKEN__";let S={},D={},V=0,ready=false,busy=false,again=false;let timer=null;
+// D: codes edited on this phone and not yet confirmed by the PC (code -> edit version). V only ever grows, so a
+// late response can never acknowledge a newer edit. One save in flight at a time keeps the PC copy in order.
+function keep(){localStorage.setItem(KEY,JSON.stringify(S));localStorage.setItem(KEY+"-pending",JSON.stringify(D));
+localStorage.setItem(KEY+"-v",String(V));}
 const sync=t=>document.getElementById("sync").textContent=t;
 function render(){let n=0;document.querySelectorAll(".card").forEach(c=>{const s=S[c.dataset.code]||{};
 c.querySelectorAll(".seg").forEach(g=>g.querySelectorAll("button").forEach(b=>b.classList.toggle("on",s[g.dataset.k]===+b.dataset.v)));
 const t=c.querySelector("textarea");if(document.activeElement!==t)t.value=s.notes||"";
 const done=Number.isInteger(s.overall_1_10);c.classList.toggle("done",done);c.querySelector(".st").textContent=done?"\u2713":"";if(done)n++;});
 document.getElementById("cnt").textContent=n;}
-function push(code){if(code)D[code]=(D[code]||0)+1;keep();clearTimeout(timer);sync("saving...");
-timer=setTimeout(()=>{const sent={...D};fetch("api/scores",{method:"POST",headers:{"Content-Type":"application/json","X-Grade-Token":TOKEN},body:JSON.stringify({scores:S})})
+function push(code){if(code)D[code]=++V;keep();clearTimeout(timer);sync("saving...");timer=setTimeout(send,600);}
+function send(){if(busy){again=true;return}busy=true;again=false;const sent={...D};fetch("api/scores",{method:"POST",headers:{"Content-Type":"application/json","X-Grade-Token":TOKEN},body:JSON.stringify({scores:S})})
 .then(r=>{if(r.status===403)throw "restart";if(!r.ok)throw "err";return r.json()})
 .then(j=>{for(const c in sent)if(D[c]===sent[c])delete D[c];keep();sync("saved to PC "+j.saved.slice(9,15)+" ("+j.n+")")})
-.catch(e=>sync(e==="restart"?"PC server restarted: reload this page (edits kept on phone)":"PC unreachable; kept on phone"))},600);}
-document.addEventListener("click",e=>{const b=e.target.closest(".seg button");if(!b)return;const card=b.closest(".card"),k=b.parentNode.dataset.k,v=+b.dataset.v;
+.catch(e=>sync(e==="restart"?"PC server restarted: reload this page (edits kept on phone)":"PC unreachable; kept on phone"))
+.finally(()=>{busy=false;if(again)send()});}
+document.addEventListener("click",e=>{const b=e.target.closest(".seg button");if(!b||!ready)return;const card=b.closest(".card"),k=b.parentNode.dataset.k,v=+b.dataset.v;
 const s=S[card.dataset.code]||(S[card.dataset.code]={});if(s[k]===v)delete s[k];else s[k]=v;render();push(card.dataset.code);});
-document.addEventListener("input",e=>{if(e.target.tagName!=="TEXTAREA")return;const code=e.target.closest(".card").dataset.code;
+document.addEventListener("input",e=>{if(e.target.tagName!=="TEXTAREA"||!ready)return;const code=e.target.closest(".card").dataset.code;
 const s=S[code]||(S[code]={});s.notes=e.target.value;push(code);});
 document.getElementById("next").onclick=()=>{const c=[...document.querySelectorAll(".card")].find(c=>!c.classList.contains("done"));if(c)c.scrollIntoView({behavior:"smooth"});};
 document.getElementById("copy").onclick=()=>{const cols=["pelican_recognizable_0_2","bicycle_recognizable_0_2","riding_contact_0_2","composition_0_2","overall_1_10","notes"];
 const rows=["code,"+cols.join(",")];document.querySelectorAll(".card").forEach(c=>{const s=S[c.dataset.code]||{};
 rows.push([c.dataset.code,...cols.map(k=>k==="notes"?JSON.stringify(s[k]||""):(s[k]??""))].join(","));});
 navigator.clipboard.writeText(rows.join("\n")).then(()=>alert("CSV copied"),()=>prompt("Copy:",rows.join("\n")));};
-try{S=JSON.parse(localStorage.getItem(KEY)||"{}");D=JSON.parse(localStorage.getItem(KEY+"-pending")||"{}")}catch(e){S={};D={}}
+try{S=JSON.parse(localStorage.getItem(KEY)||"{}");D=JSON.parse(localStorage.getItem(KEY+"-pending")||"{}");
+V=+localStorage.getItem(KEY+"-v")||0}catch(e){S={};D={};V=0}
+// edits are ignored until this first sync finishes, so a slow load cannot overwrite them
 // PC copy wins, except codes with unconfirmed phone edits (including cleared grades), which are re-sent
 fetch("api/scores").then(r=>r.json()).then(j=>{const P=j.scores||{};for(const c in D){if(S[c]&&Object.keys(S[c]).length)P[c]=S[c];else delete P[c]}
-S=P;keep();render();sync(j.saved?"PC copy "+j.saved.slice(9,15):"connected");if(Object.keys(D).length)push();})
-.catch(()=>{render();sync("PC unreachable; saving on phone")});
+S=P;keep();ready=true;render();sync(j.saved?"PC copy "+j.saved.slice(9,15):"connected");if(Object.keys(D).length)push();})
+.catch(()=>{ready=true;render();sync("PC unreachable; saving on phone")});
 render();
 </script></body></html>'''
 
