@@ -1,10 +1,9 @@
-"""Low-overhead host/GPU/storage sampler for the Strata evaluation (1 s interval), plus safety checks.
+"""1 s host/GPU/storage sampler plus safety checks.
 
-One background thread reads a persistent `nvidia-smi -lms` stream (no per-sample process spawn) and /proc files; a
-second checks the kernel log for new storage errors every 15 s. Samples go to a JSONL file and an in-memory ring so a
-request's window [t0, t1] (wall-clock epoch) can be summarized and attached to that request's record.
+Reads one persistent `nvidia-smi -lms` stream and /proc; checks the kernel log for storage errors every 15 s.
+Samples go to JSONL and an in-memory ring, so each request's [t0, t1] window is summarized into its record.
 
-Safety signals (never acted on by killing anything; the runner pauses/marks/stops ITS OWN work):
+Safety signals (nothing is killed; the runner pauses, marks or stops its own work):
   storage_alarm   data NVMe controller not 'live', or new kernel lines matching I/O/NVMe/ext4 errors
   foreign_gpu     compute processes on the GPU that are not in our server's cgroup, with their memory
   hot             GPU temperature at/above the pause threshold

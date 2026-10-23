@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
-"""Quick limit-finding eval for local OpenAI-compatible LLM servers (Strata).
-
-Design: every item is capped (reasoning budget + max_tokens) so one turn stays short at 20-50 tok/s,
-every item is scored by code, reasoning is stripped before scoring, and raw request/response/timing
-records are kept so nothing is graded by eye. Standard library only.
+"""Quick limit-finding eval for local OpenAI-compatible servers. Every item is capped, scored by code with
+reasoning stripped, and kept raw (request, response, timings). Standard library only.
 
 Usage (see README.md):
     python3 -I quick_eval.py --list

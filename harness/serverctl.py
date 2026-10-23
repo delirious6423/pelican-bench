@@ -1,11 +1,10 @@
 """Start/stop one Strata server per model on a dedicated loopback port, as an owned user systemd unit.
 
-- Configs are generated into $PELICAN_ROOT/configs/<id>.json; your own configs are read, never written. The EXL3
-  build's config is derived from $EXL3_BASE_CONFIG (only checkpoint paths, port, log and model name change). GGUF/Gyro use official Strata 0.2.3 (engine 0.1.48) with one uniform profile.
-- No shared GUI settings can apply: Strata keeps them next to the config (<config>.shared-settings.json); we assert
-  that file does not exist before a start.
-- Ownership: unit `strata-pelican-serve.service` (KillMode=control-group). The listener PID on the port must be in
-  that unit's cgroup before any request is sent. We never stop anything else.
+- Configs go to $PELICAN_ROOT/configs/<id>.json; yours are only read. EXL3 configs derive from $EXL3_BASE_CONFIG
+  (checkpoint paths, port, log and name change); GGUF/Gyro use official Strata with one uniform profile.
+- Strata's GUI settings file (<config>.shared-settings.json) must not exist, so it cannot apply.
+- Unit `strata-pelican-serve.service` (KillMode=control-group); the port's listener must be in its cgroup before
+  any request. Nothing else is ever stopped.
 """
 from __future__ import annotations
 

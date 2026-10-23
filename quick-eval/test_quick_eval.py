@@ -1,5 +1,5 @@
 """Unit tests for quick_eval: checkers, item bank, synthesized items, and SSE streaming against a fake server.
-Run on the host (no model, no network beyond loopback):  python3 -I -m unittest test_quick_eval -v
+No model, loopback only:  python3 -I test_quick_eval.py
 """
 import json
 import sys

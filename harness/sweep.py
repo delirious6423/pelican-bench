@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
-"""Strata quant evaluation orchestrator: pilot and full sweep, one model at a time, on an owned loopback server.
+"""Pilot and sweep orchestrator: one model at a time on an owned loopback server.
 
   python3 -I sweep.py pilot --run pilot-1
   python3 -I sweep.py sweep --run sweep-1 --deadline 3600 [--effort-probes]
 
-Phases per model: start server (cold load, timed) -> compat probe -> warm-up (excluded) -> pilot or scored cells ->
-quick-eval core tier (sweep) -> stop. Every request is recorded (raw text, timings, usage, correlated engine
-metrics, resource window). Model errors, invalid SVGs and cap hits are results: never retried. Only an
-infrastructure abort (storage alarm, server crash) may re-run a cell once on resume, with attempt numbers recorded.
-Gates before each request: storage health (stop everything), GPU temperature (pause), foreign GPU compute (pause,
-then mark). Generated content is never executed; SVG rendering happens later in render.py's sandbox.
+Per model: start (timed cold load) -> compat probe -> warm-up (excluded) -> pilot or scored cells -> quick-eval core
+-> stop. Every request is recorded raw with timings, usage, engine metrics and resource window. Model errors,
+invalid SVGs and cap hits are results, never retried; only an infrastructure abort (storage alarm, server crash)
+re-runs a cell once on resume, numbered. Gates per request: storage (stop), GPU heat (pause), foreign GPU compute
+(pause, then mark). Model output is never executed; rendering happens later in render.py's sandbox.
 """
 from __future__ import annotations
 

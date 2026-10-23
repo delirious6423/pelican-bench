@@ -3,10 +3,9 @@
 
   <strata-venv>/bin/python -I report.py --run sweep-1   (needs `regex` for the Strata tokenizer)
 
-Token accounting: the server's completion_tokens (reasoning + answer as generated) is the only authority for the
-generated total. Strata's chat usage has no reasoning/answer split, so reasoning_tokens_retok and
-answer_tokens_retok are RE-TOKENIZED ESTIMATES of the streamed text with the model's own tokenizer: labelled,
-reported separately, never added to the server total.
+Tokens: the server's completion_tokens is the only authority for the total. Strata's usage has no
+reasoning/answer split, so *_tokens_retok are re-tokenized estimates of the streamed text: labelled, kept
+separate, never added to the total.
 """
 from __future__ import annotations
 

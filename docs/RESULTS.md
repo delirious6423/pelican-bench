@@ -1,23 +1,20 @@
-# Example run: 8 quants of Qwen3.8-Flash-Next on one laptop GPU
+# Example run: 8 quants of Qwen3.8-Flash-Next on a laptop GPU
 
-One RTX 4090 Laptop GPU (16 GB), about 64 GB RAM, Linux. Strata official v0.2.3 for GGUF/Gyro quants, an EXL3-capable
-Strata build for EXL3 quants. Thinking on, 3 efforts x 5 seeds per model = 120 scored pelicans (plus excluded
-warm-ups). Token ceiling 49152 (incl. reasoning), wall deadline 2700 s, temperature 1.0 / top_p 0.95 / top_k 20.
+RTX 4090 Laptop GPU (16 GB), ~64 GB RAM, Linux. [Strata](https://github.com/Niko1221/Strata) v0.2.3 for GGUF/Gyro,
+the [exl3-lane fork](https://github.com/sociolog/Strata/tree/exl3-lane) for EXL3. Thinking on, 3 efforts x 5 seeds
+x 8 models = 120 pelicans. Ceiling 49152 tokens incl. reasoning, deadline 2700 s, temperature 1.0, top_p 0.95,
+top_k 20. One person graded blind on a phone (overall 1-10); models revealed afterwards.
 
-Graded blind by one person on a phone (overall 1-10), models revealed afterwards.
+## Findings
 
-## Results
+- **Effort dominates.** Mean grade: high 6.50 (95% CI 5.65-7.28), medium 3.62, low 3.38; holds inside every model
+  (stratified permutation p < 0.0001).
+- **Models separate only at high effort** (pooled p = 0.12; high p = 0.0003).
+- **Best: Gyro-M TQ2_0 at high, 8.8/10**, tied with the top three EXL3 quants but 1.7-2.4x faster per image.
+- 119/120 complete SVGs; one hit the ceiling after 9 minutes of reasoning (not a loop).
+- Quick-eval core (60 items, medium): 57-60/60 for all quants; it did not predict drawing quality.
 
-- **Effort dominates.** Mean grade: high 6.50 (95% CI 5.65-7.28), medium 3.62, low 3.38; the effect holds inside
-  every model (stratified permutation p < 0.0001).
-- **Models only separate at high effort** (pooled over efforts p = 0.12; at high p = 0.0003).
-- Best: Gyro-M (TQ2_0) at high, 8.8/10, statistically tied with the three strongest EXL3 quants but 1.7-2.4x
-  faster per image.
-- 119/120 produced a complete SVG; one hit the 49152-token ceiling after 9 minutes of reasoning (not a loop).
-- Quick-eval core (60 items, medium effort): 57-60/60 for every quant, i.e. the cheap checks did not predict
-  drawing quality.
-
-| model (high effort) | mean grade | grades (seeds 11-55) | median time per image |
+| model, high effort | mean | grades (seeds 11-55) | median time |
 |---|---|---|---|
 | Gyro-M TQ2_0 | **8.8** | 9 7 8 10 10 | 6:37 |
 | turboderp EXL3 2.68bpw h6 | 8.4 | 8 8 8 10 8 | 15:40 |
@@ -28,9 +25,9 @@ Graded blind by one person on a phone (overall 1-10), models revealed afterwards
 | turboderp EXL3 2.18bpw h6 | 4.6 | 3 3 3 6 8 | 10:18 |
 | GGUF IQ3_XXS | 3.0 | 3 6 1 4 1 | 4:12 |
 
-## Median generation time by effort (m:ss, 5 runs each)
+## Median time per image (m:ss, n = 5)
 
-| model | low | medium | high | decode tok/s (low / high) |
+| model | low | medium | high | decode tok/s, low / high |
 |---|---|---|---|---|
 | Gyro-S TQ1_0 | 0:31 | 0:41 | 3:57 | 96.7 / 85.1 |
 | GGUF IQ3_XXS | 0:37 | 0:35 | 4:12 | 95.9 / 76.3 |
@@ -41,19 +38,17 @@ Graded blind by one person on a phone (overall 1-10), models revealed afterwards
 | EXL3 3.05bpw h8 | 1:21 | 2:01 | 11:03 | 36.6 / 32.4 |
 | turboderp EXL3 2.68bpw h6 | 1:34 | 1:28 | 15:40 | 36.8 / 31.9 |
 
-High effort spends almost all of its extra time thinking: 3.5-11.5 minutes before the first visible answer token.
-Six of the 40 high-effort runs needed more than 32768 tokens.
+High effort is almost all thinking: 3.5-11.5 minutes before the first visible token. 6 of 40 high runs needed
+more than 32768 tokens.
 
-## Confounds
+## Caveats
 
-- Two engines (official Strata for GGUF/Gyro, an EXL3 build for EXL3), so speed mixes format and engine.
-- Weights are memory-mapped from disk; long runs re-read pages under RAM pressure (up to 121 GB per model across
-  five high-effort runs).
-- One grader, n = 5 per cell, overall score only; pairwise p-values are uncorrected.
-- In this run the renderer's address-space limit (1.5 GiB) killed the SVG loader on one text+filter SVG; the
-  harness now uses 4 GiB and has a regression test for it.
+- Two engines, so speed mixes format and engine.
+- Weights are memory-mapped; under RAM pressure runs re-read up to 121 GB per model across five high runs.
+- One grader, n = 5 per cell, overall score only; pairwise p-values uncorrected.
+- A 1.5 GiB renderer memory limit killed one text+filter SVG; now 4 GiB, with a regression test.
 
-## Sample outputs (best-graded high-effort image per model)
+## Best high-effort image per model
 
 <p>
 <img src="images/gyro-m-tq2_0-high-s44.png" width="180"> <img src="images/td-exl3-2.68-h6-ng8-high-s44.png" width="180">
