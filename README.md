@@ -57,7 +57,7 @@ What the official-engine launches also expect (see `build_config()`):
 - `BUILD.json` next to the official binary is recorded if present (optional).
 
 The disk watch aborts the run if the NVMe controller state stops being `live`; if `PELICAN_NVME_STATE` does not
-exist the check is skipped.
+exist at start the check is skipped; if it disappears during a run, that is an alarm.
 
 Using a different engine (llama.cpp, vLLM, ...): the harness was written for Strata, so expect to adapt it.
 The places that assume Strata:
@@ -99,8 +99,9 @@ in `runs/<run>/grade/scores-latest.json` and `gallery/scoring-sheet-filled.csv`.
 To reach it from a phone, bind `--host` to an address only you can reach: your Tailscale/WireGuard IP, or use an SSH
 tunnel. Avoid binding to a LAN or public address you do not control: there is no login.
 
-Phone copies are kept per gallery, and the PC copy wins when you reopen the page, so an old phone cannot
-overwrite newer grades. Saves need a per-session token embedded in the page, so other websites cannot post to it.
+Phone copies are kept per gallery. When you reopen the page the PC copy wins, except for edits this phone made
+that the PC never confirmed (e.g. graded offline); those are re-sent, including cleared grades. If the server was
+restarted, the page asks you to reload; unsent edits stay on the phone. Saves need a per-session token embedded in the page, so other websites cannot post to it.
 
 After grading, join the scores with `runs/<run>/reveal/reveal-key.csv` yourself. The repo has no analysis script;
 [docs/RESULTS.md](docs/RESULTS.md) describes what we ran (effort and model effects with permutation tests,

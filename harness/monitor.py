@@ -28,9 +28,14 @@ SYS_DEV = os.environ.get("PELICAN_SYS_DEV", "nvme0n1")
 NVME_STATE = Path(os.environ.get("PELICAN_NVME_STATE", "/sys/class/nvme/nvme0/state"))  # controller of DATA_DEV
 
 
+NVME_WATCHED = NVME_STATE.exists()        # decided once at start: a watched controller that vanishes is an alarm
+
+
 def nvme_state() -> str:
-    """'live' when healthy; 'n/a' when the state file does not exist (not an NVMe disk or not watched)."""
-    return (_read(NVME_STATE, "n/a") or "n/a").strip() if NVME_STATE.exists() else "n/a"
+    """'live' when healthy; 'n/a' if no state file existed at start; 'missing' if a watched controller vanished."""
+    if not NVME_WATCHED:
+        return "n/a"
+    return (_read(NVME_STATE, "missing") or "missing").strip()
 KERNEL_BAD = re.compile(r"(nvme\d?\S*:.*(reset|timeout|abort|disabl|fail|error|dead))|I/O error|EXT4-fs error|"
                         r"EXT4-fs warning|blk_update_request|Buffer I/O error|critical (medium|target) error|"
                         r"journal (aborted|has aborted)|Remounting filesystem read-only|shutdown requested", re.I)

@@ -1,5 +1,5 @@
 """Tests for the pelican harness: SVG extraction rule, static flags, metrics correlation, and the Runner request path
-against a fake Strata server (SSE + /metrics). No model, no GPU, loopback only:  python3 -I test_harness.py
+against a fake Strata server (SSE + /metrics). No model, loopback only:  python3 -I test_harness.py
 """
 import json
 import sys
