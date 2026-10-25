@@ -318,6 +318,34 @@ def ai_ratings(rows, judges):
     return "\n".join(lines)
 
 
+def ai_rating_pages(rows, judges):
+    # Bound images/tables per page for GitHub's mobile viewer; keep old index anchors.
+    rated = sorted((r for r in rows if r["render_ok"]), key=lambda r: r["code"])
+    chunks = [rated[i:i + 10] for i in range(0, len(rated), 10)]
+    names = [f"AI-RATINGS-{chunk[0]['code']}-{chunk[-1]['code']}.md" for chunk in chunks]
+    index = ["# Every AI rating", "", "[Comparison tables](AI-RESULTS.md) · [Rubric and provenance](JUDGING.md)", "",
+             "All 595 original judgments on 119 images, split into pages of at most 10 drawings for mobile viewing.",
+             "P231 was not AI-rated. Choose a range or an individual drawing below.", ""]
+    pages = {}
+    for i, (name, chunk) in enumerate(zip(names, chunks)):
+        label = f"{chunk[0]['code']}–{chunk[-1]['code']}"
+        index.append(f"- [{label}]({name})")
+        nav = ["[All AI ratings](AI-RATINGS.md)"]
+        if i:
+            nav.append(f"[Previous]({names[i - 1]})")
+        if i + 1 < len(names):
+            nav.append(f"[Next]({names[i + 1]})")
+        navigation = " · ".join(nav)
+        body = ai_ratings(chunk, judges).replace("# Every AI rating", f"# AI ratings: {label}", 1)
+        pages[name] = navigation + "\n\n" + body + "\n" + navigation + "\n"
+    for name, chunk in zip(names, chunks):
+        for r in chunk:
+            index += ["", f"## {r['code']}", "",
+                      f"[View drawing and all five judgments]({name}#{r['code'].lower()})"]
+    pages["AI-RATINGS.md"] = "\n".join(index) + "\n"
+    return pages
+
+
 def scatter(rows):
     # This chart is generated from numeric measurements, never from model-authored SVG.
     parts = ['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">',
@@ -402,7 +430,7 @@ def eval_tables(docs):
 def generated(docs):
     rows, judges = validate(docs)
     return {"SEEDS.md": "# Every seed: score, time and token headroom\n\n[Methods](METHODS.md) · [CSV](data/sweep-1-cells.csv) · [Gallery](GALLERY.md)\n\n" + analyze.tables(rows),
-            "AI-RESULTS.md": judge_tables(rows, judges), "AI-RATINGS.md": ai_ratings(rows, judges),
+            "AI-RESULTS.md": judge_tables(rows, judges), **ai_rating_pages(rows, judges),
             "images/score-time.svg": scatter(rows), "GALLERY.md": gallery(rows),
             "BLIND-GALLERY.md": gallery(rows, True), "QUICK-EVAL.md": eval_tables(docs)}
 

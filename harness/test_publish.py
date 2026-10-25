@@ -153,6 +153,25 @@ class EvidenceTests(unittest.TestCase):
         for name in publish.JUDGES:
             self.assertEqual(page.count(f"| {name} |"), 119)
 
+    def test_mobile_rating_pages_are_bounded_and_lossless(self):
+        pages = publish.ai_rating_pages(self.rows, self.judges)
+        index = pages.pop("AI-RATINGS.md")
+        self.assertEqual(len(pages), 12)
+        self.assertNotIn("<img ", index)
+        self.assertLess(len(index.encode()), 20000)
+        sections = []
+        for name, page in pages.items():
+            self.assertLessEqual(page.count("<img "), 10, name)
+            self.assertLess(len(page.encode()), 20000, name)
+            sections.extend(re.findall(r"(## P\d+\n.*?)(?=\n## P|\n\[All AI ratings\])", page, re.S))
+        original = re.findall(r"(## P\d+\n.*?)(?=\n## P|\Z)",
+                              publish.ai_ratings(self.rows, self.judges), re.S)
+        self.assertEqual([s.strip() for s in sections], [s.strip() for s in original])
+        for r in self.rows:
+            if r["render_ok"]:
+                self.assertIn(f"## {r['code']}\n", index)
+                self.assertIn(f"#{r['code'].lower()})", index)
+
     def test_local_document_links(self):
         repo = publish.DOCS.parent
         paths = list(publish.DOCS.glob("*.md")) + [repo / "README.md", repo / "CHANGELOG.md", publish.DOCS / "data/README.md"]

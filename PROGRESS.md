@@ -1,3 +1,13 @@
+# Mobile AI ratings navigation
+
+- Split the 119-image, 595-judgment page into 12 detail pages with at most 10 drawings each.
+- Kept `AI-RATINGS.md` as a 10 KB index with existing drawing anchors; original judgments are unchanged.
+- Generator and regression checks cover page bounds, lossless sections and local links.
+- PASS: 21 offline tests, generated-report check and `git diff --check`.
+- PASS: GitHub Markdown API rendered the index and a 10-drawing detail page.
+- NOT VERIFIED: GitHub iOS app rendering; no app/VM tests or GPU tasks run.
+- User approved publishing this fix. No services or VMs started.
+
 # Data transparency update — 2026-10-25
 
 ## State
