@@ -1,10 +1,16 @@
 # pelican-bench
 
-A local, blind version of Simon Willison's ["pelican riding a bicycle"](https://simonwillison.net/tags/pelican-riding-a-bicycle/)
-test for comparing LLM quants, plus a phone grading game.
+An open dataset and local harness for comparing LLM quants using Simon Willison's
+["pelican riding a bicycle"](https://simonwillison.net/tags/pelican-riding-a-bicycle/) prompt,
+with blind human grading and a separate five-model AI judging study.
 
-Each model x thinking effort (low/medium/high) x 5 seeds is run on your own server. Raw responses are saved, the SVG
-is extracted by a fixed rule and rendered in a sandbox, and you grade a shuffled gallery with model names hidden.
+**[v0.1.0: data transparency and AI judgments](https://github.com/delirious6423/pelican-bench/releases/tag/v0.1.0)**
+— [download the per-run CSV](https://github.com/delirious6423/pelican-bench/releases/download/v0.1.0/sweep-1-cells.csv)
+or [the complete dataset and source](https://github.com/delirious6423/pelican-bench/archive/refs/tags/v0.1.0.zip).
+You can inspect every outcome without a GPU or model server.
+
+To run your own experiment, the harness tests each model at low/medium/high effort across five seeds, saves raw
+responses, extracts and sandbox-renders SVGs, and presents a shuffled phone gallery with model names hidden.
 
 <p>
 <img src="docs/images/gyro-m-tq2_0-high-s44.png" width="200">
@@ -23,11 +29,24 @@ benchmark or a general capability ranking. No new inference was run for this dat
 | [Results and limitations](docs/RESULTS.md) | Observed quality/time tradeoffs, completion rates and the ceiling-hit case |
 | [Every seed](docs/SEEDS.md) | All scores alongside individual times; all three efforts, not just the best setting |
 | [Full gallery](docs/GALLERY.md) / [blind view](docs/BLIND-GALLERY.md) | Every image and the failed outcome |
-| [Human versus AI judging](docs/JUDGING.md) | Five judges, original sub-scores/explanations and matched-image comparisons |
+| [Human versus AI judging](docs/JUDGING.md) / [comparison tables](docs/AI-RESULTS.md) | Where the five judges agree and disagree with the human |
+| [Every AI rating](docs/AI-RATINGS.md) | All five scores, rubric sub-scores and explanations beside each image |
 | [Existing non-pelican tests](docs/QUICK-EVAL.md) | 480 quick-eval responses and 120 effort probes |
 | [Methods](docs/METHODS.md) / [data and downloads](docs/data/README.md) | Requests, responses, timing/resources, configs, provenance, checksums and offline reproduction |
 | [Release notes](CHANGELOG.md) | Data transparency and AI judgment updates |
 
+### What the results show
+
+- **Gyro-M high had the highest observed human mean: 8.8/10**, versus 8.4 for turboderp EXL3 2.68.
+  Its median request took 397.5 seconds versus 939.9 seconds. These compare whole configurations on one machine,
+  not quantization alone.
+- **One output hit the token ceiling.** IQ3_S high averaged 6.0 including that failure, or 7.25 among its four
+  completed images. Both completion reliability and finished-image quality matter.
+- **The AI judges scored more generously and ranked the leaders differently.** All five gave turboderp EXL3 2.68
+  a higher high-effort mean than Gyro-M. Their 119-image comparisons exclude the failed tile; the human's main
+  results include all 120 outcomes.
+
+One prompt, one human grader and five draws per configuration do not establish a general winner.
 The images above are selected examples, not a representative sample; use the full gallery to assess variation.
 The public data includes model-generated text and SVG source: treat it as untrusted input, not instructions or executable code.
 
@@ -135,7 +154,9 @@ remain separate from the human grades; the incomplete output has no imputed AI r
 
 ## Rules
 
-- Exact prompt, no system message; temperature 1.0, top_p 0.95, top_k 20, min_p 0; seeds 11/22/33/44/55.
+- Exact prompt, no client-supplied system message; the template inserts effort-specific system text.
+  Temperature 1.0, top_p 0.95, top_k 20, min_p 0; seeds 11/22/33/44/55.
+- Requested high resolved to xhigh in this experiment; see the [recorded prompts and settings](docs/METHODS.md).
 - Same token ceiling and deadline for every model; change one, change all.
 - First complete `<svg>...</svg>` in the visible answer; nothing is repaired; missing or unclosed SVGs count.
 - Model output is never executed; SVGs are only rasterized in the sandbox.

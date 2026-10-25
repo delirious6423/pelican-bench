@@ -2,39 +2,27 @@
 
 ## v0.1.0 — 2026-10-25 — data transparency and AI judgments
 
-This update exposes existing October 23–24 results. **No new inference or AI grading was run.**
-No model ranking is claimed beyond the observed prompt, machine and grading procedure.
+The full recorded experiment is now available to inspect: **eight quants, three efforts, five seeds each**.
+This release shares existing results; no new inference or AI grading was run.
 
-### Results and evidence
+### What's included
 
-- Add [all 120 seed-level scores with individual times](docs/SEEDS.md), token counts, finish reasons,
-  truncation/render status, a [score-versus-time plot](docs/images/score-time.svg) and [machine-readable data](docs/data/README.md).
-- Add [all 119 rendered images and the failed outcome](docs/GALLERY.md), a separate
-  [blind view](docs/BLIND-GALLERY.md), full raw requests/responses and SVG source as text.
-- Separate completion reliability from finished-image quality. IQ3_S high: one cap hit in five,
-  mean 6.0 including the failure versus 7.25 across four completed images.
-- Include saved resource telemetry, model/configuration provenance, rendered prompts and checksums.
-- Expose [480 existing quick-eval responses and 120 effort probes](docs/QUICK-EVAL.md), including failed items.
+- [All 120 outcomes](docs/SEEDS.md): individual scores, times, token counts and completion status, plus a
+  [score-versus-time plot](docs/images/score-time.svg).
+- [119 rendered images and the failed outcome](docs/GALLERY.md), with a separate [blind gallery](docs/BLIND-GALLERY.md).
+- [595 AI ratings](docs/AI-RATINGS.md): five judges' scores, rubric sub-scores and explanations beside each image,
+  plus [human-versus-AI comparisons](docs/AI-RESULTS.md).
+- [480 existing quick-eval responses and 120 effort probes](docs/QUICK-EVAL.md).
+- [Raw requests, responses, SVG sources, resource measurements and model configurations](docs/data/README.md),
+  with [methods and limitations](docs/METHODS.md).
 
-### AI judgment update
+### Interpreting the results
 
-- Include **595 existing ratings from five AI judges on 119 completed images**, with original rubric
-  sub-scores, explanations, orders and code mapping. A [per-image comparison page](docs/AI-RATINGS.md)
-  shows all five ratings beside each image.
-- Add [human/AI agreement and per-model comparisons](docs/AI-RESULTS.md), with
-  [blinding, provenance and denominator limitations](docs/JUDGING.md).
-- Keep human and AI results separate. Do not impute a judgment for the incomplete SVG or pool correlated
-  ratings into extra generation samples.
+Human and AI scores remain separate: the human graded all 120 outcomes; the AI judges rated the 119 completed
+images. IQ3_S high averaged **6.0 including its token-cap failure**, versus **7.25 among four completed images**.
+The results describe one prompt on one machine, not a general model ranking.
 
-### Corrections and reproducibility
+### Downloads
 
-- Replace “best” with highest observed human mean, and remove equivalence/“statistically tied” claims.
-- Correct the blanket effort claim: IQ3_XXS medium mean 3.4 exceeds its high mean of 3.0.
-- Correct Gyro-M's median-time ratios against the three leading EXL3 configurations to 1.62–2.36.
-- Document requested high → resolved xhigh, template-inserted effort system text, engine/configuration
-  confounds, the separate renderer-memory fix, and unavailable historical patch/version evidence.
-- Remove historical inferential claims that are not reproduced by the included descriptive analysis.
-- Add an offline evidence exporter, reproducible reports, checksums and data-integrity/regression tests.
-- No changes to generation, serving, rendering or interactive grading behavior.
-
-The tagged source archive includes the dataset, galleries, analysis scripts and documentation.
+The release's attached **sweep-1-cells.csv** contains all 120 scored outcomes. The source ZIP and tar.gz include
+the complete dataset, images, galleries, analysis scripts and documentation.
