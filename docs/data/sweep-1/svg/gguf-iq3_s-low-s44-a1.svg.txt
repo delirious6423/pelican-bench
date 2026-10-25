@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 450" width="500" height="450">
+  <!-- Background -->
+  <rect width="500" height="450" fill="#e8f4f8" rx="10"/>
+  
+  <!-- Ground -->
+  <line x1="30" y1="390" x2="470" y2="390" stroke="#90a4ae" stroke-width="3" stroke-dasharray="10,5"/>
+
+  <!-- === BICYCLE === -->
+  
+  <!-- Rear Wheel -->
+  <circle cx="140" cy="330" r="58" fill="none" stroke="#37474f" stroke-width="5"/>
+  <circle cx="140" cy="330" r="5" fill="#37474f"/>
+  <!-- Spokes rear -->
+  <line x1="140" y1="275" x2="140" y2="385" stroke="#78909c" stroke-width="1.5"/>
+  <line x1="85" y1="330" x2="195" y2="330" stroke="#78909c" stroke-width="1.5"/>
+  <line x1="99" y1="289" x2="181" y2="371" stroke="#78909c" stroke-width="1.5"/>
+  <line x1="181" y1="289" x2="99" y2="371" stroke="#78909c" stroke-width="1.5"/>
+
+  <!-- Front Wheel -->
+  <circle cx="340" cy="330" r="58" fill="none" stroke="#37474f" stroke-width="5"/>
+  <circle cx="340" cy="330" r="5" fill="#37474f"/>
+  <!-- Spokes front -->
+  <line x1="340" y1="275" x2="340" y2="385" stroke="#78909c" stroke-width="1.5"/>
+  <line x1="285" y1="330" x2="395" y2="330" stroke="#78909c" stroke-width="1.5"/>
+  <line x1="299" y1="289" x2="381" y2="371" stroke="#78909c" stroke-width="1.5"/>
+  <line x1="381" y1="289" x2="299" y2="371" stroke="#78909c" stroke-width="1.5"/>
+
+  <!-- Chainring / Pedal area -->
+  <circle cx="230" cy="330" r="18" fill="none" stroke="#37474f" stroke-width="3"/>
+  
+  <!-- Chain -->
+  <line x1="155" y1="333" x2="220" y2="345" stroke="#546e7a" stroke-width="3"/>
+  <line x1="155" y1="327" x2="220" y2="315" stroke="#546e7a" stroke-width="3"/>
+
+  <!-- Frame -->
+  <!-- Seat tube -->
+  <line x1="195" y1="240" x2="225" y2="330" stroke="#1565c0" stroke-width="6" stroke-linecap="round"/>
+  <!-- Down tube -->
+  <line x1="225" y1="330" x2="320" y2="260" stroke="#1565c0" stroke-width="6" stroke-linecap="round"/>
+  <!-- Top tube -->
+  <line x1="195" y1="240" x2="320" y2="240" stroke="#1565c0" stroke-width="6" stroke-linecap="round"/>
+  <!-- Head tube -->
+  <line x1="320" y1="240" x2="330" y2="275" stroke="#1565c0" stroke-width="7" stroke-linecap="round"/>
+  <!-- Fork -->
+  <line x1="330" y1="275" x2="340" y2="330" stroke="#1565c0" stroke-width="5" stroke-linecap="round"/>
+  <!-- Chain stays -->
+  <line x1="225" y1="330" x2="140" y2="330" stroke="#1565c0" stroke-width="5" stroke-linecap="round"/>
+  <!-- Seat stays -->
+  <line x1="195" y1="240" x2="140" y2="330" stroke="#1565c0" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Handlebar stem -->
+  <line x1="320" y1="240" x2="310" y2="215" stroke="#1565c0" stroke-width="4" stroke-linecap="round"/>
+  <!-- Handlebars -->
+  <path d="M295 210 Q310 205 320 210 Q330 215 325 225" fill="none" stroke="#37474f" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Seat post -->
+  <line x1="195" y1="240" x2="190" y2="225" stroke="#1565c0" stroke-width="4" stroke-linecap="round"/>
+  <!-- Seat -->
+  <path d="M175 222 Q190 215 205 222" fill="#5d4037" stroke="#5d4037" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Pedals and cranks -->
+  <line x1="230" y1="330" x2="250" y2="345" stroke="#37474f" stroke-width="4" stroke-linecap="round"/>
+  <rect x="245" y="342" width="16" height="6" rx="2" fill="#37474f"/>
+  <line x1="230" y1="330" x2="212" y2="315" stroke="#37474f" stroke-width="4" stroke-linecap="round"/>
+  <rect x="202" y="310" width="16" height="6" rx="2" fill="#37474f"/>
+
+  <!-- === PELICAN === -->
+  
+  <!-- Pelican legs (from body to pedals) -->
+  <path d="M195 260 Q200 290 248 345" fill="none" stroke="#f4a460" stroke-width="5" stroke-linecap="round"/>
+  <path d="M195 260 Q198 285 210 315" fill="none" stroke="#f4a460" stroke-width="5" stroke-linecap="round"/>
+  <!-- Feet -->
+  <path d="M248 345 L262 348" stroke="#f4a460" stroke-width="4" stroke-linecap="round"/>
+  <path d="M210 315 L200 318" stroke="#f4a460" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Pelican body (sitting on seat) -->
+  <ellipse cx="190" cy="220" rx="40" ry="35" fill="#f5f0e6" stroke="#c9b99a" stroke-width="2"/>
+  <!-- Wing (main body color) -->
+  <ellipse cx="185" cy="215" rx="30" ry="25" fill="#ede4d4" stroke="#c9b99a" stroke-width="1.5"/>
+
+  <!-- Tail feathers -->
+  <path d="M155 230 L140 240 M155 225 L138 232 M155 220 L140 224" stroke="#c9b99a" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Neck -->
+  <path d="M210 200 Q225 180 235 160 Q240 145 238 130" fill="none" stroke="#f5f0e6" stroke-width="14" stroke-linecap="round"/>
+  <path d="M210 200 Q225 180 235 160 Q240 145 238 130" fill="none" stroke="#ede4d4" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Neck curve inner (shadow) -->
+  <path d="M215 198 Q230 178 238 158 Q242 145 240 132" fill="none" stroke="#d4c5a9" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Head -->
+  <ellipse cx="240" cy="120" rx="22" ry="18" fill="#f5f0e6" stroke="#c9b99a" stroke-width="1.5"/>
+
+  <!-- Eye -->
+  <circle cx="245" cy="115" r="4" fill="#263238"/>
+  <circle cx="246.5" cy="113.5" r="1.5" fill="white"/>
+  
+  <!-- Eye ring -->
+  <circle cx="245" cy="115" r="5.5" fill="none" stroke="#f4a460" stroke-width="1.5"/>
+
+  <!-- Upper beak -->
+  <path d="M255 112 L320 100 L318 108 L258 118 Z" fill="#ff8f00" stroke="#e65100" stroke-width="1"/>
+  <!-- Beak hook tip -->
+  <path d="M320 100 Q323 100 322 104" fill="#e65100" stroke="#e65100" stroke-width="1.5"/>
+
+  <!-- Lower beak / throat pouch -->
+  <path d="M258 122 Q290 150 320 108" fill="#ffb74d" stroke="#e65100" stroke-width="1.5"/>
+  <!-- Pouch texture lines -->
+  <path d="M265 125 Q280 138 295 130" fill="none" stroke="#e65100" stroke-width="0.8" opacity="0.5"/>
+  <path d="M270 130 Q285 142 305 125" fill="none" stroke="#e65100" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Nostril -->
+  <ellipse cx="262" cy="112" rx="2.5" ry="1.2" fill="#e65100"/>
+
+  <!-- Wings on handlebars -->
+  <!-- Right wing reaching to handlebar -->
+  <path d="M210 215 Q250 210 290 215 Q300 218 305 222" fill="#f5f0e6" stroke="#c9b99a" stroke-width="2"/>
+  <!-- Wing feather details -->
+  <path d="M250 215 Q260 220 270 218" fill="none" stroke="#c9b99a" stroke-width="1.2"/>
+  <path d="M265 216 Q275 220 285 218" fill="none" stroke="#c9b99a" stroke-width="1.2"/>
+  <!-- Wing tip / hand on handlebar -->
+  <path d="M290 215 Q295 213 300 215 Q305 218 305 222 Q300 224 295 222" fill="#ede4d4" stroke="#c9b99a" stroke-width="1.5"/>
+
+  <!-- Wing tip feathers (trailing) -->
+  <path d="M160 210 L148 205 M160 215 L146 212 M160 220 L148 218" stroke="#c9b99a" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Pelican breast marking -->
+  <path d="M200 240 Q210 250 205 260" fill="none" stroke="#d4c5a9" stroke-width="2" opacity="0.5"/>
+
+  <!-- === DETAILS & FINISHING === -->
+  
+  <!-- Helmet on pelican (fun touch) -->
+  <path d="M225 100 Q240 88 260 95 Q265 100 260 105" fill="#ef5350" stroke="#c62828" stroke-width="1.5"/>
+  <line x1="232" y1="97" x2="232" y2="112" stroke="#c62828" stroke-width="1" opacity="0.5"/>
+  <line x1="242" y1="93" x2="242" y2="112" stroke="#c62828" stroke-width="1" opacity="0.5"/>
+  <line x1="252" y1="95" x2="252" y2="108" stroke="#c62828" stroke-width="1" opacity="0.5"/>
+
+  <!-- Motion lines -->
+  <line x1="80" y1="180" x2="50" y2="180" stroke="#90a4ae" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <line x1="75" y1="200" x2="40" y2="200" stroke="#90a4ae" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <line x1="70" y1="220" x2="45" y2="220" stroke="#90a4ae" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Scarf blowing in wind -->
+  <path d="M215 190 Q200 185 185 190 Q170 195 160 188 Q150 182 140 185" fill="none" stroke="#ef5350" stroke-width="4" stroke-linecap="round"/>
+  <path d="M140 185 L132 180 M140 185 L134 190" stroke="#ef5350" stroke-width="3" stroke-linecap="round"/>
+</svg>

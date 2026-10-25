@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- sky -->
+  <rect width="800" height="600" fill="#bfe3f0"/>
+  <ellipse cx="400" cy="505" rx="330" ry="18" fill="#8aa6b0"/>
+  <circle cx="120" cy="90" r="45" fill="#ffe9a8"/>
+
+  <!-- ================= BICYCLE ================= -->
+  <g stroke="#1f3a4d" stroke-width="8" fill="none" stroke-linecap="round">
+    <!-- frame -->
+    <path d="M220 430 L390 430 L505 340 L330 320 Z"/>
+    <path d="M330 320 L390 430"/>
+    <path d="M505 340 L560 430"/>
+    <!-- handlebar -->
+    <path d="M505 340 L512 310 M490 306 L534 314"/>
+  </g>
+
+  <!-- wheels -->
+  <g stroke="#1f3a4d" fill="none">
+    <circle cx="220" cy="430" r="72" stroke-width="9"/>
+    <circle cx="560" cy="430" r="72" stroke-width="9"/>
+    <g stroke-width="3">
+      <path d="M220 430 L220 358 M220 430 L292 430 M220 430 L220 502 M220 430 L148 430
+               M220 430 L271 379 M220 430 L271 481 M220 430 L169 481 M220 430 L169 379"/>
+      <path d="M560 430 L560 358 M560 430 L632 430 M560 430 L560 502 M560 430 L488 430
+               M560 430 L611 379 M560 430 L611 481 M560 430 L509 481 M560 430 L509 379"/>
+    </g>
+  </g>
+  <circle cx="220" cy="430" r="9" fill="#1f3a4d"/>
+  <circle cx="560" cy="430" r="9" fill="#1f3a4d"/>
+
+  <!-- crank & pedals -->
+  <g stroke="#1f3a4d" stroke-width="7" stroke-linecap="round">
+    <path d="M390 430 L412 398 M390 430 L368 462"/>
+  </g>
+  <circle cx="390" cy="430" r="8" fill="#1f3a4d"/>
+  <rect x="402" y="392" width="26" height="10" rx="3" fill="#c0392b" transform="rotate(-20 415 397)"/>
+  <rect x="352" y="458" width="26" height="10" rx="3" fill="#c0392b" transform="rotate(-20 365 463)"/>
+
+  <!-- seat -->
+  <path d="M305 318 Q330 306 352 316 L335 324 Z" fill="#1f3a4d"/>
+
+  <!-- ================= PELICAN ================= -->
+  <!-- tail -->
+  <path d="M246 258 L212 244 L232 286 L246 300 Z" fill="#e8ecef" stroke="#33485a" stroke-width="4"/>
+
+  <!-- body -->
+  <ellipse cx="318" cy="272" rx="74" ry="46" fill="#f7f9fa" stroke="#33485a" stroke-width="5"/>
+
+  <!-- wing -->
+  <path d="M300 250 Q340 240 380 258 Q420 280 470 306 Q492 314 505 312
+           Q498 326 472 326 Q410 318 358 296 Q316 280 300 270 Z"
+        fill="#dfe6ea" stroke="#33485a" stroke-width="4"/>
+
+  <!-- neck & head -->
+  <path d="M356 246 Q392 230 420 208 Q438 194 452 188" fill="none"
+        stroke="#f7f9fa" stroke-width="26" stroke-linecap="round"/>
+  <path d="M356 246 Q392 230 420 208 Q438 194 452 188" fill="none"
+        stroke="#33485a" stroke-width="4" stroke-dasharray="0 400" stroke-linecap="round"/>
+  <circle cx="452" cy="190" r="23" fill="#f7f9fa" stroke="#33485a" stroke-width="5"/>
+
+  <!-- beak & pouch -->
+  <path d="M462 180 L592 212 Q560 216 548 226 Q510 246 472 212 Q462 202 462 192 Z"
+        fill="#f2a65a" stroke="#33485a" stroke-width="4"/>
+  <path d="M470 208 Q505 240 545 224" fill="none" stroke="#33485a" stroke-width="3"/>
+  <path d="M462 182 L592 212" fill="none" stroke="#33485a" stroke-width="3"/>
+
+  <!-- eye -->
+  <circle cx="456" cy="182" r="4.5" fill="#1f3a4d"/>
+
+  <!-- legs to pedals -->
+  <g fill="none" stroke="#33485a" stroke-width="6" stroke-linecap="round">
+    <path d="M330 310 Q360 350 410 398"/>
+    <path d="M318 314 Q340 390 368 460"/>
+  </g>
+  <g fill="none" stroke="#f2a65a" stroke-width="9" stroke-linecap="round">
+    <path d="M402 396 L418 400"/>
+    <path d="M360 458 L374 462"/>
+  </g>
+
+  <text x="400" y="560" text-anchor="middle" font-family="sans-serif"
+        font-size="22" fill="#33485a">Pelican express — arriving pouch-ly on time</text>
+</svg>

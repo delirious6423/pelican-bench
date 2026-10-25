@@ -1,0 +1,42 @@
+{
+  "exe": "${ARTIFACTS}/Strata-EXL3-tuning/build/strata",
+  "args": [
+    "--exl3",
+    "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8",
+    "--ple-exl3",
+    "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/ngram_embedding.safetensors",
+    "--exl3-lane",
+    "--exl3-lane-profile",
+    "${ARTIFACTS}/Strata-new/data/expert-profile.bin",
+    "--exl3-vram-tier",
+    "6757",
+    "--prefill",
+    "auto:1024",
+    "--max-context",
+    "65536",
+    "--kv",
+    "int8",
+    "--spec",
+    "4",
+    "--spec-min-p",
+    "0.5",
+    "--mtp",
+    "${ARTIFACTS}/Strata-data/mtp/rt",
+    "--pool-workers",
+    "7",
+    "--pool-affinity",
+    "p-cores"
+  ],
+  "cwd": "${ARTIFACTS}/Strata-EXL3-tuning/source",
+  "tokenizer": "${ARTIFACTS}/Strata-EXL3-test/pack/tokenizer",
+  "model_name": "sc-exl3-2.05-h8",
+  "env": {
+    "CUDA_VISIBLE_DEVICES": "0",
+    "STRATA_EXL3_DENSE": "q8",
+    "STRATA_ROUTE_TAIL_SKIP": "0",
+    "STRATA_EXL3_MISS_SHARE": "0",
+    "STRATA_ROUTE_RESIDENT": "0",
+    "STRATA_HC_REQ8": "0"
+  },
+  "parallel": 1
+}

@@ -1,0 +1,34 @@
+{
+  "exe": "${EXPERIMENT}/engines/strata-0.2.3-engine/strata",
+  "args": [
+    "--pack",
+    "${EXPERIMENT}/packs/iq3_s",
+    "--native",
+    "${ARTIFACTS}/Strata-data/models/IQ3_S/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf",
+    "--ple-gguf",
+    "${ARTIFACTS}/Strata-data/models/IQ3_S/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf",
+    "--expert-profile",
+    "${EXPERIMENT}/engines/strata-0.2.3-src/data/expert-profile.bin",
+    "--expert-cache",
+    "auto",
+    "--prefill",
+    "auto",
+    "--spec",
+    "4",
+    "--spec-min-p",
+    "0.5",
+    "--mtp",
+    "${ARTIFACTS}/Strata-data/mtp/rt",
+    "--max-context",
+    "65536",
+    "--kv",
+    "int8"
+  ],
+  "cwd": "${EXPERIMENT}/engines/strata-0.2.3-src",
+  "tokenizer": "${EXPERIMENT}/packs/iq3_s/tokenizer",
+  "model_name": "gguf-iq3_s",
+  "parallel": 1,
+  "env": {
+    "CUDA_VISIBLE_DEVICES": "0"
+  }
+}

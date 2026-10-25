@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="500" height="400">
+  <!-- Background -->
+  <rect width="500" height="400" fill="#e8f4f8"/>
+
+  <!-- Bicycle -->
+  <!-- Rear wheel -->
+  <circle cx="150" cy="300" r="50" fill="none" stroke="#333" stroke-width="4"/>
+  <circle cx="150" cy="300" r="4" fill="#333"/>
+  <!-- Rear spokes -->
+  <line x1="150" y1="250" x2="150" y2="350" stroke="#666" stroke-width="1.5"/>
+  <line x1="100" y1="300" x2="200" y2="300" stroke="#666" stroke-width="1.5"/>
+  <line x1="115" y1="265" x2="185" y2="335" stroke="#666" stroke-width="1.5"/>
+  <line x1="185" y1="265" x2="115" y2="335" stroke="#666" stroke-width="1.5"/>
+
+  <!-- Front wheel -->
+  <circle cx="350" cy="300" r="50" fill="none" stroke="#333" stroke-width="4"/>
+  <circle cx="350" cy="300" r="4" fill="#333"/>
+  <!-- Front spokes -->
+  <line x1="350" y1="250" x2="350" y2="350" stroke="#666" stroke-width="1.5"/>
+  <line x1="300" y1="300" x2="400" y2="300" stroke="#666" stroke-width="1.5"/>
+  <line x1="315" y1="265" x2="385" y2="335" stroke="#666" stroke-width="1.5"/>
+  <line x1="385" y1="265" x2="315" y2="335" stroke="#666" stroke-width="1.5"/>
+
+  <!-- Frame -->
+  <!-- Chain stay (rear axle to bottom bracket) -->
+  <line x1="150" y1="300" x2="240" y2="300" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+  <!-- Seat stay (rear axle to seat tube top) -->
+  <line x1="150" y1="300" x2="220" y2="230" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+  <!-- Seat tube (bottom bracket to seat) -->
+  <line x1="240" y1="300" x2="220" y2="220" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+  <!-- Down tube (bottom bracket to head tube) -->
+  <line x1="240" y1="300" x2="330" y2="240" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+  <!-- Top tube (seat area to head tube) -->
+  <line x1="220" y1="230" x2="330" y2="230" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+  <!-- Head tube -->
+  <line x1="330" y1="230" x2="340" y2="260" stroke="#c0392b" stroke-width="6" stroke-linecap="round"/>
+  <!-- Fork -->
+  <line x1="340" y1="260" x2="350" y2="300" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Seat post -->
+  <line x1="215" y1="220" x2="220" y2="230" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+  <!-- Seat -->
+  <ellipse cx="215" cy="215" rx="18" ry="6" fill="#4a2c17"/>
+
+  <!-- Handlebars -->
+  <line x1="330" y1="230" x2="320" y2="210" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+  <path d="M310 205 Q320 200 330 205" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="310" cy="207" r="3" fill="#333"/>
+  <circle cx="330" cy="207" r="3" fill="#333"/>
+
+  <!-- Pedals/Crank -->
+  <circle cx="240" cy="300" r="8" fill="none" stroke="#333" stroke-width="3"/>
+  <line x1="230" y1="310" x2="250" y2="290" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+  <rect x="224" y="308" width="12" height="5" rx="2" fill="#333"/>
+  <rect x="244" y="287" width="12" height="5" rx="2" fill="#333"/>
+
+  <!-- Pelican -->
+  <!-- Body -->
+  <ellipse cx="240" cy="190" rx="45" ry="30" fill="#f0e6d3" stroke="#c4a882" stroke-width="2"/>
+
+  <!-- Wing -->
+  <path d="M210 180 Q230 160 270 175 Q260 195 235 200 Z" fill="#d4b896" stroke="#c4a882" stroke-width="1.5"/>
+  <path d="M220 185 Q235 175 255 182" fill="none" stroke="#b8a07a" stroke-width="1"/>
+  <path d="M215 192 Q235 182 260 190" fill="none" stroke="#b8a07a" stroke-width="1"/>
+
+  <!-- Tail feathers -->
+  <path d="M195 195 Q175 185 165 190 Q170 200 180 200 Z" fill="#d4b896" stroke="#c4a882" stroke-width="1.5"/>
+  <path d="M195 200 Q172 198 162 205 Q172 210 182 207 Z" fill="#d4b896" stroke="#c4a882" stroke-width="1.5"/>
+
+  <!-- Neck -->
+  <path d="M265 180 Q280 160 290 145 Q295 140 300 138" fill="none" stroke="#f0e6d3" stroke-width="16" stroke-linecap="round"/>
+  <path d="M265 180 Q280 160 290 145 Q295 140 300 138" fill="none" stroke="#c4a882" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Head -->
+  <ellipse cx="305" cy="135" rx="14" ry="12" fill="#f0e6d3" stroke="#c4a882" stroke-width="1.5"/>
+
+  <!-- Eye -->
+  <circle cx="308" cy="132" r="3" fill="#2c1810"/>
+  <circle cx="309" cy="131" r="1" fill="#fff"/>
+
+  <!-- Beak - upper -->
+  <path d="M315 135 L375 130 Q378 131 377 133 L315 138 Z" fill="#e8a835" stroke="#c48a20" stroke-width="1.5"/>
+
+  <!-- Beak - lower (with pouch) -->
+  <path d="M315 138 Q345 155 375 133" fill="#f5c542" stroke="#c48a20" stroke-width="1.5"/>
+  <!-- Pouch detail -->
+  <path d="M320 139 Q345 150 370 134" fill="none" stroke="#d4a030" stroke-width="1"/>
+
+  <!-- Beak hook -->
+  <path d="M375 130 Q377 128 375 130" fill="#e8a835"/>
+
+  <!-- Legs on pedals -->
+  <!-- Right leg -->
+  <path d="M245 215 Q250 260 250 290" fill="none" stroke="#e8a835" stroke-width="5" stroke-linecap="round"/>
+  <!-- Left leg -->
+  <path d="M235 215 Q230 260 230 310" fill="none" stroke="#e8a835" stroke-width="5" stroke-linecap="round"/>
+  <!-- Feet -->
+  <path d="M225 310 L240 312 L235 316 L222 314 Z" fill="#e8a835"/>
+  <path d="M245 290 L258 292 L253 296 L240 294 Z" fill="#e8a835"/>
+
+  <!-- Scarf -->
+  <path d="M275 155 Q280 160 275 165 Q265 162 260 165 Q255 160 260 155 Z" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+  <path d="M260 165 Q250 180 245 200" fill="none" stroke="#e74c3c" stroke-width="4" stroke-linecap="round"/>
+  <path d="M255 165 Q248 175 240 195" fill="none" stroke="#e74c3c" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Ground -->
+  <line x1="50" y1="355" x2="450" y2="355" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+  <line x1="80" y1="365" x2="420" y2="365" stroke="#8B7355" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Speed lines -->
+  <line x1="60" y1="250" x2="100" y2="250" stroke="#aaa" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="50" y1="270" x2="90" y2="270" stroke="#aaa" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <line x1="55" y1="290" x2="85" y2="290" stroke="#aaa" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+</svg>

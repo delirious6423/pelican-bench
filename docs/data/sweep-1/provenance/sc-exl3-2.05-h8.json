@@ -1,0 +1,137 @@
+{
+  "model_id": "sc-exl3-2.05-h8",
+  "engine": "fork",
+  "config_sha256": "a70a379ebe557965fedd7909e55d69f4e0c2760f13d3c1cfe9321819fc8e6d9d",
+  "effort_table_ok": true,
+  "effort_table": "EFFORT = {\"none\": None, \"off\": None, \"minimal\": None, \"disabled\": None, \"false\": None,\n          \"low\": \"low\", \"medium\": \"medium\", \"high\": \"xhigh\", \"xhigh\": \"xhigh\", \"max\": \"xhigh\", \"maximum\": \"xhigh\"}",
+  "files": {
+    "engine_exe": {
+      "path": "${ARTIFACTS}/Strata-EXL3-tuning/build/strata",
+      "sha256": "5f9e44e0e98ac19a7e97bba106d0ec84af5933124cdb372d4d3ad02af4d22948"
+    },
+    "server_py": {
+      "path": "${ARTIFACTS}/Strata-EXL3-tuning/source/serve/server.py",
+      "sha256": "9eb13d12dc3ed0f6c94d20ac1c0018efe1e00c331deae76bd0fb9f420e005232"
+    },
+    "frontend_py": {
+      "path": "${ARTIFACTS}/Strata-EXL3-tuning/source/serve/frontend.py",
+      "sha256": "1f40ac6fc9f4ad021ac0c202f35f184f5784009355dd7485ee0e44746bfd75e1"
+    },
+    "template": {
+      "path": "${ARTIFACTS}/Strata-EXL3-test/pack/tokenizer/chat_template.jinja",
+      "sha256": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041"
+    },
+    "tokenizer_json": {
+      "path": "${ARTIFACTS}/Strata-EXL3-test/pack/tokenizer/tokenizer.json",
+      "sha256": "664ba9b1d09b068c2b4427138540a5f895eb1485c030b4529129d1f109d47b1b"
+    },
+    "mtp_dense_txt": {
+      "path": "${ARTIFACTS}/Strata-data/mtp/rt/dense.txt",
+      "sha256": "991456cf4eb266eb8a888c349e548d11bc640f5dbd9149439aa9786af0f732fd"
+    },
+    "mtp_draft_vocab": {
+      "path": "${ARTIFACTS}/Strata-data/mtp/rt/draft_vocab.bin",
+      "sha256": "b1e1d3a7a9e4bf862dcd5923ce661fb59bbd07907e594df5cf86a62ac235cb91"
+    },
+    "expert_profile": {
+      "path": "${ARTIFACTS}/Strata-new/data/expert-profile.bin",
+      "sha256": "8f59b4aa8873209dff11c11e37bcda9529a1335b724a1afeea37bf6388975baf"
+    },
+    "exl3_config": {
+      "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/config.json",
+      "sha256": "00be908ebb107bdcaab571e570862eb74615b41e1c49f6a12611af45f0278acd"
+    },
+    "exl3_quant_config": {
+      "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/quantization_config.json",
+      "sha256": "64fad078fe7a97f13db7fa8280bb162a4596c7ccb6b8d715cd04b1ee9a0cde6b"
+    },
+    "exl3_index": {
+      "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/model.safetensors.index.json",
+      "sha256": "6d5a70b0b6f2d8401477c81ba3fc9a7d1af2710d8878027d1f8edeff6b70cdd0"
+    }
+  },
+  "engine_version": "strata 0.1.45",
+  "config_flags": {
+    "reasoning_effort": null,
+    "reasoning_budget_tokens": null,
+    "effort_position": null,
+    "reasoning_loop_recovery": null,
+    "reasoning_close_retry": null,
+    "sampling": null
+  },
+  "fork_git": {
+    "head": "fa21db8bb1a9017e875717acb2b7c546f109b941",
+    "diff_sha256": "00207cc3501218970e81564c63ccd248a1a776f501a701691c876efd29ad80f7",
+    "diff_bytes": 29603,
+    "modified": [
+      "CMakeLists.txt",
+      "include/strata/core/verify.hpp",
+      "src/core/verify.cpp",
+      "src/kernels/ngram.cpp",
+      "src/kernels/ple_exl3_parity.cpp",
+      "src/program/generate.cpp",
+      "tools/calibrate.py",
+      "tools/exl3/emit_ngram_table.py",
+      "tools/exl3/tokenizer_to_pack.py",
+      "tools/quant_quality.py",
+      "tools/strata_bench.py"
+    ],
+    "untracked_source": {
+      "include/strata/program/exl3_miss_plan.hpp": "4318808458768ecee058a07dd4db3e922e99a03268abb22e815acb41ed5fd43e",
+      "src/program/exl3_miss_plan_test.cpp": "e771d5c69820edc4d5c6433b9408415d7ae28ed9ce9129d596b39130d4fe7bcc",
+      "tools/benchmark-tuned.sh": "fdadd26539965e4bf29f29a3616a5dd98dd60e833178ac971d267a806b53a752",
+      "tools/export_tuning.py": "abcee483a8aec71ff784b58d7c7a6d9ee7981ba8a0acce4ad40fa70f4461118f",
+      "tools/finish_artifacts.py": "7cc3a38c1f3778918a8ce174c65401ce5ca11d2de1f8bb06dd2e29b7d5ac9b4f",
+      "tools/finish_validation.py": "809d7ea59331cd9e792e2626831fdf64a7d981754ce41cba4e5d2db23a25e5c1",
+      "tools/local_legacy_chat.py": "775843833a645d823ff413a6fb7ebcb50cf2a7b525787fbb854f140dba50938a",
+      "tools/local_quality.py": "14ae1db7ae441edf8e9698a2cbea2336678761e35fc484d9e09d4b3416530159",
+      "tools/local_quality_compare.py": "cf4aec524f62710890caeb045d1d5127a20bec506e20284b77f18fe894d310ed",
+      "tools/local_tune.py": "431aeea508adc9a42d06468286214b8c951bfbedbad56f01dc59bb39689f0f9d",
+      "tools/local_tuning/corpus.txt": "422d02f9a77f8eee4fe20330b9584f186e307ea0d06bc501da0ad08431326445",
+      "tools/make_tuning_report.py": "e07237ef1d6c504b6a1941684bd2a6e7274d648292246e6df7f9ac5e1cb9b5fa",
+      "tools/run_final_validation.py": "d30f5505ed7e21a3f33795417236ae5646f2c972ac1d577747207517886550b9",
+      "tools/run_quality_matrix.py": "e3507da5da7e6530ae0b5fc19ee3db0b33c740e6ae5a5fb93dbfe514c6673897",
+      "tools/run_tuning_matrix.py": "7335bb428344164c684dccf723f9714dc8490daea2a859aa6501f53df2c3ac71",
+      "tools/summarize_local_quality.py": "ecc68024c880dc6a649665ec1505545a97b85e15eead5ef9436b869140aacb28"
+    }
+  },
+  "load": {
+    "t_listen_s": 70.26695835000282,
+    "t_ready_s": 70.28064866599743,
+    "vram_tier_override": null
+  },
+  "engine_info": {
+    "model": "sc-exl3-2.05-h8",
+    "max_context": 65536,
+    "images": false,
+    "version": "0.1.45",
+    "logit_bias": 1,
+    "context": 65536,
+    "kv": "int8",
+    "kv_resident": 0,
+    "expert_slots": 0,
+    "expert_cache_mib": 0,
+    "expert_slots_primary": 0,
+    "expert_cache_primary_mib": 0,
+    "spec": 6,
+    "mtp_max": 4,
+    "lookup": 3,
+    "vram_free_mib": 783,
+    "cvec": 0,
+    "arena_mib": 0,
+    "pool_workers": 7,
+    "pcie_frac": "0.20",
+    "spec_min_p": "0.50",
+    "conversation_cache_mib": 0,
+    "conversation_cache_slots": 4,
+    "conversation_cache_min_free_mib": 2560,
+    "conversation_cache_min_tokens": 0,
+    "tail_role_token": -1,
+    "vram_elastic": 0,
+    "prefill_cap": 8192,
+    "prefill_stages": 1,
+    "stream_all_min": 1024,
+    "prefill_pipe": 0,
+    "engine": "0.1.45"
+  }
+}

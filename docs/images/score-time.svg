@@ -1,0 +1,396 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+<title id="title">Human score versus request wall time, all 120 outcomes</title>
+<desc id="desc">Each point is one generation. Low effort is a circle, medium a square, high a triangle. The token-cap failure is a red cross. Points may overlap. Full values are in the CSV and seed tables.</desc>
+<rect width="960" height="560" fill="white"/>
+<g font-family="Geist Mono, monospace" font-size="16" fill="#181818">
+<text x="64" y="32">All 120 outcomes: human score versus wall time</text>
+<path d="M64 440H928" stroke="#dddddd"/>
+<text x="32" y="444">1</text>
+<path d="M64 400H928" stroke="#dddddd"/>
+<text x="32" y="404">2</text>
+<path d="M64 360H928" stroke="#dddddd"/>
+<text x="32" y="364">3</text>
+<path d="M64 320H928" stroke="#dddddd"/>
+<text x="32" y="324">4</text>
+<path d="M64 280H928" stroke="#dddddd"/>
+<text x="32" y="284">5</text>
+<path d="M64 240H928" stroke="#dddddd"/>
+<text x="32" y="244">6</text>
+<path d="M64 200H928" stroke="#dddddd"/>
+<text x="32" y="204">7</text>
+<path d="M64 160H928" stroke="#dddddd"/>
+<text x="32" y="164">8</text>
+<path d="M64 120H928" stroke="#dddddd"/>
+<text x="32" y="124">9</text>
+<path d="M64 80H928" stroke="#dddddd"/>
+<text x="32" y="84">10</text>
+<text x="64.0" y="472" text-anchor="middle">0</text>
+<text x="208.0" y="472" text-anchor="middle">200</text>
+<text x="352.0" y="472" text-anchor="middle">400</text>
+<text x="496.0" y="472" text-anchor="middle">600</text>
+<text x="640.0" y="472" text-anchor="middle">800</text>
+<text x="784.0" y="472" text-anchor="middle">1000</text>
+<text x="928.0" y="472" text-anchor="middle">1200</text>
+<text x="400" y="504">Request wall time (seconds)</text>
+<g fill="#4338ca" fill-opacity="0.65"><title>gguf-iq3_s-high-s11: 8/10, 419.4 s</title>
+<path d="M365.98041122824304 154l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>gguf-iq3_s-high-s22: 6/10, 542.3 s</title>
+<path d="M454.4771776739228 234l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>gguf-iq3_s-high-s33: 1/10, 724.6 s, token cap</title>
+<path d="M579.6933066371176 434l12 12m0 -12l-12 12" stroke="#b91c1c" stroke-width="3"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>gguf-iq3_s-high-s44: 8/10, 317.9 s</title>
+<path d="M292.9090594621655 154l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>gguf-iq3_s-high-s55: 7/10, 454.6 s</title>
+<path d="M391.32248694040464 194l6 11h-12z"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>gguf-iq3_s-low-s11: 3/10, 37.4 s</title>
+<circle cx="90.92313304048031" cy="360" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>gguf-iq3_s-low-s22: 1/10, 38.7 s</title>
+<circle cx="91.83520865584724" cy="440" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>gguf-iq3_s-low-s33: 4/10, 45.2 s</title>
+<circle cx="96.56478115912526" cy="320" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>gguf-iq3_s-low-s44: 4/10, 57.4 s</title>
+<circle cx="105.32200363120529" cy="320" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>gguf-iq3_s-low-s55: 1/10, 33.0 s</title>
+<circle cx="87.79187738295062" cy="440" r="5"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>gguf-iq3_s-medium-s11: 5/10, 54.8 s</title>
+<rect x="98.44216664719511" y="275" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>gguf-iq3_s-medium-s22: 5/10, 54.1 s</title>
+<rect x="97.94750756936148" y="275" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>gguf-iq3_s-medium-s33: 7/10, 65.2 s</title>
+<rect x="105.9276000718423" y="195" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>gguf-iq3_s-medium-s44: 1/10, 61.9 s</title>
+<rect x="103.57377264319686" y="435" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>gguf-iq3_s-medium-s55: 6/10, 32.5 s</title>
+<rect x="82.41018202327541" y="235" width="10" height="10"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>gguf-iq3_xxs-high-s11: 3/10, 252.4 s</title>
+<path d="M245.69418417976004 354l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>gguf-iq3_xxs-high-s22: 6/10, 267.4 s</title>
+<path d="M256.55534503840374 234l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>gguf-iq3_xxs-high-s33: 1/10, 203.5 s</title>
+<path d="M210.50869590207586 434l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>gguf-iq3_xxs-high-s44: 4/10, 238.3 s</title>
+<path d="M235.5449056580814 314l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>gguf-iq3_xxs-high-s55: 1/10, 321.1 s</title>
+<path d="M295.1729874388012 434l6 11h-12z"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>gguf-iq3_xxs-low-s11: 1/10, 29.5 s</title>
+<circle cx="85.2643694756797" cy="440" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>gguf-iq3_xxs-low-s22: 2/10, 46.2 s</title>
+<circle cx="97.24454428816097" cy="400" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>gguf-iq3_xxs-low-s33: 4/10, 37.1 s</title>
+<circle cx="90.72285833295784" cy="320" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>gguf-iq3_xxs-low-s44: 5/10, 54.5 s</title>
+<circle cx="103.22512212736066" cy="280" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>gguf-iq3_xxs-low-s55: 2/10, 36.4 s</title>
+<circle cx="90.19025412256131" cy="400" r="5"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>gguf-iq3_xxs-medium-s11: 3/10, 30.4 s</title>
+<rect x="80.87131641775952" y="355" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>gguf-iq3_xxs-medium-s22: 2/10, 31.3 s</title>
+<rect x="81.50654954984086" y="395" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>gguf-iq3_xxs-medium-s33: 5/10, 35.4 s</title>
+<rect x="84.49644439111464" y="275" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>gguf-iq3_xxs-medium-s44: 3/10, 45.6 s</title>
+<rect x="91.81714075952885" y="355" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>gguf-iq3_xxs-medium-s55: 4/10, 40.6 s</title>
+<rect x="88.26079428464175" y="315" width="10" height="10"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>gyro-m-tq2_0-high-s11: 9/10, 557.7 s</title>
+<path d="M465.5257210244797 114l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>gyro-m-tq2_0-high-s22: 7/10, 256.8 s</title>
+<path d="M248.91416853831964 194l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>gyro-m-tq2_0-high-s33: 8/10, 397.5 s</title>
+<path d="M350.19880187319006 154l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>gyro-m-tq2_0-high-s44: 10/10, 529.5 s</title>
+<path d="M445.27042148896027 74l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>gyro-m-tq2_0-high-s55: 10/10, 129.7 s</title>
+<path d="M157.38832627335563 74l6 11h-12z"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>gyro-m-tq2_0-low-s11: 1/10, 42.3 s</title>
+<circle cx="94.43806931008933" cy="440" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>gyro-m-tq2_0-low-s22: 1/10, 35.8 s</title>
+<circle cx="89.76155768704135" cy="440" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>gyro-m-tq2_0-low-s33: 4/10, 39.1 s</title>
+<circle cx="92.12335151392035" cy="320" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>gyro-m-tq2_0-low-s44: 3/10, 32.7 s</title>
+<circle cx="87.51126524607534" cy="360" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>gyro-m-tq2_0-low-s55: 7/10, 45.8 s</title>
+<circle cx="96.96443035311765" cy="200" r="5"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>gyro-m-tq2_0-medium-s11: 3/10, 40.9 s</title>
+<rect x="88.43880391951767" y="355" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>gyro-m-tq2_0-medium-s22: 5/10, 57.4 s</title>
+<rect x="100.3121740061685" y="275" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>gyro-m-tq2_0-medium-s33: 1/10, 31.6 s</title>
+<rect x="81.75889896943816" y="435" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>gyro-m-tq2_0-medium-s44: 2/10, 29.5 s</title>
+<rect x="80.20619987503508" y="395" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>gyro-m-tq2_0-medium-s55: 3/10, 42.1 s</title>
+<rect x="89.30711741936625" y="355" width="10" height="10"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>gyro-s-tq1_0-high-s11: 8/10, 149.9 s</title>
+<path d="M171.92480375008134 154l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>gyro-s-tq1_0-high-s22: 2/10, 263.6 s</title>
+<path d="M253.78872786639957 394l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>gyro-s-tq1_0-high-s33: 6/10, 273.1 s</title>
+<path d="M260.6342547628027 234l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>gyro-s-tq1_0-high-s44: 3/10, 237.0 s</title>
+<path d="M234.6412166646408 354l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>gyro-s-tq1_0-high-s55: 8/10, 117.5 s</title>
+<path d="M148.6087348801596 154l6 11h-12z"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>gyro-s-tq1_0-low-s11: 1/10, 29.1 s</title>
+<circle cx="84.97777219480194" cy="440" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>gyro-s-tq1_0-low-s22: 6/10, 41.7 s</title>
+<circle cx="94.026972520001" cy="240" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>gyro-s-tq1_0-low-s33: 4/10, 31.2 s</title>
+<circle cx="86.49796162815939" cy="320" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>gyro-s-tq1_0-low-s44: 1/10, 27.1 s</title>
+<circle cx="83.54325455343874" cy="440" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>gyro-s-tq1_0-low-s55: 5/10, 33.6 s</title>
+<circle cx="88.18831997128146" cy="280" r="5"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>gyro-s-tq1_0-medium-s11: 4/10, 25.8 s</title>
+<rect x="77.59607739655999" y="315" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>gyro-s-tq1_0-medium-s22: 1/10, 30.1 s</title>
+<rect x="80.67022688696335" y="435" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>gyro-s-tq1_0-medium-s33: 4/10, 41.2 s</title>
+<rect x="88.67197960807943" y="315" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>gyro-s-tq1_0-medium-s44: 1/10, 44.1 s</title>
+<rect x="90.72305828168173" y="435" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>gyro-s-tq1_0-medium-s55: 2/10, 44.9 s</title>
+<rect x="91.33936126519751" y="395" width="10" height="10"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>sc-exl3-2.05-h8-high-s11: 8/10, 643.1 s</title>
+<path d="M527.0179111904831 154l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>sc-exl3-2.05-h8-high-s22: 8/10, 1013.5 s</title>
+<path d="M793.7170759972028 154l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>sc-exl3-2.05-h8-high-s33: 8/10, 1187.6 s</title>
+<path d="M919.083607927842 154l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>sc-exl3-2.05-h8-high-s44: 6/10, 506.8 s</title>
+<path d="M428.8971420805616 234l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>sc-exl3-2.05-h8-high-s55: 9/10, 530.1 s</title>
+<path d="M445.6840068798413 114l6 11h-12z"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>sc-exl3-2.05-h8-low-s11: 1/10, 66.6 s</title>
+<circle cx="111.9473727227177" cy="440" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>sc-exl3-2.05-h8-low-s22: 4/10, 67.3 s</title>
+<circle cx="112.44076659352228" cy="320" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>sc-exl3-2.05-h8-low-s33: 2/10, 53.5 s</title>
+<circle cx="102.4848574299994" cy="400" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>sc-exl3-2.05-h8-low-s44: 3/10, 58.2 s</title>
+<circle cx="105.92114930487762" cy="360" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>sc-exl3-2.05-h8-low-s55: 4/10, 57.4 s</title>
+<circle cx="105.34649580136174" cy="320" r="5"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>sc-exl3-2.05-h8-medium-s11: 5/10, 78.1 s</title>
+<rect x="115.24575366895995" y="275" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>sc-exl3-2.05-h8-medium-s22: 4/10, 83.5 s</title>
+<rect x="119.14674618271704" y="315" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>sc-exl3-2.05-h8-medium-s33: 4/10, 107.9 s</title>
+<rect x="136.66525856528372" y="315" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>sc-exl3-2.05-h8-medium-s44: 1/10, 55.4 s</title>
+<rect x="98.86113857840013" y="435" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>sc-exl3-2.05-h8-medium-s55: 3/10, 98.0 s</title>
+<rect x="129.55592715440145" y="355" width="10" height="10"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>sc-exl3-3.05-h8-high-s11: 8/10, 721.4 s</title>
+<path d="M583.4257239685603 154l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>sc-exl3-3.05-h8-high-s22: 8/10, 623.6 s</title>
+<path d="M512.9602602795977 154l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>sc-exl3-3.05-h8-high-s33: 7/10, 663.0 s</title>
+<path d="M541.3597693069535 194l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>sc-exl3-3.05-h8-high-s44: 9/10, 359.4 s</title>
+<path d="M322.73881104592465 114l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>sc-exl3-3.05-h8-high-s55: 8/10, 774.5 s</title>
+<path d="M621.6173841260874 154l6 11h-12z"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>sc-exl3-3.05-h8-low-s11: 4/10, 81.2 s</title>
+<circle cx="122.4766422373522" cy="320" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>sc-exl3-3.05-h8-low-s22: 7/10, 86.1 s</title>
+<circle cx="126.02608167159836" cy="200" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>sc-exl3-3.05-h8-low-s33: 5/10, 119.6 s</title>
+<circle cx="150.09107304448145" cy="280" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>sc-exl3-3.05-h8-low-s44: 5/10, 76.2 s</title>
+<circle cx="118.86157874728903" cy="280" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>sc-exl3-3.05-h8-low-s55: 5/10, 80.6 s</title>
+<circle cx="122.01344832447357" cy="280" r="5"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>sc-exl3-3.05-h8-medium-s11: 3/10, 98.3 s</title>
+<rect x="129.7660784424818" y="355" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>sc-exl3-3.05-h8-medium-s22: 3/10, 120.9 s</title>
+<rect x="146.07887899496126" y="355" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>sc-exl3-3.05-h8-medium-s33: 6/10, 131.7 s</title>
+<rect x="153.83147023111698" y="235" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>sc-exl3-3.05-h8-medium-s44: 6/10, 73.1 s</title>
+<rect x="111.65910730520612" y="235" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>sc-exl3-3.05-h8-medium-s55: 1/10, 153.3 s</title>
+<rect x="169.37568054464413" y="435" width="10" height="10"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>td-exl3-2.18-h6-ng8-high-s11: 3/10, 557.0 s</title>
+<path d="M465.03265481703795 354l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>td-exl3-2.18-h6-ng8-high-s22: 3/10, 275.2 s</title>
+<path d="M262.1442445897631 354l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>td-exl3-2.18-h6-ng8-high-s33: 3/10, 617.8 s</title>
+<path d="M508.78306495432156 354l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>td-exl3-2.18-h6-ng8-high-s44: 6/10, 687.5 s</title>
+<path d="M559.0320541134406 234l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>td-exl3-2.18-h6-ng8-high-s55: 8/10, 782.0 s</title>
+<path d="M627.0040912636002 154l6 11h-12z"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>td-exl3-2.18-h6-ng8-low-s11: 3/10, 117.0 s</title>
+<circle cx="148.2608283004019" cy="360" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>td-exl3-2.18-h6-ng8-low-s22: 4/10, 73.4 s</title>
+<circle cx="116.8370683782373" cy="320" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>td-exl3-2.18-h6-ng8-low-s33: 3/10, 129.4 s</title>
+<circle cx="157.19121741879673" cy="360" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>td-exl3-2.18-h6-ng8-low-s44: 6/10, 101.7 s</title>
+<circle cx="137.20759585912396" cy="240" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>td-exl3-2.18-h6-ng8-low-s55: 3/10, 86.3 s</title>
+<circle cx="126.14621739616094" cy="360" r="5"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>td-exl3-2.18-h6-ng8-medium-s11: 6/10, 98.3 s</title>
+<rect x="129.7752387655986" y="235" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>td-exl3-2.18-h6-ng8-medium-s22: 3/10, 135.8 s</title>
+<rect x="156.79575883904005" y="355" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>td-exl3-2.18-h6-ng8-medium-s33: 6/10, 121.8 s</title>
+<rect x="146.66814589496119" y="235" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>td-exl3-2.18-h6-ng8-medium-s44: 3/10, 60.9 s</title>
+<rect x="102.84433415528153" y="355" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>td-exl3-2.18-h6-ng8-medium-s55: 4/10, 134.8 s</title>
+<rect x="156.02157167720026" y="315" width="10" height="10"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>td-exl3-2.68-h6-ng8-high-s11: 8/10, 939.9 s</title>
+<path d="M740.740937929122 154l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>td-exl3-2.68-h6-ng8-high-s22: 8/10, 1001.0 s</title>
+<path d="M784.740723886725 154l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>td-exl3-2.68-h6-ng8-high-s33: 8/10, 522.2 s</title>
+<path d="M439.9642926100036 154l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>td-exl3-2.68-h6-ng8-high-s44: 10/10, 994.6 s</title>
+<path d="M780.0957070876087 74l6 11h-12z"/>
+</g>
+<g fill="#4338ca" fill-opacity="0.65"><title>td-exl3-2.68-h6-ng8-high-s55: 8/10, 829.9 s</title>
+<path d="M661.4927595985588 154l6 11h-12z"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>td-exl3-2.68-h6-ng8-low-s11: 2/10, 87.5 s</title>
+<circle cx="127.00224015040672" cy="400" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>td-exl3-2.68-h6-ng8-low-s22: 3/10, 137.1 s</title>
+<circle cx="162.69344777440068" cy="360" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>td-exl3-2.68-h6-ng8-low-s33: 4/10, 86.5 s</title>
+<circle cx="126.27820161567303" cy="320" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>td-exl3-2.68-h6-ng8-low-s44: 6/10, 101.6 s</title>
+<circle cx="137.13994493199277" cy="240" r="5"/>
+</g>
+<g fill="#0f766e" fill-opacity="0.65"><title>td-exl3-2.68-h6-ng8-low-s55: 1/10, 94.1 s</title>
+<circle cx="131.761238884473" cy="440" r="5"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>td-exl3-2.68-h6-ng8-medium-s11: 2/10, 48.8 s</title>
+<rect x="94.10386109359446" y="395" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>td-exl3-2.68-h6-ng8-medium-s22: 4/10, 88.3 s</title>
+<rect x="122.60386854464187" y="315" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>td-exl3-2.68-h6-ng8-medium-s33: 6/10, 166.7 s</title>
+<rect x="179.00220833095605" y="235" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>td-exl3-2.68-h6-ng8-medium-s44: 3/10, 176.0 s</title>
+<rect x="185.74753588591935" y="355" width="10" height="10"/>
+</g>
+<g fill="#b45309" fill-opacity="0.65"><title>td-exl3-2.68-h6-ng8-medium-s55: 5/10, 69.0 s</title>
+<rect x="108.64607842975528" y="275" width="10" height="10"/>
+</g>
+<text x="64" y="544">Circle: low · Square: medium · Triangle: high · Red cross: token cap</text>
+</g></svg>

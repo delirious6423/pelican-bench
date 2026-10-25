@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <title>A pelican riding a bicycle</title>
+
+  <!-- ground -->
+  <line x1="15" y1="258" x2="385" y2="258" stroke="#8d9aa6" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- motion lines -->
+  <g stroke="#b8c4ce" stroke-width="3" stroke-linecap="round">
+    <line x1="25" y1="140" x2="55" y2="140"/>
+    <line x1="15" y1="165" x2="50" y2="165"/>
+    <line x1="30" y1="190" x2="55" y2="190"/>
+  </g>
+
+  <!-- rear wheel -->
+  <g>
+    <circle cx="100" cy="215" r="42" fill="none" stroke="#2c3e50" stroke-width="6"/>
+    <g stroke="#95a5a6" stroke-width="2">
+      <line x1="58" y1="215" x2="142" y2="215"/>
+      <line x1="100" y1="173" x2="100" y2="257"/>
+      <line x1="70" y1="185" x2="130" y2="245"/>
+      <line x1="70" y1="245" x2="130" y2="185"/>
+    </g>
+    <circle cx="100" cy="215" r="6" fill="#2c3e50"/>
+  </g>
+
+  <!-- front wheel -->
+  <g>
+    <circle cx="290" cy="215" r="42" fill="none" stroke="#2c3e50" stroke-width="6"/>
+    <g stroke="#95a5a6" stroke-width="2">
+      <line x1="248" y1="215" x2="332" y2="215"/>
+      <line x1="290" y1="173" x2="290" y2="257"/>
+      <line x1="260" y1="185" x2="320" y2="245"/>
+      <line x1="260" y1="245" x2="320" y2="185"/>
+    </g>
+    <circle cx="290" cy="215" r="6" fill="#2c3e50"/>
+  </g>
+
+  <!-- frame -->
+  <g stroke="#c0392b" stroke-width="6" fill="none" stroke-linecap="round">
+    <line x1="100" y1="215" x2="195" y2="215"/>  <!-- chain stay -->
+    <line x1="152" y1="150" x2="195" y2="215"/>  <!-- seat tube -->
+    <line x1="154" y1="152" x2="270" y2="155"/>  <!-- top tube -->
+    <line x1="195" y1="215" x2="272" y2="167"/>  <!-- down tube -->
+    <line x1="268" y1="148" x2="273" y2="168"/>  <!-- head tube -->
+    <line x1="273" y1="168" x2="290" y2="215"/>  <!-- fork -->
+  </g>
+
+  <!-- handlebar -->
+  <path d="M268,148 L266,133 Q266,128 272,128 L290,130" fill="none" stroke="#2c3e50" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- seat -->
+  <path d="M133,148 Q148,139 163,148 Q148,154 133,148 Z" fill="#2c3e50"/>
+
+  <!-- crank and pedals -->
+  <circle cx="195" cy="215" r="7" fill="#2c3e50"/>
+  <line x1="195" y1="215" x2="205" y2="203" stroke="#2c3e50" stroke-width="4" stroke-linecap="round"/>
+  <line x1="195" y1="215" x2="185" y2="227" stroke="#2c3e50" stroke-width="4" stroke-linecap="round"/>
+  <line x1="198" y1="203" x2="212" y2="203" stroke="#2c3e50" stroke-width="5" stroke-linecap="round"/>
+  <line x1="178" y1="227" x2="192" y2="227" stroke="#2c3e50" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- pelican legs (pedaling) -->
+  <g stroke="#e67e22" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="160,144 172,175 185,225"/>
+    <polyline points="174,146 192,178 205,201"/>
+  </g>
+
+  <!-- pelican body -->
+  <ellipse cx="163" cy="122" rx="45" ry="30" fill="#f4f6f7" stroke="#c8d1d9" stroke-width="3"/>
+
+  <!-- tail feathers -->
+  <path d="M124,112 L104,103 L118,122 L102,128 L124,134 Z" fill="#dfe6ec" stroke="#c8d1d9" stroke-width="2"/>
+
+  <!-- neck and head -->
+  <path d="M188,98 C212,92 218,82 228,68 L246,74 C236,88 230,100 205,116 Z" fill="#f4f6f7" stroke="#c8d1d9" stroke-width="3"/>
+  <circle cx="238" cy="68" r="14" fill="#f4f6f7" stroke="#c8d1d9" stroke-width="3"/>
+
+  <!-- beak with pouch -->
+  <path d="M249,58 L320,70 Q294,104 248,82 Z" fill="#f6a935" stroke="#d9832b" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M252,78 Q280,94 310,74" fill="none" stroke="#d9832b" stroke-width="2"/>
+
+  <!-- eye -->
+  <circle cx="240" cy="63" r="3.5" fill="#2c3e50"/>
+
+  <!-- wing -->
+  <path d="M132,112 Q152,94 182,106 Q192,118 178,132 Q150,138 132,112 Z" fill="#dfe6ec" stroke="#c8d1d9" stroke-width="3"/>
+  <!-- wing reaching to handlebar -->
+  <path d="M180,110 Q222,116 262,134" fill="none" stroke="#dfe6ec" stroke-width="9" stroke-linecap="round"/>
+  <path d="M180,110 Q222,116 262,134" fill="none" stroke="#c8d1d9" stroke-width="3" stroke-linecap="round"/>
+</svg>

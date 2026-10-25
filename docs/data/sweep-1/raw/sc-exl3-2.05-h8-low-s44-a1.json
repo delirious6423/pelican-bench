@@ -1,0 +1,223 @@
+{
+  "run": "sweep-1",
+  "harness": "pelican-harness-1",
+  "phase": "scored",
+  "model_id": "sc-exl3-2.05-h8",
+  "engine": "fork",
+  "cell_id": "sc-exl3-2.05-h8-low-s44",
+  "attempt": 1,
+  "requested_effort": "low",
+  "resolved_effort": "low",
+  "seed": 44,
+  "sampling": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "repetition_penalty": 1.0
+  },
+  "max_tokens": 49152,
+  "budget_sent": 0,
+  "deadline_s": 2700.0,
+  "idle_timeout_s": 600,
+  "request": {
+    "model": "sc-exl3-2.05-h8",
+    "stream": true,
+    "max_tokens": 49152,
+    "seed": 44,
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "reasoning_effort": "low",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate an SVG of a pelican riding a bicycle"
+      }
+    ],
+    "reasoning_budget_tokens": 0
+  },
+  "t_wall_start": 2044.999686,
+  "t_wall_end": 2103.223725,
+  "finish_reason": "stop",
+  "cap_hit": false,
+  "abort": null,
+  "error": null,
+  "done_seen": true,
+  "inline_think": false,
+  "t_first_byte_s": 0.002821766996930819,
+  "ttft_s": 2.0820468239980983,
+  "t_first_reasoning_s": 2.0820468239980983,
+  "t_first_answer_s": 8.449261172994738,
+  "wall_s": 58.22381847899669,
+  "thinking_phase_s": 6.36721434899664,
+  "answer_phase_s": 49.77455730600195,
+  "prompt_tokens": 50,
+  "completion_tokens": 2811,
+  "total_tokens": 2861,
+  "cached_tokens": 0,
+  "reasoning_chars": 902,
+  "answer_chars": 4830,
+  "server_timings": {
+    "cache_n": 0,
+    "prompt_n": 50,
+    "prompt_ms": 2008.4,
+    "prompt_per_token_ms": 40.168,
+    "prompt_per_second": 24.9,
+    "predicted_n": 2811,
+    "predicted_ms": 56211.4,
+    "predicted_per_token_ms": 19.997,
+    "predicted_per_second": 50.0,
+    "draft_n": 2332,
+    "draft_n_accepted": 1969
+  },
+  "engine_decode_tok_s": 50.0,
+  "engine_prefill_tok_s": 24.9,
+  "prefill_ms": 2008.4,
+  "decode_ms": 56211.4,
+  "prompt_cache_n": 0,
+  "draft_n": 2332,
+  "draft_accepted": 1969,
+  "metrics_match": "time+tokens",
+  "metrics_reason": null,
+  "metrics_entry": {
+    "projection": null,
+    "time": 2045.002301,
+    "duration_s": 58.2,
+    "finish": "stop",
+    "prompt_tokens": 50,
+    "reused": 0,
+    "output_tokens": 2811,
+    "prompt_total": 50,
+    "prompt_read": 50,
+    "reasoning_recoveries": 0,
+    "reasoning_repeat_coverage": 0.0,
+    "engine_generated": 2811,
+    "prompt_ms": 2008.4,
+    "decode_ms": 56211.4,
+    "decode_tok_s": 50.0,
+    "hit_rate": 0.827,
+    "pcie_share": 0.0,
+    "ram_blobs": 230026,
+    "file_blobs": 0,
+    "file_mb": 0,
+    "drafts_offered": 2332,
+    "drafts_accepted": 1969
+  },
+  "history_decode_tok_s": 50.0,
+  "engine_generated": 2811,
+  "first_engine_token_s": null,
+  "reasoning_recoveries": 0,
+  "client_tok_s_after_first_text": 50.07,
+  "client_tok_s_wall": 48.28,
+  "gate": {
+    "paused_hot_s": 0.0,
+    "paused_foreign_s": 0.0,
+    "contention": []
+  },
+  "resources": {
+    "n_samples": 58,
+    "interval_ms": 1000,
+    "t0": 2045.6986,
+    "t1": 2103.015102,
+    "gpu_util_pct": {
+      "min": 99.0,
+      "max": 100.0,
+      "mean": 99.66
+    },
+    "vram_used_mib": {
+      "min": 15277.0,
+      "max": 15277.0,
+      "mean": 15277.0
+    },
+    "gpu_temp_c": {
+      "min": 56.0,
+      "max": 61.0,
+      "mean": 58.72
+    },
+    "gpu_power_w": {
+      "min": 65.88,
+      "max": 123.15,
+      "mean": 99.01
+    },
+    "gpu_sm_mhz": {
+      "min": 2115.0,
+      "max": 2340.0,
+      "mean": 2320.09
+    },
+    "gpu_mem_mhz": {
+      "min": 9001.0,
+      "max": 9001.0,
+      "mean": 9001.0
+    },
+    "gpu_clock_event_reasons": {
+      "0x0000000000000000": 46,
+      "0x0000000000000004": 12
+    },
+    "cpu_util_pct": {
+      "min": 34.9,
+      "max": 41.1,
+      "mean": 37.42
+    },
+    "server_cpu_cores": 7.99,
+    "other_cpu_cores": 0.94,
+    "cpu_pkg_c": {
+      "min": 56.0,
+      "max": 61.0,
+      "mean": 57.93
+    },
+    "mem_available_gib": {
+      "min": 20.14405059814453,
+      "max": 20.401592254638672,
+      "mean": 20.24
+    },
+    "swap_used_gib": {
+      "min": 7.290523529052734,
+      "max": 7.2916259765625,
+      "mean": 7.29
+    },
+    "swap_in_pages": 1,
+    "swap_out_pages": 0,
+    "major_faults": 477,
+    "data_disk_read_gb": 0.01189888,
+    "data_disk_write_gb": 0.000647168,
+    "sys_disk_read_gb": 0.000561152,
+    "server_cgroup_read_gb": 0.0,
+    "server_rss_gib": {
+      "min": 36.606727600097656,
+      "max": 36.7163200378418,
+      "mean": 36.71
+    },
+    "server_cgroup_mem_gib": {
+      "min": 36.66210174560547,
+      "max": 36.77201843261719,
+      "mean": 36.77
+    },
+    "load1": {
+      "min": 8.8759765625,
+      "max": 9.4638671875,
+      "mean": 9.18
+    },
+    "nvme1_states": [
+      "live"
+    ],
+    "foreign_gpu_seen": []
+  },
+  "post_abort_idle": null,
+  "svg_status": "complete",
+  "svg_n_starts": 1,
+  "svg_flags": {
+    "has_xmlns_svg": true,
+    "bytes": 4819
+  },
+  "svg_unsafe": [],
+  "extraction_rule": "v1-first-balanced-svg",
+  "reasoning": "The user wants me to create an SVG illustration of a pelican riding a bicycle. Let me think about how to approach this:\n\n1. I need to draw a bicycle - two wheels, frame, handlebars, pedals, seat\n2. I need to draw a pelican sitting on the bicycle - body, long beak with pouch, wings, feet on pedals, head\n3. The pelican should look like it's actually riding the bike (sitting on seat, feet on pedals, wings on handlebars)\n\nLet me design this step by step:\n- Bicycle: two circles for wheels, lines for frame, handlebars, pedals\n- Pelican: body sitting on the seat, long curved beak, wings reaching to handlebars, legs reaching to pedals\n\nI'll use a fun, cartoonish style with some colors to make it appealing. Let me think about positioning:\n- Bicycle centered in the SVG\n- Pelican sitting on the seat, facing right\n- Beak pointing forward/right\n\nLet me build this out carefully with proper proportions.\n",
+  "answer": "```svg\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 400\" width=\"500\" height=\"400\">\n  <!-- Background -->\n  <rect width=\"500\" height=\"400\" fill=\"#87CEEB\"/>\n  \n  <!-- Ground -->\n  <rect x=\"0\" y=\"350\" width=\"500\" height=\"50\" fill=\"#8B4513\"/>\n  \n  <!-- Bicycle Wheels -->\n  <circle cx=\"130\" cy=\"310\" r=\"55\" fill=\"none\" stroke=\"#333\" stroke-width=\"6\"/>\n  <circle cx=\"130\" cy=\"310\" r=\"8\" fill=\"#333\"/>\n  <!-- Spokes -->\n  <line x1=\"130\" y1=\"255\" x2=\"130\" y2=\"365\" stroke=\"#555\" stroke-width=\"2\"/>\n  <line x1=\"75\" y1=\"310\" x2=\"185\" y2=\"310\" stroke=\"#555\" stroke-width=\"2\"/>\n  <line x1=\"91\" y1=\"271\" x2=\"169\" y2=\"349\" stroke=\"#555\" stroke-width=\"2\"/>\n  <line x1=\"169\" y1=\"271\" x2=\"91\" y2=\"349\" stroke=\"#555\" stroke-width=\"2\"/>\n  \n  <circle cx=\"350\" cy=\"310\" r=\"55\" fill=\"none\" stroke=\"#333\" stroke-width=\"6\"/>\n  <circle cx=\"350\" cy=\"310\" r=\"8\" fill=\"#333\"/>\n  <!-- Spokes -->\n  <line x1=\"350\" y1=\"255\" x2=\"350\" y2=\"365\" stroke=\"#555\" stroke-width=\"2\"/>\n  <line x1=\"295\" y1=\"310\" x2=\"405\" y2=\"310\" stroke=\"#555\" stroke-width=\"2\"/>\n  <line x1=\"311\" y1=\"271\" x2=\"389\" y2=\"349\" stroke=\"#555\" stroke-width=\"2\"/>\n  <line x1=\"389\" y1=\"271\" x2=\"311\" y2=\"349\" stroke=\"#555\" stroke-width=\"2\"/>\n  \n  <!-- Bicycle Frame -->\n  <line x1=\"130\" y1=\"310\" x2=\"240\" y2=\"240\" stroke=\"#E63946\" stroke-width=\"5\"/>\n  <line x1=\"240\" y1=\"240\" x2=\"240\" y2=\"310\" stroke=\"#E63946\" stroke-width=\"5\"/>\n  <line x1=\"240\" y1=\"310\" x2=\"130\" y2=\"310\" stroke=\"#E63946\" stroke-width=\"5\"/>\n  <line x1=\"240\" y1=\"240\" x2=\"320\" y2=\"260\" stroke=\"#E63946\" stroke-width=\"5\"/>\n  <line x1=\"320\" y1=\"260\" x2=\"350\" y2=\"310\" stroke=\"#E63946\" stroke-width=\"5\"/>\n  <line x1=\"240\" y1=\"310\" x2=\"350\" y2=\"310\" stroke=\"#E63946\" stroke-width=\"5\"/>\n  \n  <!-- Pedal crank -->\n  <circle cx=\"240\" cy=\"310\" r=\"12\" fill=\"none\" stroke=\"#333\" stroke-width=\"4\"/>\n  <line x1=\"228\" y1=\"300\" x2=\"252\" y2=\"320\" stroke=\"#333\" stroke-width=\"4\"/>\n  <!-- Pedals -->\n  <rect x=\"220\" y=\"294\" width=\"14\" height=\"6\" fill=\"#333\" rx=\"2\"/>\n  <rect x=\"248\" y=\"316\" width=\"14\" height=\"6\" fill=\"#333\" rx=\"2\"/>\n  \n  <!-- Seat -->\n  <ellipse cx=\"235\" cy=\"235\" rx=\"20\" ry=\"8\" fill=\"#333\"/>\n  \n  <!-- Handlebars -->\n  <line x1=\"320\" y1=\"260\" x2=\"330\" y2=\"230\" stroke=\"#333\" stroke-width=\"5\"/>\n  <line x1=\"310\" y1=\"225\" x2=\"350\" y2=\"225\" stroke=\"#333\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n  \n  <!-- Pelican Body -->\n  <ellipse cx=\"250\" cy=\"190\" rx=\"45\" ry=\"40\" fill=\"#F5F5DC\"/>\n  <ellipse cx=\"250\" cy=\"190\" rx=\"45\" ry=\"40\" fill=\"none\" stroke=\"#8B8B00\" stroke-width=\"3\"/>\n  \n  <!-- Pelican Tail -->\n  <path d=\"M 205 200 Q 180 210 175 230 Q 190 220 205 215\" fill=\"#F5F5DC\" stroke=\"#8B8B00\" stroke-width=\"2\"/>\n  \n  <!-- Pelican Neck -->\n  <path d=\"M 265 170 Q 270 130 280 110 Q 290 95 300 85\" fill=\"#F5F5DC\" stroke=\"#8B8B00\" stroke-width=\"3\"/>\n  <path d=\"M 275 175 Q 280 135 290 115 Q 300 100 310 90\" fill=\"#F5F5DC\" stroke=\"#8B8B00\" stroke-width=\"3\"/>\n  \n  <!-- Pelican Head -->\n  <circle cx=\"310\" cy=\"82\" r=\"22\" fill=\"#F5F5DC\" stroke=\"#8B8B00\" stroke-width=\"3\"/>\n  \n  <!-- Pelican Eye -->\n  <circle cx=\"318\" cy=\"78\" r=\"5\" fill=\"#000\"/>\n  <circle cx=\"319\" cy=\"77\" r=\"2\" fill=\"#FFF\"/>\n  \n  <!-- Pelican Beak -->\n  <path d=\"M 325 75 Q 360 68 390 72 Q 395 80 385 90 Q 360 95 330 92 Z\" fill=\"#E8963A\" stroke=\"#8B6914\" stroke-width=\"2\"/>\n  <!-- Beak pouch -->\n  <path d=\"M 330 92 Q 340 105 350 100 Q 365 95 385 90 Q 370 98 355 100 Q 340 100 330 92 Z\" fill=\"#F4A460\" stroke=\"#8B6914\" stroke-width=\"2\"/>\n  \n  <!-- Pelican Wing (left, reaching to handlebars) -->\n  <path d=\"M 270 195 Q 300 200 320 220 Q 330 235 340 240 Q 335 245 320 240 Q 310 230 300 220 Q 285 210 270 205 Z\" fill=\"#F5F5DC\" stroke=\"#8B8B00\" stroke-width=\"2\"/>\n  \n  <!-- Pelican Wing feathers -->\n  <path d=\"M 280 210 Q 295 220 310 230\" fill=\"none\" stroke=\"#8B8B00\" stroke-width=\"1.5\"/>\n  <path d=\"M 285 215 Q 300 225 315 235\" fill=\"none\" stroke=\"#8B8B00\" stroke-width=\"1.5\"/>\n  \n  <!-- Pelican Legs -->\n  <path d=\"M 245 220 Q 240 250 235 270 Q 230 280 225 290\" fill=\"none\" stroke=\"#E8963A\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n  <path d=\"M 260 225 Q 255 255 250 275 Q 250 285 252 295\" fill=\"none\" stroke=\"#E8963A\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n  \n  <!-- Pelican Feet -->\n  <path d=\"M 225 290 L 220 296 L 226 300 L 230 295 Z\" fill=\"#E8963A\" stroke=\"#8B6914\" stroke-width=\"1\"/>\n  <path d=\"M 252 295 L 248 301 L 254 305 L 258 300 Z\" fill=\"#E8963A\" stroke=\"#8B6914\" stroke-width=\"1\"/>\n  \n  <!-- Pelican crest tuft -->\n  <path d=\"M 295 60 Q 292 50 298 52 Q 300 58 295 60\" fill=\"#F5F5DC\" stroke=\"#8B8B00\" stroke-width=\"1.5\"/>\n  \n  <!-- Sun -->\n  <circle cx=\"430\" cy=\"50\" r=\"25\" fill=\"#FFD700\"/>\n  \n  <!-- Clouds -->\n  <ellipse cx=\"80\" cy=\"50\" rx=\"40\" ry=\"20\" fill=\"#FFF\" opacity=\"0.8\"/>\n  <ellipse cx=\"110\" cy=\"45\" rx=\"30\" ry=\"15\" fill=\"#FFF\" opacity=\"0.8\"/>\n  <ellipse cx=\"400\" cy=\"80\" rx=\"35\" ry=\"18\" fill=\"#FFF\" opacity=\"0.8\"/>\n</svg>\n```"
+}

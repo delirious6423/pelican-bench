@@ -1,0 +1,224 @@
+{
+  "run": "sweep-1",
+  "harness": "pelican-harness-1",
+  "phase": "scored",
+  "model_id": "gyro-m-tq2_0",
+  "engine": "official",
+  "cell_id": "gyro-m-tq2_0-medium-s44",
+  "attempt": 1,
+  "requested_effort": "medium",
+  "resolved_effort": "medium",
+  "seed": 44,
+  "sampling": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "repetition_penalty": 1.0
+  },
+  "max_tokens": 49152,
+  "budget_sent": 0,
+  "deadline_s": 2700.0,
+  "idle_timeout_s": 600,
+  "request": {
+    "model": "gyro-m-tq2_0",
+    "stream": true,
+    "max_tokens": 49152,
+    "seed": 44,
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "reasoning_effort": "medium",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate an SVG of a pelican riding a bicycle"
+      }
+    ],
+    "reasoning_budget_tokens": 0
+  },
+  "t_wall_start": 20341.261628,
+  "t_wall_end": 20370.714879,
+  "finish_reason": "stop",
+  "cap_hit": false,
+  "abort": null,
+  "error": null,
+  "done_seen": true,
+  "inline_think": false,
+  "t_first_byte_s": 0.0023762869968777522,
+  "ttft_s": 0.5548246410035063,
+  "t_first_reasoning_s": 0.5548246410035063,
+  "t_first_answer_s": 5.071819365999545,
+  "wall_s": 29.45305538199318,
+  "thinking_phase_s": 4.516994724996039,
+  "answer_phase_s": 24.381236015993636,
+  "prompt_tokens": 20,
+  "completion_tokens": 2101,
+  "total_tokens": 2121,
+  "cached_tokens": 15,
+  "reasoning_chars": 870,
+  "answer_chars": 3568,
+  "server_timings": {
+    "cache_n": 15,
+    "prompt_n": 5,
+    "prompt_ms": 505.7,
+    "prompt_per_token_ms": 101.14,
+    "prompt_per_second": 9.9,
+    "predicted_n": 2101,
+    "predicted_ms": 28943.5,
+    "predicted_per_token_ms": 13.776,
+    "predicted_per_second": 72.6,
+    "draft_n": 1836,
+    "draft_n_accepted": 1429
+  },
+  "engine_decode_tok_s": 72.6,
+  "engine_prefill_tok_s": 9.9,
+  "prefill_ms": 505.7,
+  "decode_ms": 28943.5,
+  "prompt_cache_n": 15,
+  "draft_n": 1836,
+  "draft_accepted": 1429,
+  "metrics_match": "time+tokens",
+  "metrics_reason": null,
+  "metrics_entry": {
+    "projection": null,
+    "time": 20341.263901,
+    "duration_s": 29.5,
+    "finish": "stop",
+    "prompt_tokens": 20,
+    "reused": 15,
+    "output_tokens": 2101,
+    "first_engine_token_s": 0.552,
+    "prompt_total": 20,
+    "prompt_read": 5,
+    "reasoning_recoveries": 0,
+    "reasoning_repeat_coverage": 0.0,
+    "engine_generated": 2101,
+    "prompt_ms": 505.7,
+    "decode_ms": 28943.5,
+    "decode_tok_s": 72.6,
+    "hit_rate": 0.893,
+    "pcie_share": 0.021,
+    "ram_blobs": 0,
+    "file_blobs": 0,
+    "file_mb": 0,
+    "drafts_offered": 1836,
+    "drafts_accepted": 1429
+  },
+  "history_decode_tok_s": 72.6,
+  "engine_generated": 2101,
+  "first_engine_token_s": 0.552,
+  "reasoning_recoveries": 0,
+  "client_tok_s_after_first_text": 72.7,
+  "client_tok_s_wall": 71.33,
+  "gate": {
+    "paused_hot_s": 0.0,
+    "paused_foreign_s": 0.0,
+    "contention": []
+  },
+  "resources": {
+    "n_samples": 29,
+    "interval_ms": 1000,
+    "t0": 20341.884239,
+    "t1": 20370.012632,
+    "gpu_util_pct": {
+      "min": 100.0,
+      "max": 100.0,
+      "mean": 100.0
+    },
+    "vram_used_mib": {
+      "min": 15597.0,
+      "max": 15597.0,
+      "mean": 15597.0
+    },
+    "gpu_temp_c": {
+      "min": 60.0,
+      "max": 64.0,
+      "mean": 62.93
+    },
+    "gpu_power_w": {
+      "min": 67.96,
+      "max": 125.22,
+      "mean": 110.94
+    },
+    "gpu_sm_mhz": {
+      "min": 1680.0,
+      "max": 2340.0,
+      "mean": 2160.0
+    },
+    "gpu_mem_mhz": {
+      "min": 9001.0,
+      "max": 9001.0,
+      "mean": 9001.0
+    },
+    "gpu_clock_event_reasons": {
+      "0x0000000000000000": 7,
+      "0x0000000000000004": 22
+    },
+    "cpu_util_pct": {
+      "min": 41.7,
+      "max": 71.4,
+      "mean": 69.32
+    },
+    "server_cpu_cores": 15.99,
+    "other_cpu_cores": 0.81,
+    "cpu_pkg_c": {
+      "min": 60.0,
+      "max": 75.0,
+      "mean": 64.45
+    },
+    "mem_available_gib": {
+      "min": 20.67418670654297,
+      "max": 20.89950942993164,
+      "mean": 20.82
+    },
+    "swap_used_gib": {
+      "min": 8.814800262451172,
+      "max": 8.8148193359375,
+      "mean": 8.81
+    },
+    "swap_in_pages": 4,
+    "swap_out_pages": 0,
+    "major_faults": 42,
+    "data_disk_read_gb": 0.011337728,
+    "data_disk_write_gb": 0.00026624,
+    "sys_disk_read_gb": 0.000622592,
+    "server_cgroup_read_gb": 0.0,
+    "server_rss_gib": {
+      "min": 33.49224853515625,
+      "max": 33.49225997924805,
+      "mean": 33.49
+    },
+    "server_cgroup_mem_gib": {
+      "min": 33.66923141479492,
+      "max": 33.670135498046875,
+      "mean": 33.67
+    },
+    "load1": {
+      "min": 17.6123046875,
+      "max": 17.91064453125,
+      "mean": 17.76
+    },
+    "nvme1_states": [
+      "live"
+    ],
+    "foreign_gpu_seen": []
+  },
+  "post_abort_idle": null,
+  "svg_status": "complete",
+  "svg_n_starts": 1,
+  "svg_flags": {
+    "has_xmlns_svg": true,
+    "bytes": 3370
+  },
+  "svg_unsafe": [],
+  "extraction_rule": "v1-first-balanced-svg",
+  "reasoning": "The user wants an SVG of a pelican riding a bicycle. Let me create a reasonably detailed SVG with a bicycle (wheels, frame, handlebars, pedals) and a pelican (body, big beak with pouch, wing, eye, legs on pedals). I'll make it a single self-contained SVG with reasonable coordinates.\n\nLet me plan layout: canvas 400x300. Bicycle: wheels at (110, 210) and (270, 210), radius 45. Frame connecting. Pelican sits above saddle around (190, 140), facing right, big beak pointing right.\n\nLet me draft:\n\nWheels: circles with spokes. Frame: lines from rear wheel hub to seat tube, down tube to crank, top tube, head tube to front hub, handlebars.\n\nPelican: body ellipse around (185, 130), white/gray. Neck curving up to head at (230, 95). Beak long pointing right-down with pouch. Wing on body. Legs going down to pedals.\n\nWrite clean SVG with comments. Keep it simple but cute.\n",
+  "answer": "Here's a cheerful pelican cycling along:\n\n```svg\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" width=\"400\" height=\"300\">\n  <!-- sky background -->\n  <rect width=\"400\" height=\"300\" fill=\"#cfe8ff\"/>\n  <!-- ground -->\n  <rect y=\"255\" width=\"400\" height=\"45\" fill=\"#8fbf72\"/>\n\n  <!-- ===== BICYCLE ===== -->\n  <g stroke=\"#333\" stroke-width=\"5\" stroke-linecap=\"round\" fill=\"none\">\n    <!-- frame -->\n    <line x1=\"110\" y1=\"210\" x2=\"170\" y2=\"150\"/> <!-- seat tube -->\n    <line x1=\"170\" y1=\"150\" x2=\"240\" y2=\"150\"/> <!-- top tube -->\n    <line x1=\"110\" y1=\"210\" x2=\"190\" y2=\"210\"/> <!-- chain stay -->\n    <line x1=\"190\" y1=\"210\" x2=\"170\" y2=\"150\"/> <!-- down tube back -->\n    <line x1=\"190\" y1=\"210\" x2=\"255\" y2=\"150\"/> <!-- down tube -->\n    <line x1=\"240\" y1=\"150\" x2=\"270\" y2=\"210\"/> <!-- fork -->\n    <line x1=\"240\" y1=\"150\" x2=\"248\" y2=\"128\"/> <!-- head tube to bars -->\n    <!-- handlebar -->\n    <path d=\"M248 128 q 18 -8 30 6\"/>\n    <!-- seat -->\n    <path d=\"M158 145 q 12 -8 26 -2\" stroke-width=\"7\"/>\n    <!-- crank -->\n    <circle cx=\"190\" cy=\"210\" r=\"6\" fill=\"#333\"/>\n    <!-- pedals -->\n    <line x1=\"190\" y1=\"210\" x2=\"172\" y2=\"192\"/>\n    <line x1=\"190\" y1=\"210\" x2=\"208\" y2=\"228\"/>\n  </g>\n\n  <!-- wheels -->\n  <g stroke=\"#222\" stroke-width=\"5\" fill=\"none\">\n    <circle cx=\"110\" cy=\"210\" r=\"42\"/>\n    <circle cx=\"270\" cy=\"210\" r=\"42\"/>\n  </g>\n  <!-- spokes -->\n  <g stroke=\"#666\" stroke-width=\"2\">\n    <line x1=\"110\" y1=\"170\" x2=\"110\" y2=\"250\"/><line x1=\"70\" y1=\"210\" x2=\"150\" y2=\"210\"/>\n    <line x1=\"82\" y1=\"182\" x2=\"138\" y2=\"238\"/><line x1=\"138\" y1=\"182\" x2=\"82\" y2=\"238\"/>\n    <line x1=\"270\" y1=\"170\" x2=\"270\" y2=\"250\"/><line x1=\"230\" y1=\"210\" x2=\"310\" y2=\"210\"/>\n    <line x1=\"242\" y1=\"182\" x2=\"298\" y2=\"238\"/><line x1=\"298\" y1=\"182\" x2=\"242\" y2=\"238\"/>\n  </g>\n  <circle cx=\"110\" cy=\"210\" r=\"4\" fill=\"#222\"/>\n  <circle cx=\"270\" cy=\"210\" r=\"4\" fill=\"#222\"/>\n\n  <!-- ===== PELICAN ===== -->\n  <!-- legs to pedals -->\n  <g stroke=\"#e8963f\" stroke-width=\"5\" stroke-linecap=\"round\" fill=\"none\">\n    <path d=\"M175 155 Q 168 175 172 192\"/>\n    <path d=\"M192 155 Q 205 190 208 228\"/>\n    <line x1=\"166\" y1=\"192\" x2=\"178\" y2=\"192\"/>\n    <line x1=\"202\" y1=\"228\" x2=\"214\" y2=\"228\"/>\n  </g>\n\n  <!-- tail -->\n  <path d=\"M138 128 L 112 118 L 122 138 Z\" fill=\"#d9d9d9\"/>\n\n  <!-- body -->\n  <ellipse cx=\"180\" cy=\"132\" rx=\"48\" ry=\"30\" fill=\"#f2f2f2\" stroke=\"#bbb\" stroke-width=\"2\"/>\n\n  <!-- wing -->\n  <path d=\"M155 122 Q 185 105 210 130 Q 185 150 155 138 Z\" fill=\"#dcdcdc\" stroke=\"#aaa\" stroke-width=\"2\"/>\n\n  <!-- neck -->\n  <path d=\"M212 128 Q 235 118 238 96\" stroke=\"#f2f2f2\" stroke-width=\"16\" fill=\"none\" stroke-linecap=\"round\"/>\n\n  <!-- head -->\n  <circle cx=\"244\" cy=\"90\" r=\"16\" fill=\"#f2f2f2\" stroke=\"#bbb\" stroke-width=\"2\"/>\n\n  <!-- beak with pouch -->\n  <path d=\"M254 84 L 310 92 Q 300 100 282 102 Q 264 104 254 96 Z\" fill=\"#f0a860\" stroke=\"#c77f3a\" stroke-width=\"2\"/>\n  <path d=\"M256 94 Q 268 112 286 106 Q 296 102 306 95\" fill=\"#f6c287\" stroke=\"#c77f3a\" stroke-width=\"2\"/>\n\n  <!-- eye -->\n  <circle cx=\"248\" cy=\"86\" r=\"3.5\" fill=\"#222\"/>\n\n  <!-- helmet, for safety -->\n  <path d=\"M229 82 Q 244 66 260 82\" fill=\"#e05050\" stroke=\"#b23a3a\" stroke-width=\"2\"/>\n\n  <!-- motion lines -->\n  <g stroke=\"#7aa6c9\" stroke-width=\"3\" stroke-linecap=\"round\">\n    <line x1=\"60\" y1=\"130\" x2=\"90\" y2=\"130\"/>\n    <line x1=\"50\" y1=\"150\" x2=\"85\" y2=\"150\"/>\n    <line x1=\"65\" y1=\"170\" x2=\"95\" y2=\"170\"/>\n  </g>\n</svg>\n```\n\nSave it as `pelican.svg` (or paste it into an HTML page) and open it in a browser. Feel free to tweak colors — the helmet is red for safety! 🚴🦆"
+}

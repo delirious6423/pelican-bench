@@ -1,0 +1,1119 @@
+{
+  "checkpoints": [
+    {
+      "id": "sc-exl3-2.05-h8",
+      "label": "SC EXL3 2.05bpw h8",
+      "fmt": "exl3",
+      "author": "scorpoon (SC)",
+      "repo": "scorpoon/Qwen3.8-Flash-Next-exl3-SC",
+      "revision": "2.05bpw_h8 @ 3b646f450626c4143c92ed76bf60bdfa7f74ed75 (INVENTORY.md)",
+      "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8",
+      "bits": 2.05,
+      "head_bits": 8,
+      "exl3_version": "1.6.0",
+      "mtp_bits": 2,
+      "out_scales": "always",
+      "architecture": "Qwen4ExpForConditionalGeneration",
+      "ngram_format": "exl3_ngram_trellis",
+      "ngram_K": "6",
+      "ngram_layout": "flat",
+      "ngram_shared_with": null,
+      "n_shards": 5,
+      "engine": "Strata EXL3 fork (sociolog exl3-lane fa21db8 + local tuning)",
+      "files": [
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/.gitattributes",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/.gitattributes",
+          "exists": true,
+          "bytes": 1696,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/LICENSE",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/LICENSE",
+          "exists": true,
+          "bytes": 3235,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/README.md",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/README.md",
+          "exists": true,
+          "bytes": 70475,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/chat_template.jinja",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/chat_template.jinja",
+          "exists": true,
+          "bytes": 8952,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/config.json",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/config.json",
+          "exists": true,
+          "bytes": 5080,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/generation_config.json",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/generation_config.json",
+          "exists": true,
+          "bytes": 202,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/merges.txt",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/merges.txt",
+          "exists": true,
+          "bytes": 3353259,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/model-00001-of-00005.safetensors",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/model-00001-of-00005.safetensors",
+          "exists": true,
+          "bytes": 8358627372,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/model-00002-of-00005.safetensors",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/model-00002-of-00005.safetensors",
+          "exists": true,
+          "bytes": 8402471236,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/model-00003-of-00005.safetensors",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/model-00003-of-00005.safetensors",
+          "exists": true,
+          "bytes": 8412301676,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/model-00004-of-00005.safetensors",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/model-00004-of-00005.safetensors",
+          "exists": true,
+          "bytes": 8400505196,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/model-00005-of-00005.safetensors",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/model-00005-of-00005.safetensors",
+          "exists": true,
+          "bytes": 3196425246,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/model.safetensors.index.json",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/model.safetensors.index.json",
+          "exists": true,
+          "bytes": 32763270,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/ngram_embedding.safetensors",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/ngram_embedding.safetensors",
+          "exists": true,
+          "bytes": 39040193720,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/preprocessor_config.json",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/preprocessor_config.json",
+          "exists": true,
+          "bytes": 390,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/quantization_config.json",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/quantization_config.json",
+          "exists": true,
+          "bytes": 96602457,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/tokenizer.json",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/tokenizer.json",
+          "exists": true,
+          "bytes": 12809320,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/tokenizer_config.json",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/tokenizer_config.json",
+          "exists": true,
+          "bytes": 17928,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/video_preprocessor_config.json",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/video_preprocessor_config.json",
+          "exists": true,
+          "bytes": 385,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/vocab.json",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/vocab.json",
+          "exists": true,
+          "bytes": 6722759,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        }
+      ],
+      "logical_bytes": 75962883854,
+      "exists": true,
+      "problems": [],
+      "unique_bytes_first_seen": 75962883854,
+      "status": "present, complete by header/shard checks",
+      "pack": null,
+      "pack_complete": null
+    },
+    {
+      "id": "sc-exl3-3.05-h8",
+      "label": "SC EXL3 3.05bpw h8",
+      "fmt": "exl3",
+      "author": "scorpoon (SC)",
+      "repo": "scorpoon/Qwen3.8-Flash-Next-exl3-SC",
+      "revision": "3.05bpw_h8 (revision not recorded locally)",
+      "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8",
+      "bits": 3.05,
+      "head_bits": 8,
+      "exl3_version": "1.5.4",
+      "mtp_bits": 5,
+      "out_scales": "always",
+      "architecture": "Qwen4ExpForConditionalGeneration",
+      "ngram_format": "exl3_ngram_trellis",
+      "ngram_K": "6",
+      "ngram_layout": "flat",
+      "ngram_shared_with": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/ngram_embedding.safetensors",
+      "n_shards": 7,
+      "engine": "Strata EXL3 fork (sociolog exl3-lane fa21db8 + local tuning)",
+      "files": [
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/.gitattributes",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/.gitattributes",
+          "exists": true,
+          "bytes": 1891,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/LICENSE",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/LICENSE",
+          "exists": true,
+          "bytes": 3235,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/README.md",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/README.md",
+          "exists": true,
+          "bytes": 70475,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/chat_template.jinja",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/chat_template.jinja",
+          "exists": true,
+          "bytes": 8952,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/config.json",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/config.json",
+          "exists": true,
+          "bytes": 5080,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/generation_config.json",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/generation_config.json",
+          "exists": true,
+          "bytes": 202,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/merges.txt",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/merges.txt",
+          "exists": true,
+          "bytes": 3353259,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/model-00001-of-00007.safetensors",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/model-00001-of-00007.safetensors",
+          "exists": true,
+          "bytes": 8494949239,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/model-00002-of-00007.safetensors",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/model-00002-of-00007.safetensors",
+          "exists": true,
+          "bytes": 8176620010,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/model-00003-of-00007.safetensors",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/model-00003-of-00007.safetensors",
+          "exists": true,
+          "bytes": 8176638568,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/model-00004-of-00007.safetensors",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/model-00004-of-00007.safetensors",
+          "exists": true,
+          "bytes": 8176638568,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/model-00005-of-00007.safetensors",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/model-00005-of-00007.safetensors",
+          "exists": true,
+          "bytes": 8176638568,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/model-00006-of-00007.safetensors",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/model-00006-of-00007.safetensors",
+          "exists": true,
+          "bytes": 8176638568,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/model-00007-of-00007.safetensors",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/model-00007-of-00007.safetensors",
+          "exists": true,
+          "bytes": 3842699893,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/model.safetensors.index.json",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/model.safetensors.index.json",
+          "exists": true,
+          "bytes": 32763270,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/ngram_embedding.safetensors",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-2.05bpw_h8/ngram_embedding.safetensors",
+          "exists": true,
+          "bytes": 39040193720,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/preprocessor_config.json",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/preprocessor_config.json",
+          "exists": true,
+          "bytes": 390,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/quantization_config.json",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/quantization_config.json",
+          "exists": true,
+          "bytes": 96602612,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/tokenizer.json",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/tokenizer.json",
+          "exists": true,
+          "bytes": 12809320,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/tokenizer_config.json",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/tokenizer_config.json",
+          "exists": true,
+          "bytes": 17928,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/video_preprocessor_config.json",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/video_preprocessor_config.json",
+          "exists": true,
+          "bytes": 385,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/vocab.json",
+          "realpath": "${ARTIFACTS}/ExLlamaV3-Qwen-SC/models/Qwen3.8-Flash-Next-3.05bpw_h8/vocab.json",
+          "exists": true,
+          "bytes": 6722759,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": false
+        }
+      ],
+      "logical_bytes": 92413376892,
+      "exists": true,
+      "problems": [],
+      "unique_bytes_first_seen": 53373183172,
+      "status": "present, complete by header/shard checks",
+      "pack": null,
+      "pack_complete": null
+    },
+    {
+      "id": "td-exl3-2.18-h6-ng8",
+      "label": "turboderp EXL3 2.18bpw h6 ng8",
+      "fmt": "exl3",
+      "author": "turboderp",
+      "repo": "turboderp/Qwen3.8-Flash-Next-exl3",
+      "revision": "2.18bpw_h6_ng8 @ 7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6",
+      "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6",
+      "manifest": "7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6.json",
+      "bits": 2.18,
+      "head_bits": 6,
+      "exl3_version": "1.6.3",
+      "mtp_bits": 2,
+      "out_scales": "auto",
+      "architecture": "Qwen4ExpForConditionalGeneration",
+      "ngram_format": "exl3_ngram_trellis",
+      "ngram_K": "8",
+      "ngram_layout": "sharded",
+      "ngram_shared_with": "${ARTIFACTS}/cache/huggingface/hub/blobs/19/196aab8dd664ff1036f7c3678842be26ad4bb7b588f567687c13e4e3d51b460d",
+      "n_shards": 5,
+      "engine": "Strata EXL3 fork (sociolog exl3-lane fa21db8 + local tuning)",
+      "files": [
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/.gitattributes",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/a43791f306e6c26bf48714334ef2492c188e3fa8",
+          "exists": true,
+          "bytes": 1696,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/LICENSE",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/9557a8961782792814714b7488346732c043793d",
+          "exists": true,
+          "bytes": 3235,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/README.md",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/a1fe177999aa2cb975cd5c17b787405e168bd176",
+          "exists": true,
+          "bytes": 65155,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/chat_template.jinja",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/c0c686f9c38d70d179fb7b5f5aa7530bc913dda3",
+          "exists": true,
+          "bytes": 8952,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/config.json",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/46b178e5dd158ae20994573f50f22358604e0e72",
+          "exists": true,
+          "bytes": 5079,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/generation_config.json",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/023756cfadf88e5bf69eefeee3e172f38c448d64",
+          "exists": true,
+          "bytes": 202,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/merges.txt",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/a494e019ca1502219fd0128658b979e5f05ae8e8",
+          "exists": true,
+          "bytes": 3353259,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/model-00001-of-00005.safetensors",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/9d/9d79e486bbfe926e69b980a5e77fa149ef9520f808b2a96829ba29d9639497a6",
+          "exists": true,
+          "bytes": 8403715415,
+          "sha256": "b497bf5ed0c4df2e1d5a77411021c2b2d879571f4894286e3d3dbb9ac43dd33a",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/model-00002-of-00005.safetensors",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/56/5677b8655bc9e1c9adf3b264a789b065903e0943820980a83e8268d90e82309c",
+          "exists": true,
+          "bytes": 8581624396,
+          "sha256": "51ca54439bca3eef7337b61180870216ee796e62da1b0c2072a7198e73472c7c",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/model-00003-of-00005.safetensors",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/9d/9de6bd88588ef5a4e17712d1fdf889dbb9f1960c85f524530b3f1821b0449192",
+          "exists": true,
+          "bytes": 8581630580,
+          "sha256": "5c8c3df4616f5c8d9b84a2939499e70fdef0c1618646e2753fabaa771750afde",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/model-00004-of-00005.safetensors",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/3a/3ad3aa6fd9a9fba9b44c962bbb1550404d0b8e1a98218a893aeaca956862e668",
+          "exists": true,
+          "bytes": 7865184119,
+          "sha256": "8f774e8b05786afbab8801885627d97fb099e3bf08513a95373d7a7c483dfba7",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/model-00005-of-00005.safetensors",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/80/80f04f7e92a11dd17591e6768052a26d530452de02506b3b44cbc2e692b61568",
+          "exists": true,
+          "bytes": 5272304295,
+          "sha256": "35c5835176f87ae50a554c1470f4c78b83e3f775d4776279600d4cd13c57c536",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/model.safetensors.index.json",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/7b/7b50788f823e453b8254626a7d6b5384f3d856622ac8008d5d0c1100a904dd16",
+          "exists": true,
+          "bytes": 32763270,
+          "sha256": "5fb3596f84cb9f87b531cdcf49305e86c34006fafe990d7fa76012903f305b96",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/ngram_embedding.safetensors",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/19/196aab8dd664ff1036f7c3678842be26ad4bb7b588f567687c13e4e3d51b460d",
+          "exists": true,
+          "bytes": 51840275600,
+          "sha256": "4d3171dd6b3018264ef6cad71996c40023dd920fb91060a5f925faaa133f95cb",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/preprocessor_config.json",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/2ea84a437d448ff71b08df68fdd949d5cc4ebb64",
+          "exists": true,
+          "bytes": 390,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/qbench_prompts.json",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/30997642e72294faf80e0979b8d4fa6131c89b00",
+          "exists": true,
+          "bytes": 324183,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/qbench_prompts.md",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/5d70e60e02a8513bfcb08124b7fa7cd054df6f3b",
+          "exists": true,
+          "bytes": 212719,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/quantization_config.json",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/e0/e001224467f03c65d5af6c2cb0542f8f90a25d0a1fc31be55566b2a88f27d7cd",
+          "exists": true,
+          "bytes": 96667932,
+          "sha256": "cc2bfe30d2068ee37e9b5b9be8ae5602b00745ea5168c0c30f71ffd1c3fc2a8d",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/tokenizer.json",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/dd/ddca7e708ff0da8902fdcef5209d5eea8bf922715733eb02f93026a37478e426",
+          "exists": true,
+          "bytes": 12809320,
+          "sha256": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/tokenizer_config.json",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/5de744b3fca2129d7186979ae47c06be33903243",
+          "exists": true,
+          "bytes": 17928,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/video_preprocessor_config.json",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/3ba673a5ad7d4d13f54155ecd38b2a94a6dac8fe",
+          "exists": true,
+          "bytes": 385,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/7a1be2e7e365ffd26ff51bcfe9b34d90f05568f6/vocab.json",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/0aa0ce0658d60ac4a5d609f4eadb0e8e43514176",
+          "exists": true,
+          "bytes": 6722759,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        }
+      ],
+      "logical_bytes": 90697690869,
+      "exists": true,
+      "problems": [],
+      "unique_bytes_first_seen": 90697690869,
+      "status": "present, complete by header/shard checks",
+      "pack": null,
+      "pack_complete": null
+    },
+    {
+      "id": "td-exl3-2.68-h6-ng8",
+      "label": "turboderp EXL3 2.68bpw h6 ng8",
+      "fmt": "exl3",
+      "author": "turboderp",
+      "repo": "turboderp/Qwen3.8-Flash-Next-exl3",
+      "revision": "2.68bpw_h6_ng8 @ d660113325e1eba20e760a9063580139bdbdfc22",
+      "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22",
+      "manifest": "d660113325e1eba20e760a9063580139bdbdfc22.json",
+      "bits": 2.66,
+      "head_bits": 6,
+      "exl3_version": "1.6.3",
+      "mtp_bits": 2.5,
+      "out_scales": "auto",
+      "architecture": "Qwen4ExpForConditionalGeneration",
+      "ngram_format": "exl3_ngram_trellis",
+      "ngram_K": "8",
+      "ngram_layout": "sharded",
+      "ngram_shared_with": "${ARTIFACTS}/cache/huggingface/hub/blobs/19/196aab8dd664ff1036f7c3678842be26ad4bb7b588f567687c13e4e3d51b460d",
+      "n_shards": 6,
+      "engine": "Strata EXL3 fork (sociolog exl3-lane fa21db8 + local tuning)",
+      "files": [
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/.gitattributes",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/a43791f306e6c26bf48714334ef2492c188e3fa8",
+          "exists": true,
+          "bytes": 1696,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/LICENSE",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/9557a8961782792814714b7488346732c043793d",
+          "exists": true,
+          "bytes": 3235,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/README.md",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/a1fe177999aa2cb975cd5c17b787405e168bd176",
+          "exists": true,
+          "bytes": 65155,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/chat_template.jinja",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/c0c686f9c38d70d179fb7b5f5aa7530bc913dda3",
+          "exists": true,
+          "bytes": 8952,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/config.json",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/6dd0bed89e8d1000559c3efd4769a35f466a37ee",
+          "exists": true,
+          "bytes": 5081,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/generation_config.json",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/023756cfadf88e5bf69eefeee3e172f38c448d64",
+          "exists": true,
+          "bytes": 202,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/merges.txt",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/a494e019ca1502219fd0128658b979e5f05ae8e8",
+          "exists": true,
+          "bytes": 3353259,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/model-00001-of-00006.safetensors",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/fb/fb254b04636046cbe0098f810142caced6ed74d0e9ea63cdc15c55b2e8c094c6",
+          "exists": true,
+          "bytes": 8077075319,
+          "sha256": "a4b160919f4e5ac3fa3abc73c0d3c0125d7bcd908b86808f86a98059864529e3",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/model-00002-of-00006.safetensors",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/ed/ed574ccf40198bfd983150601069986adf0ec19e94a442c0a1859111e9fd2095",
+          "exists": true,
+          "bytes": 7847854083,
+          "sha256": "52422f49bd306c622f19efd8486e568303e5b812610cd8d23ce67d910ee9736c",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/model-00003-of-00006.safetensors",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/14/14fff768966e3d4777b46615fded93b192ef2c245a0901304d05fe31134ba7ed",
+          "exists": true,
+          "bytes": 7853108385,
+          "sha256": "89f18340d8f2738df9d315d09a4e733878c984464076450fde88275c4dcfd505",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/model-00004-of-00006.safetensors",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/12/128d967075fb682a9bb34d80bb76e1e83d831d4aff8fb0da27f3fa8b08c500e9",
+          "exists": true,
+          "bytes": 7853108385,
+          "sha256": "8a95fa040cf1ce8a42e3c3d32f1a3ae2ad8614afd177c8ce1c33c1ba3133b622",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/model-00005-of-00006.safetensors",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/3e/3e9a0767988fd1fe0f6dcdf953a70d5247a6730c57fb3834da31524ebd917782",
+          "exists": true,
+          "bytes": 7853108385,
+          "sha256": "5a6930b13d0a6a3d337dc2389b7eceb1bb369a4e23970a05c15a97fcabfbb08a",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/model-00006-of-00006.safetensors",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/8e/8e509879c7b07ef4b07e51c24ff5450bca67472bc0b5af1d3cf76ea8d5f2f225",
+          "exists": true,
+          "bytes": 6927233748,
+          "sha256": "631042148b84906472b4088384adc1bd1921a014ea55de3073df60ca249653be",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/model.safetensors.index.json",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/6c/6c7ea6f38a8bbfa6bd0b00928c60f011d06b1acac67617faeb3ec6e46bea68a9",
+          "exists": true,
+          "bytes": 32763270,
+          "sha256": "5ec9dfa0b97581738aa64ec745ee8d38ac0480b362bc65c00057fc52422d3f83",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/ngram_embedding.safetensors",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/19/196aab8dd664ff1036f7c3678842be26ad4bb7b588f567687c13e4e3d51b460d",
+          "exists": true,
+          "bytes": 51840275600,
+          "sha256": "4d3171dd6b3018264ef6cad71996c40023dd920fb91060a5f925faaa133f95cb",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/preprocessor_config.json",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/2ea84a437d448ff71b08df68fdd949d5cc4ebb64",
+          "exists": true,
+          "bytes": 390,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/qbench_prompts.json",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/30997642e72294faf80e0979b8d4fa6131c89b00",
+          "exists": true,
+          "bytes": 324183,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/qbench_prompts.md",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/5d70e60e02a8513bfcb08124b7fa7cd054df6f3b",
+          "exists": true,
+          "bytes": 212719,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/quantization_config.json",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/5b/5b4d1a91c869ac6bdc833a4d089f6fe13823b93b8ce1130c3d9de2db662b9d0e",
+          "exists": true,
+          "bytes": 96766238,
+          "sha256": "03cff7bb61889940de77179788ca47d870a35f3fb1d71bc79523ac62c4afda9b",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/tokenizer.json",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/dd/ddca7e708ff0da8902fdcef5209d5eea8bf922715733eb02f93026a37478e426",
+          "exists": true,
+          "bytes": 12809320,
+          "sha256": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/tokenizer_config.json",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/5de744b3fca2129d7186979ae47c06be33903243",
+          "exists": true,
+          "bytes": 17928,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/video_preprocessor_config.json",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/3ba673a5ad7d4d13f54155ecd38b2a94a6dac8fe",
+          "exists": true,
+          "bytes": 385,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        },
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/snapshots/d660113325e1eba20e760a9063580139bdbdfc22/vocab.json",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/models--turboderp--Qwen3.8-Flash-Next-exl3/blobs/0aa0ce0658d60ac4a5d609f4eadb0e8e43514176",
+          "exists": true,
+          "bytes": 6722759,
+          "sha256": null,
+          "sha256_status": "git-blob (small file, HF etag)",
+          "done_marker": false
+        }
+      ],
+      "logical_bytes": 98404818677,
+      "exists": true,
+      "problems": [],
+      "unique_bytes_first_seen": 46541022894,
+      "status": "present, complete by header/shard checks",
+      "pack": null,
+      "pack_complete": null
+    },
+    {
+      "id": "gguf-iq3_xxs",
+      "label": "GSQ-RCO GGUF IQ3_XXS",
+      "fmt": "gguf",
+      "author": "GSQ-RCO (Strata setup download)",
+      "repo": "(Strata setup, pinned by setup.py)",
+      "revision": "not recorded locally",
+      "architecture": "qwen4exp",
+      "general_name": "Qwen3.8-Flash-Next GSQ-RCO",
+      "gguf_file_type": 23,
+      "split_count": 2,
+      "tensor_types": [
+        {
+          "Q5_K": 15,
+          "BF16": 484,
+          "F32": 292,
+          "IQ3_S": 82,
+          "IQ4_XS": 67,
+          "IQ4_NL": 58,
+          "IQ2_XS": 20,
+          "Q6_K": 71,
+          "Q2_0": 38,
+          "IQ2_XXS": 18,
+          "F16": 1,
+          "Q4_K": 45,
+          "IQ2_S": 20,
+          "IQ3_XXS": 12
+        },
+        {
+          "IQ4_NL": 1
+        }
+      ],
+      "n_shards": 2,
+      "engine": "Strata official 0.2.3 (engine 0.1.48)",
+      "files": [
+        {
+          "path": "${ARTIFACTS}/Strata-data/models/IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00001-of-00002.gguf",
+          "realpath": "${ARTIFACTS}/Strata-data/models/IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00001-of-00002.gguf",
+          "exists": true,
+          "bytes": 47039860096,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": true
+        },
+        {
+          "path": "${ARTIFACTS}/Strata-data/models/IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00002-of-00002.gguf",
+          "realpath": "${ARTIFACTS}/Strata-data/models/IQ3_XXS/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS-00002-of-00002.gguf",
+          "exists": true,
+          "bytes": 28800138432,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": true
+        }
+      ],
+      "logical_bytes": 75839998528,
+      "exists": true,
+      "problems": [],
+      "unique_bytes_first_seen": 75839998528,
+      "status": "present, complete by header/shard checks",
+      "pack": "${EXPERIMENT}/packs/iq3_xxs",
+      "pack_complete": true
+    },
+    {
+      "id": "gguf-iq3_s",
+      "label": "GSQ-RCO GGUF IQ3_S",
+      "fmt": "gguf",
+      "author": "GSQ-RCO (Strata setup download)",
+      "repo": "(Strata setup, pinned by setup.py)",
+      "revision": "not recorded locally",
+      "architecture": "qwen4exp",
+      "general_name": "Qwen3.8-Flash-Next GSQ-RCO",
+      "gguf_file_type": 26,
+      "split_count": 2,
+      "tensor_types": [
+        {
+          "Q6_K": 129,
+          "BF16": 484,
+          "F32": 292,
+          "IQ4_XS": 45,
+          "Q4_K": 47,
+          "IQ4_NL": 86,
+          "IQ3_XXS": 34,
+          "Q5_K": 35,
+          "Q2_0": 9,
+          "IQ2_S": 40,
+          "F16": 1,
+          "IQ3_S": 20,
+          "Q8_0": 1
+        },
+        {
+          "IQ4_NL": 1
+        }
+      ],
+      "n_shards": 2,
+      "engine": "Strata official 0.2.3 (engine 0.1.48)",
+      "files": [
+        {
+          "path": "${ARTIFACTS}/Strata-data/models/IQ3_S/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf",
+          "realpath": "${ARTIFACTS}/Strata-data/models/IQ3_S/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf",
+          "exists": true,
+          "bytes": 54817524224,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": true
+        },
+        {
+          "path": "${ARTIFACTS}/Strata-data/models/IQ3_S/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf",
+          "realpath": "${ARTIFACTS}/Strata-data/models/IQ3_S/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf",
+          "exists": true,
+          "bytes": 28800138432,
+          "sha256": null,
+          "sha256_status": "not hashed (pre-existing download)",
+          "done_marker": true
+        }
+      ],
+      "logical_bytes": 83617662656,
+      "exists": true,
+      "problems": [],
+      "unique_bytes_first_seen": 54817524224,
+      "status": "present, complete by header/shard checks",
+      "pack": "${EXPERIMENT}/packs/iq3_s",
+      "pack_complete": true
+    },
+    {
+      "id": "gyro-s-tq1_0",
+      "label": "agentionai Gyro-S TQ1_0",
+      "fmt": "gguf",
+      "author": "agentionai",
+      "repo": "agentionai/Qwen3.8-Flash-Next-Gyro-GGUF",
+      "revision": "273edc1d2ffae5241fe3cab69568d682dad4c718",
+      "manifest": "273edc1d2ffae5241fe3cab69568d682dad4c718.json",
+      "architecture": "qwen4exp",
+      "general_name": "Qwen3.8-Flash-Next Gyro-S",
+      "gguf_file_type": 25,
+      "split_count": 1,
+      "tensor_types": [
+        {
+          "Q6_K": 196,
+          "IQ4_NL": 3,
+          "F32": 340,
+          "Q5_K": 324,
+          "TQK7": 48,
+          "Q8_0": 144,
+          "TQK6": 96,
+          "BF16": 72,
+          "F16": 1
+        }
+      ],
+      "n_shards": 1,
+      "engine": "Strata official 0.2.3 (engine 0.1.48)",
+      "files": [
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--agentionai--Qwen3.8-Flash-Next-Gyro-GGUF/snapshots/273edc1d2ffae5241fe3cab69568d682dad4c718/Qwen3.8-Flash-Next-Gyro-S-TQ1_0.gguf",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/ca/ca081f8793288224a5b145b393889ff31efb01e6746bc697cd71ff61a86c22dc",
+          "exists": true,
+          "bytes": 58487015808,
+          "sha256": "c6ea1b08ca312f99095b27588ba35976b53f948268e7f91e7761926aa01d9c87",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        }
+      ],
+      "logical_bytes": 58487015808,
+      "exists": true,
+      "problems": [],
+      "unique_bytes_first_seen": 58487015808,
+      "status": "present, complete by header/shard checks",
+      "pack": "${EXPERIMENT}/packs/gyro-s",
+      "pack_complete": true
+    },
+    {
+      "id": "gyro-m-tq2_0",
+      "label": "agentionai Gyro-M TQ2_0",
+      "fmt": "gguf",
+      "author": "agentionai",
+      "repo": "agentionai/Qwen3.8-Flash-Next-Gyro-GGUF",
+      "revision": "273edc1d2ffae5241fe3cab69568d682dad4c718",
+      "manifest": "273edc1d2ffae5241fe3cab69568d682dad4c718.json",
+      "architecture": "qwen4exp",
+      "general_name": "Qwen3.8-Flash-Next Gyro-M",
+      "gguf_file_type": 7,
+      "split_count": 1,
+      "tensor_types": [
+        {
+          "Q8_0": 667,
+          "F32": 389,
+          "TQ2_T": 144,
+          "BF16": 24
+        }
+      ],
+      "n_shards": 1,
+      "engine": "Strata official 0.2.3 (engine 0.1.48)",
+      "files": [
+        {
+          "path": "${ARTIFACTS}/cache/huggingface/hub/models--agentionai--Qwen3.8-Flash-Next-Gyro-GGUF/snapshots/273edc1d2ffae5241fe3cab69568d682dad4c718/Qwen3.8-Flash-Next-Gyro-M-TQ2_0.gguf",
+          "realpath": "${ARTIFACTS}/cache/huggingface/hub/blobs/b9/b95f1e991ff9ffe7fcd6301380b0f6503ccf40abd0914df655ad0d602c5aa775",
+          "exists": true,
+          "bytes": 91965774272,
+          "sha256": "7aa36d15131d255179ab6c87fa9c9f81a0b541fc9e81e959d4c3e29eb20feb5f",
+          "sha256_status": "verified (download queue [timestamp omitted])",
+          "done_marker": false
+        }
+      ],
+      "logical_bytes": 91965774272,
+      "exists": true,
+      "problems": [],
+      "unique_bytes_first_seen": 91965774272,
+      "status": "present, complete by header/shard checks",
+      "pack": "${EXPERIMENT}/packs/gyro-m",
+      "pack_complete": true
+    }
+  ]
+}

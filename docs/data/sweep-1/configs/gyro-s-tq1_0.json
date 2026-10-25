@@ -1,0 +1,32 @@
+{
+  "exe": "${EXPERIMENT}/engines/strata-0.2.3-engine/strata",
+  "args": [
+    "--pack",
+    "${EXPERIMENT}/packs/gyro-s",
+    "--native",
+    "${ARTIFACTS}/cache/huggingface/hub/models--agentionai--Qwen3.8-Flash-Next-Gyro-GGUF/snapshots/273edc1d2ffae5241fe3cab69568d682dad4c718/Qwen3.8-Flash-Next-Gyro-S-TQ1_0.gguf",
+    "--expert-profile",
+    "${EXPERIMENT}/engines/strata-0.2.3-src/data/expert-profile.bin",
+    "--expert-cache",
+    "auto",
+    "--prefill",
+    "auto",
+    "--spec",
+    "4",
+    "--spec-min-p",
+    "0.5",
+    "--mtp",
+    "${ARTIFACTS}/Strata-data/mtp/rt",
+    "--max-context",
+    "65536",
+    "--kv",
+    "int8"
+  ],
+  "cwd": "${EXPERIMENT}/engines/strata-0.2.3-src",
+  "tokenizer": "${EXPERIMENT}/packs/gyro-s/tokenizer",
+  "model_name": "gyro-s-tq1_0",
+  "parallel": 1,
+  "env": {
+    "CUDA_VISIBLE_DEVICES": "0"
+  }
+}

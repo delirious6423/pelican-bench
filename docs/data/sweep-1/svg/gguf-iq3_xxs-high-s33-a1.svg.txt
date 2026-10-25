@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-labelledby="title desc">
+  <title id="title">A pelican riding a bicycle</title>
+  <desc id="desc">Cartoon pelican seated on a bicycle with a long beak and orange legs.</desc>
+
+  <rect width="400" height="300" fill="#f8fbff"/>
+  <line x1="20" y1="258" x2="380" y2="258" stroke="#b5c1cc" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Bicycle -->
+  <g fill="none" stroke="#455a64" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Rear wheel -->
+    <circle cx="105" cy="220" r="36"/>
+    <!-- Front wheel -->
+    <circle cx="265" cy="220" r="36"/>
+
+    <!-- Spokes -->
+    <g stroke="#c3ccd4" stroke-width="1.5">
+      <line x1="105" y1="184" x2="105" y2="256"/>
+      <line x1="69" y1="220" x2="141" y2="220"/>
+      <line x1="80" y1="195" x2="130" y2="245"/>
+      <line x1="130" y1="195" x2="80" y2="245"/>
+
+      <line x1="265" y1="184" x2="265" y2="256"/>
+      <line x1="229" y1="220" x2="301" y2="220"/>
+      <line x1="240" y1="195" x2="290" y2="245"/>
+      <line x1="290" y1="195" x2="240" y2="245"/>
+    </g>
+
+    <!-- Hubs -->
+    <circle cx="105" cy="220" r="4" fill="#455a64" stroke="none"/>
+    <circle cx="265" cy="220" r="4" fill="#455a64" stroke="none"/>
+
+    <!-- Frame -->
+    <path d="M105 220 L160 205 L175 154 M105 220 L175 154 M160 205 L240 165 M175 154 L240 165 M240 165 L265 220"/>
+
+    <!-- Seatpost and saddle -->
+    <path d="M175 154 L171 149"/>
+    <path d="M148 149 L188 149" stroke-width="7"/>
+
+    <!-- Handlebar -->
+    <path d="M240 165 L236 152 M236 152 C226 142 219 140 212 143 L206 148"/>
+
+    <!-- Bottom bracket / crank -->
+    <circle cx="160" cy="205" r="10" stroke-width="3"/>
+    <path d="M160 205 L132 197 M160 205 L182 215"/>
+    <path d="M123 197 L142 197 M175 215 L194 215" stroke-width="5"/>
+  </g>
+
+  <!-- Pelican -->
+  <g stroke-linejoin="round">
+    <!-- Tail -->
+    <path
+      d="M92 130 Q66 120 74 148 Q90 154 101 141 Z"
+      fill="#e8eef4"
+      stroke="#455a64"
+      stroke-width="3"
+    />
+
+    <!-- Body, neck, and head -->
+    <path
+      d="M92 130 Q84 108 105 97 Q128 84 155 85 Q194 86 213 99 Q225 111 215 123 Q205 131 192 128 Q186 142 150 143 Q112 145 92 130 Z"
+      fill="#ffffff"
+      stroke="#455a64"
+      stroke-width="3"
+    />
+
+    <!-- Wing -->
+    <path
+      d="M121 117 Q153 104 178 126 Q157 148 124 139 Z"
+      fill="#d7e0e9"
+      stroke="#455a64"
+      stroke-width="3"
+    />
+
+    <!-- Wing reaching to handlebar -->
+    <path
+      d="M163 107 Q192 112 213 137 Q204 147 195 146 Q169 122 157 118 Z"
+      fill="#cfd8e2"
+      stroke="#455a64"
+      stroke-width="3"
+    />
+
+    <!-- Beak -->
+    <path
+      d="M214 100 Q256 92 300 106 Q297 126 256 133 Q226 131 213 117 Z"
+      fill="#f4b35d"
+      stroke="#8d5a2c"
+      stroke-width="2.5"
+    />
+    <path
+      d="M214 112 Q255 109 300 106"
+      fill="none"
+      stroke="#8d5a2c"
+      stroke-width="2"
+      stroke-linecap="round"
+    />
+
+    <!-- Eye and brow -->
+    <circle cx="207" cy="107" r="3" fill="#24303b"/>
+    <path d="M201 103 Q207 99 214 103" fill="none" stroke="#455a64" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Legs -->
+    <g stroke="#e76f51" stroke-width="6" stroke-linecap="round" fill="none">
+      <path d="M140 142 Q136 168 132 197"/>
+      <path d="M165 143 Q173 169 182 215"/>
+    </g>
+
+    <!-- Feet on pedals -->
+    <g fill="#e76f51">
+      <path d="M123 197 L142 197 L133 208 Z"/>
+      <path d="M175 215 L194 215 L185 226 Z"/>
+    </g>
+  </g>
+</svg>

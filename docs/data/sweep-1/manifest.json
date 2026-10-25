@@ -1,0 +1,82 @@
+{
+  "run": "sweep-1",
+  "mode": "sweep",
+  "models": [
+    "sc-exl3-2.05-h8",
+    "gyro-s-tq1_0",
+    "td-exl3-2.18-h6-ng8",
+    "gguf-iq3_xxs",
+    "sc-exl3-3.05-h8",
+    "gyro-m-tq2_0",
+    "td-exl3-2.68-h6-ng8",
+    "gguf-iq3_s"
+  ],
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "efforts": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "max_tokens": 49152,
+  "deadline_s": 2700.0,
+  "idle_timeout_s": 600,
+  "prompt": "Generate an SVG of a pelican riding a bicycle",
+  "sampling": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "repetition_penalty": 1.0
+  },
+  "resolved_effort": {
+    "low": "low",
+    "medium": "medium",
+    "high": "xhigh",
+    "xhigh": "xhigh"
+  },
+  "budget_sent": 0,
+  "extraction_rule": "v1-first-balanced-svg",
+  "harness": "pelican-harness-1",
+  "qe": {
+    "categories": "recall,arith,format,repeat",
+    "effort": "medium",
+    "budget": 1536,
+    "max_tokens": 2560,
+    "deadline_s": 900,
+    "seed": 11
+  },
+  "warmup": {
+    "effort": "low",
+    "seed": 7,
+    "excluded": true
+  },
+  "gates": {
+    "hot_c": 87.0,
+    "cool_c": 80.0,
+    "foreign_gpu_mib": 256
+  },
+  "harness_files": {
+    "catalogue.py": "8a4d66b7b071a33e49f74c2e5b8da533bc838bf8d4ab52e9a765cdb8d3213495",
+    "gallery.py": "5385d6c7957a2817a8fc2ce138f3ffa79d3e4eb3f49bfb54c38a6829610f02cf",
+    "monitor.py": "1cb828ff5cd85927c4e0fd8bf0fea8741eb83157b9b94ea076b179d00f271ca5",
+    "pelican.py": "df3ea59550b965a02e8dd1deafcf743e5d99c5d262aaebb4b5ae54a6f36a64b5",
+    "rasterize.py": "198f560793676ea7707656dc453d708657ef5c2e61869f042d112dab24eb080f",
+    "render.py": "df04fa5ad1a024d808a0845d2a5791e7d19f24686ee1c427cc9bcf3701e89f3f",
+    "render_prompts.py": "1886536b4829dbe8fd57b5578d13b90f103879d82e55ddf18b12acdd60d07b1e",
+    "report.py": "59e5ea6ccaec57da362a52b7b2a0e0ff02751033f603470493b437d773c15822",
+    "serverctl.py": "3329b815805704fd4fa29abe21566529b83e150690556e3710f87e6b7bab5b32",
+    "sweep.py": "307d9389260521949a639d3b9f24f138e223571799bd918244411ed5176e81c2",
+    "test_harness.py": "c8420a8ed22289e8de1caf978be833ade7ea5028a80ecefc60ff2311fc263562",
+    "quick_eval.py": "582dfd523f2bc09615e15cd87502c40da755828b6f67dc389e0d77974680739c",
+    "items.jsonl": "06e9789eaa7b76ca4a25ee0c18a2bf4442e2efdd54f44b774a6467dceb8fbb2b"
+  },
+  "note": "full sweep v1: 8 models x low/medium/high x seeds 11,22,33,44,55; max_tokens 49152 (raised uniformly from provisional 32768 after pilot-1: high-effort pilots used 21679 and 25906 tokens); deadline 2700s = 1.5 x 49152 tokens at ~28.5 tok/s (slowest compat 32.3 tok/s minus ~12% long-run drop) + 120s; quick-eval core medium budget 1536 max 2560 seed 11"
+}

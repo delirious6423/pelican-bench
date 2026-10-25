@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="title desc">
+  <title id="title">A pelican riding a bicycle</title>
+  <desc id="desc">A cartoon pelican with a large orange beak rides a red bicycle.</desc>
+
+  <rect width="800" height="600" fill="#eaf7ff"/>
+
+  <circle cx="700" cy="90" r="45" fill="#ffd763"/>
+
+  <g fill="#ffffff" opacity="0.8">
+    <ellipse cx="120" cy="105" rx="48" ry="18"/>
+    <ellipse cx="165" cy="90" rx="32" ry="14"/>
+    <ellipse cx="90" cy="112" rx="30" ry="13"/>
+    <ellipse cx="315" cy="135" rx="42" ry="15"/>
+  </g>
+
+  <rect x="0" y="490" width="800" height="110" fill="#d9efcf"/>
+  <line x1="0" y1="490" x2="800" y2="490" stroke="#b7d9a9" stroke-width="6"/>
+
+  <ellipse cx="400" cy="486" rx="185" ry="16" fill="#c9e3b6" opacity="0.7"/>
+
+  <g id="bicycle">
+    <g stroke="#222" stroke-width="8" fill="#fff">
+      <circle cx="250" cy="410" r="80"/>
+      <circle cx="560" cy="410" r="80"/>
+    </g>
+
+    <g fill="none" stroke="#aaa" stroke-width="2">
+      <circle cx="250" cy="410" r="70"/>
+      <circle cx="560" cy="410" r="70"/>
+    </g>
+
+    <g stroke="#ddd" stroke-width="2">
+      <g transform="translate(250 410)">
+        <line x1="0" y1="0" x2="70" y2="0"/>
+        <line x1="0" y1="0" x2="70" y2="0" transform="rotate(45)"/>
+        <line x1="0" y1="0" x2="70" y2="0" transform="rotate(90)"/>
+        <line x1="0" y1="0" x2="70" y2="0" transform="rotate(135)"/>
+        <line x1="0" y1="0" x2="70" y2="0" transform="rotate(180)"/>
+        <line x1="0" y1="0" x2="70" y2="0" transform="rotate(225)"/>
+        <line x1="0" y1="0" x2="70" y2="0" transform="rotate(270)"/>
+        <line x1="0" y1="0" x2="70" y2="0" transform="rotate(315)"/>
+      </g>
+
+      <g transform="translate(560 410)">
+        <line x1="0" y1="0" x2="70" y2="0"/>
+        <line x1="0" y1="0" x2="70" y2="0" transform="rotate(45)"/>
+        <line x1="0" y1="0" x2="70" y2="0" transform="rotate(90)"/>
+        <line x1="0" y1="0" x2="70" y2="0" transform="rotate(135)"/>
+        <line x1="0" y1="0" x2="70" y2="0" transform="rotate(180)"/>
+        <line x1="0" y1="0" x2="70" y2="0" transform="rotate(225)"/>
+        <line x1="0" y1="0" x2="70" y2="0" transform="rotate(270)"/>
+        <line x1="0" y1="0" x2="70" y2="0" transform="rotate(315)"/>
+      </g>
+    </g>
+
+    <g fill="#222">
+      <circle cx="250" cy="410" r="10"/>
+      <circle cx="560" cy="410" r="10"/>
+    </g>
+
+    <path d="M250 410 L340 410 L340 300 L470 315 L560 410 M340 300 L250 410 M340 410 L470 315"
+          fill="none" stroke="#e64545" stroke-width="12"
+          stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g fill="none" stroke="#5b5b5b" stroke-width="4">
+      <circle cx="250" cy="410" r="17"/>
+      <circle cx="340" cy="410" r="24"/>
+      <path d="M267 395 L316 391"/>
+      <path d="M267 425 L316 429"/>
+    </g>
+
+    <path d="M470 315 L515 285 M470 315 L445 280"
+          fill="none" stroke="#222" stroke-width="10" stroke-linecap="round"/>
+
+    <circle cx="515" cy="285" r="7" fill="#222"/>
+    <circle cx="445" cy="280" r="7" fill="#222"/>
+
+    <path d="M305 305 Q335 280 375 295 Q365 322 310 318 Z" fill="#222"/>
+
+    <path d="M340 410 L385 445 M340 410 L295 375"
+          fill="none" stroke="#222" stroke-width="8" stroke-linecap="round"/>
+
+    <g fill="#333">
+      <rect x="368" y="440" width="34" height="10" rx="3" transform="rotate(20 385 445)"/>
+      <rect x="278" y="370" width="34" height="10" rx="3" transform="rotate(-20 295 375)"/>
+    </g>
+  </g>
+
+  <g id="pelican">
+    <path d="M260 255 L190 215 L225 300 Z"
+          fill="#ffffff" stroke="#333" stroke-width="4" stroke-linejoin="round"/>
+
+    <g fill="none" stroke="#e89c2a" stroke-width="14" stroke-linecap="round">
+      <path d="M338 280 Q368 355 378 440"/>
+      <path d="M305 288 Q295 335 297 372"/>
+    </g>
+
+    <g fill="#e89c2a" stroke="#b85d17" stroke-width="3">
+      <ellipse cx="385" cy="442" rx="14" ry="8" transform="rotate(-10 385 442)"/>
+      <ellipse cx="295" cy="372" rx="14" ry="8" transform="rotate(-10 295 372)"/>
+    </g>
+
+    <ellipse cx="315" cy="245" rx="72" ry="54" fill="#ffffff" stroke="#333" stroke-width="4"/>
+
+    <path d="M320 215 C365 205 425 230 460 258 C488 278 508 286 515 292
+             C500 312 460 306 420 298 C370 290 330 275 300 255 Z"
+          fill="#f4f9ff" stroke="#333" stroke-width="4" stroke-linejoin="round"/>
+
+    <path d="M350 208 C398 162 435 137 458 142 L472 187
+             C430 212 378 252 352 278 Z"
+          fill="#ffffff" stroke="#333" stroke-width="4" stroke-linejoin="round"/>
+
+    <circle cx="460" cy="145" r="33" fill="#ffffff" stroke="#333" stroke-width="4"/>
+
+    <path d="M448 115 Q460 94 472 113 Q460 122 448 115 Z"
+          fill="#ffffff" stroke="#333" stroke-width="3" stroke-linejoin="round"/>
+
+    <path d="M474 139 L618 199 L582 218 L456 163 Z"
+          fill="#f5b04c" stroke="#bd6d1f" stroke-width="3" stroke-linejoin="round"/>
+
+    <path d="M456 163 L582 218 Q526 248 448 203 Z"
+          fill="#ef9330" stroke="#bd6d1f" stroke-width="3" stroke-linejoin="round"/>
+
+    <circle cx="458" cy="140" r="5" fill="#222"/>
+    <circle cx="459" cy="139" r="1.7" fill="#fff"/>
+    <circle cx="467" cy="150" r="2" fill="#8c4a13"/>
+  </g>
+</svg>

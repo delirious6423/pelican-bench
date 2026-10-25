@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <style>
+      .wheel { fill: none; stroke: #333; stroke-width: 3; }
+      .spoke { stroke: #555; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="#e8f4ff" rx="10"/>
+
+  <!-- Road -->
+  <rect x="0" y="340" width="400" height="60" fill="#888" rx="3"/>
+  <line x1="0" y1="370" x2="400" y2="370" stroke="#fff" stroke-width="2" stroke-dasharray="20 15"/>
+
+  <!-- Bicycle -->
+  <!-- Rear wheel -->
+  <circle cx="120" cy="300" r="50" class="wheel"/>
+  <circle cx="120" cy="300" r="8" fill="#666"/>
+  <!-- Rear spokes -->
+  <line x1="120" y1="250" x2="120" y2="350" class="spoke"/>
+  <line x1="70" y1="300" x2="170" y2="300" class="spoke"/>
+  <line x1="85" y1="265" x2="155" y2="335" class="spoke"/>
+  <line x1="85" y1="335" x2="155" y2="265" class="spoke"/>
+
+  <!-- Front wheel -->
+  <circle cx="280" cy="300" r="50" class="wheel"/>
+  <circle cx="280" cy="300" r="8" fill="#666"/>
+  <!-- Front spokes -->
+  <line x1="280" y1="250" x2="280" y2="350" class="spoke"/>
+  <line x1="230" y1="300" x2="330" y2="300" class="spoke"/>
+  <line x1="245" y1="265" x2="315" y2="335" class="spoke"/>
+  <line x1="245" y1="335" x2="315" y2="265" class="spoke"/>
+
+  <!-- Bicycle frame -->
+  <path d="M120,300 L165,230 L220,230 L280,300" stroke="#c0392b" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M165,230 L195,280 L120,300" stroke="#c0392b" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M220,230 L260,245 L280,300" stroke="#c0392b" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Handlebars -->
+  <path d="M220,230 L240,200 L255,195" stroke="#555" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M255,195 L270,210" stroke="#555" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Seat -->
+  <ellipse cx="175" cy="222" rx="22" ry="8" fill="#654321"/>
+
+  <!-- Pedals -->
+  <circle cx="195" cy="280" r="6" fill="#555"/>
+  <line x1="195" y1="280" x2="180" y2="295" stroke="#555" stroke-width="3" stroke-linecap="round"/>
+  <line x1="195" y1="280" x2="210" y2="265" stroke="#555" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Pelican Body -->
+  <ellipse cx="175" cy="175" rx="45" ry="35" fill="#f0e6d6" stroke="#d4c5a9" stroke-width="2"/>
+
+  <!-- Pelican tail feathers -->
+  <path d="M140,185 Q120,195 115,205 Q125,200 130,190" fill="#e8dcc8" stroke="#c9b896" stroke-width="1"/>
+  <path d="M135,190 Q115,210 110,220 Q120,212 125,200" fill="#e8dcc8" stroke="#c9b896" stroke-width="1"/>
+
+  <!-- Pelican Wings gripping handlebars -->
+  <path d="M190,170 Q210,180 240,195 Q250,200 255,195 Q245,185 225,178 Q210,172 195,168" fill="#e8dcc8" stroke="#c9b896" stroke-width="2"/>
+  <!-- Wing tip detail -->
+  <path d="M255,195 Q260,192 265,200" fill="#c9b896" stroke="#c9b896" stroke-width="1.5"/>
+
+  <!-- Pelican Head -->
+  <ellipse cx="210" cy="145" rx="20" ry="18" fill="#f0e6d6" stroke="#d4c5a9" stroke-width="2"/>
+
+  <!-- Pelican Beak -->
+  <path d="M225,148 Q250,140 285,130 Q270,145 255,155 Q240,158 225,155 Z" fill="#e8a040" stroke="#d4862a" stroke-width="2"/>
+  <!-- Beak pouch -->
+  <path d="M240,155 Q248,168 252,160 Q245,158 240,155" fill="#e8a040" stroke="#d4862a" stroke-width="1"/>
+  <!-- Beak upper ridge -->
+  <path d="M225,143 Q260,132 285,130" fill="none" stroke="#d4862a" stroke-width="1.5"/>
+
+  <!-- Pelican Eye -->
+  <circle cx="213" cy="140" r="5" fill="#333"/>
+  <circle cx="215" cy="138" r="2" fill="#fff"/>
+
+  <!-- Pelican crest/hair tuft -->
+  <path d="M205,130 Q210,122 215,128 Q218,120 222,126" fill="#f0e6d6" stroke="#d4c5a9" stroke-width="1"/>
+
+  <!-- Feet on pedals -->
+  <path d="M180,220 Q178,260 180,290 Q175,295 180,295" fill="#e8a040" stroke="#d4862a" stroke-width="2"/>
+  <!-- Left foot webbing -->
+  <path d="M175,290 L182,298 L188,292" fill="#e8a040" stroke="#d4862a" stroke-width="1.5"/>
+
+  <path d="M200,220 Q205,255 210,265 Q208,270 212,268" fill="#e8a040" stroke="#d4862a" stroke-width="2"/>
+  <!-- Right foot webbing -->
+  <path d="M208,264 L214,270 L218,262" fill="#e8a040" stroke="#d4862a" stroke-width="1.5"/>
+
+  <!-- Scarf blowing in wind -->
+  <path d="M200,155 Q215,160 230,152 Q245,148 260,142 Q250,155 235,162 Q220,168 210,160" fill="#e74c3c" stroke="#c0392b" stroke-width="1.5"/>
+
+  <!-- Sun -->
+  <circle cx="360" cy="60" r="25" fill="#f9d639" opacity="0.9"/>
+  <line x1="360" y1="30" x2="360" y2="20" stroke="#f9d639" stroke-width="3" stroke-linecap="round"/>
+  <line x1="375" y1="45" x2="385" y2="38" stroke="#f9d639" stroke-width="3" stroke-linecap="round"/>
+  <line x1="390" y1="60" x2="400" y2="60" stroke="#f9d639" stroke-width="3" stroke-linecap="round"/>
+  <line x1="375" y1="75" x2="385" y2="82" stroke="#f9d639" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Cloud -->
+  <path d="M60,60 Q75,45 90,55 Q105,40 120,55 Q135,50 140,65 Q130,75 110,72 Q85,75 75,70 Q60,70 60,60" fill="#fff" opacity="0.8"/>
+</svg>

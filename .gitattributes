@@ -1,0 +1,3 @@
+# Preserve evidence bytes and hashes, including CSV CRLF and model-authored SVG whitespace.
+docs/data/sweep-1-cells.csv -text whitespace=cr-at-eol
+docs/data/sweep-1/svg/*.svg.txt -text -whitespace

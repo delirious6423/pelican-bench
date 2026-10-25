@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" width="420" height="300" role="img" aria-label="A pelican riding a bicycle">
+  <title>Pelican riding a bicycle</title>
+
+  <!-- sky -->
+  <rect width="420" height="300" fill="#eef8ff" />
+
+  <!-- ground and shadow -->
+  <line x1="0" y1="272" x2="420" y2="272" stroke="#9ccdb4" stroke-width="8" stroke-linecap="round" />
+  <ellipse cx="210" cy="269" rx="145" ry="10" fill="#101010" opacity="0.12" />
+
+  <!-- bicycle wheels -->
+  <g fill="#ffffff" stroke="#111111" stroke-width="7">
+    <circle cx="100" cy="225" r="44" />
+    <circle cx="315" cy="225" r="44" />
+  </g>
+
+  <!-- wheel spokes -->
+  <g stroke="#666666" stroke-width="1.6" stroke-linecap="round">
+    <path d="M100 185 L100 265 M60 225 L140 225 M72 197 L128 253 M72 253 L128 197" />
+    <path d="M315 185 L315 265 M275 225 L355 225 M287 197 L343 253 M287 253 L343 197" />
+  </g>
+
+  <!-- wheel hubs -->
+  <circle cx="100" cy="225" r="7" fill="#222222" />
+  <circle cx="315" cy="225" r="7" fill="#222222" />
+
+  <!-- bicycle frame -->
+  <g stroke="#d93e3e" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M100 225 H175 L145 150 Z" />
+    <path d="M175 225 L230 168 L222 138 L145 150" />
+    <path d="M222 138 L315 225" />
+    <path d="M230 168 L315 225" />
+  </g>
+
+  <!-- stem and handlebar -->
+  <g stroke="#222222" stroke-width="6" fill="none" stroke-linecap="round">
+    <line x1="222" y1="138" x2="210" y2="120" />
+    <path d="M190 122 Q210 111 232 126" />
+  </g>
+
+  <!-- saddle -->
+  <path d="M129 147 C137 138,161 138,171 148 L152 156 Z" fill="#111111" />
+
+  <!-- crank and pedals -->
+  <circle cx="175" cy="225" r="14" fill="#222222" />
+  <g stroke="#333333" stroke-width="5" stroke-linecap="round">
+    <line x1="175" y1="225" x2="162" y2="240" />
+    <line x1="175" y1="225" x2="188" y2="210" />
+  </g>
+  <g fill="#333333">
+    <rect x="152" y="238" width="20" height="5" rx="2" />
+    <rect x="180" y="208" width="20" height="5" rx="2" />
+  </g>
+
+  <!-- pelican legs -->
+  <g stroke="#e07a31" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M132 144 L142 190 L162 236" />
+    <path d="M152 146 L172 192 L188 212" />
+  </g>
+
+  <!-- pelican tail -->
+  <path d="M78 116 L52 106 L86 138 Z" fill="#f7fbff" stroke="#7894a6" stroke-width="2" />
+
+  <!-- pelican body -->
+  <ellipse cx="122" cy="116" rx="50" ry="32" fill="#f7fbff" stroke="#7894a6" stroke-width="3" />
+
+  <!-- neck and head -->
+  <path d="M136 116 C136 92,158 76,174 88 C170 112,164 126,146 136 Z" fill="#f7fbff" stroke="#7894a6" stroke-width="3" />
+  <circle cx="174" cy="96" r="19" fill="#f7fbff" stroke="#7894a6" stroke-width="3" />
+
+  <!-- pelican beak -->
+  <path d="M178 86 L248 79 Q266 78 261 95 L189 94 Z" fill="#f0b04a" stroke="#b56a1c" stroke-width="2" />
+  <path d="M172 98 Q176 124,216 122 Q246 120,261 98 Q240 108,186 103 Z" fill="#f7c769" stroke="#b56a1c" stroke-width="2" />
+  <circle cx="170" cy="90" r="3.2" fill="#111111" />
+
+  <!-- pelican wing gripping the handlebar -->
+  <path d="M132 118 Q165 106,204 124 Q185 140,134 134 Z" fill="#93b3c8" stroke="#6c899c" stroke-width="3" />
+
+  <!-- feet on pedals -->
+  <g fill="#e07a31" stroke="#b55d1f" stroke-width="2" stroke-linejoin="round">
+    <path d="M153 238 L173 236 L160 248 Z" />
+    <path d="M181 211 L201 208 L190 222 Z" />
+  </g>
+</svg>

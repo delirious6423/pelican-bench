@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350">
+  <!-- Background -->
+  <rect width="500" height="350" fill="#87CEEB"/>
+  <!-- Ground -->
+  <rect y="290" width="500" height="60" fill="#8B7355"/>
+
+  <!-- Bicycle -->
+  <!-- Wheels -->
+  <circle cx="130" cy="240" r="50" fill="none" stroke="#333" stroke-width="5"/>
+  <circle cx="130" cy="240" r="10" fill="#333"/>
+  <circle cx="330" cy="240" r="50" fill="none" stroke="#333" stroke-width="5"/>
+  <circle cx="330" cy="240" r="10" fill="#333"/>
+
+  <!-- Spokes -->
+  <line x1="130" y1="190" x2="130" y2="290" stroke="#666" stroke-width="1.5"/>
+  <line x1="80" y1="240" x2="180" y2="240" stroke="#666" stroke-width="1.5"/>
+  <line x1="95" y1="205" x2="165" y2="275" stroke="#666" stroke-width="1.5"/>
+  <line x1="95" y1="275" x2="165" y2="205" stroke="#666" stroke-width="1.5"/>
+  <line x1="330" y1="190" x2="330" y2="290" stroke="#666" stroke-width="1.5"/>
+  <line x1="280" y1="240" x2="380" y2="240" stroke="#666" stroke-width="1.5"/>
+  <line x1="295" y1="205" x2="365" y2="275" stroke="#666" stroke-width="1.5"/>
+  <line x1="295" y1="275" x2="365" y2="205" stroke="#666" stroke-width="1.5"/>
+
+  <!-- Frame -->
+  <line x1="130" y1="240" x2="200" y2="180" stroke="#E63946" stroke-width="5" stroke-linecap="round"/>
+  <line x1="200" y1="180" x2="250" y2="240" stroke="#E63946" stroke-width="5" stroke-linecap="round"/>
+  <line x1="250" y1="240" x2="330" y2="240" stroke="#E63946" stroke-width="5" stroke-linecap="round"/>
+  <line x1="200" y1="180" x2="180" y2="155" stroke="#E63946" stroke-width="5" stroke-linecap="round"/>
+  <line x1="250" y1="240" x2="310" y2="170" stroke="#E63946" stroke-width="5" stroke-linecap="round"/>
+  <line x1="310" y1="170" x2="340" y2="170" stroke="#E63946" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Handlebars -->
+  <path d="M340 170 Q350 155 345 145" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+  <path d="M340 170 Q350 175 355 170" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Seat -->
+  <ellipse cx="178" cy="152" rx="18" ry="6" fill="#333"/>
+
+  <!-- Pedals -->
+  <circle cx="250" cy="240" r="6" fill="#333"/>
+  <line x1="235" y1="255" x2="250" y2="240" stroke="#333" stroke-width="3"/>
+  <line x1="250" y1="240" x2="265" y2="255" stroke="#333" stroke-width="3"/>
+  <rect x="228" y="252" width="14" height="8" rx="2" fill="#333"/>
+  <rect x="258" y="252" width="14" height="8" rx="2" fill="#333"/>
+
+  <!-- Pelican -->
+  <!-- Body -->
+  <ellipse cx="185" cy="140" rx="45" ry="35" fill="#F5E6CA"/>
+  <!-- Wing -->
+  <path d="M160 125 Q180 100 210 120 Q200 145 170 145 Z" fill="#D4B896" stroke="#B8956A" stroke-width="1"/>
+  <!-- Wing reaching to handlebars -->
+  <path d="M210 120 Q260 130 310 160 Q330 165 340 168" fill="none" stroke="#D4B896" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Head -->
+  <circle cx="210" cy="110" r="20" fill="#F5E6CA"/>
+  <!-- Eye -->
+  <circle cx="218" cy="105" r="4" fill="#333"/>
+  <circle cx="219" cy="104" r="1.5" fill="white"/>
+
+  <!-- Beak -->
+  <path d="M225 110 L290 105 L285 115 L225 120 Z" fill="#E8943A" stroke="#C9762A" stroke-width="1"/>
+  <!-- Pouch -->
+  <path d="M228 118 Q260 135 280 118" fill="#E8943A" stroke="#C9762A" stroke-width="1" opacity="0.8"/>
+
+  <!-- Crest/tuft -->
+  <path d="M200 95 Q195 85 205 88" fill="#F5E6CA" stroke="#D4B896" stroke-width="2"/>
+
+  <!-- Legs/feet on pedals -->
+  <path d="M175 170 Q180 200 235 255" fill="none" stroke="#E8943A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M195 170 Q210 210 265 255" fill="none" stroke="#E8943A" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Tail -->
+  <path d="M140 130 Q120 120 115 135 Q125 140 140 138" fill="#D4B896" stroke="#B8956A" stroke-width="1"/>
+
+  <!-- Sun -->
+  <circle cx="420" cy="50" r="30" fill="#FFD700" opacity="0.9"/>
+
+  <!-- Clouds -->
+  <ellipse cx="80" cy="50" rx="30" ry="15" fill="white" opacity="0.8"/>
+  <ellipse cx="100" cy="45" rx="25" ry="12" fill="white" opacity="0.8"/>
+  <ellipse cx="400" cy="90" rx="25" ry="12" fill="white" opacity="0.7"/>
+
+  <!-- Text -->
+  <text x="250" y="330" text-anchor="middle" font-family="Arial" font-size="14" fill="#333" font-style="italic">A pelican pedaling along the beach</text>
+</svg>

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Sky background -->
+  <rect width="400" height="300" fill="#cfe8f5"/>
+  <circle cx="350" cy="40" r="22" fill="#ffd54d"/>
+  <ellipse cx="70" cy="50" rx="30" ry="12" fill="#ffffff" opacity="0.8"/>
+  <ellipse cx="110" cy="60" rx="24" ry="10" fill="#ffffff" opacity="0.8"/>
+  <rect x="0" y="270" width="400" height="30" fill="#9bd18a"/>
+
+  <!-- Rear wheel -->
+  <g stroke="#333" stroke-width="3">
+    <circle cx="100" cy="220" r="50" fill="#f7f7f7"/>
+    <line x1="100" y1="170" x2="100" y2="270"/>
+    <line x1="50" y1="220" x2="150" y2="220"/>
+    <line x1="65" y1="185" x2="135" y2="255"/>
+    <line x1="135" y1="185" x2="65" y2="255"/>
+    <circle cx="100" cy="220" r="6" fill="#333"/>
+  </g>
+
+  <!-- Front wheel -->
+  <g stroke="#333" stroke-width="3">
+    <circle cx="300" cy="220" r="50" fill="#f7f7f7"/>
+    <line x1="300" y1="170" x2="300" y2="270"/>
+    <line x1="250" y1="220" x2="350" y2="220"/>
+    <line x1="265" y1="185" x2="335" y2="255"/>
+    <line x1="335" y1="185" x2="265" y2="255"/>
+    <circle cx="300" cy="220" r="6" fill="#333"/>
+  </g>
+
+  <!-- Bicycle frame -->
+  <g stroke="#e05a2b" stroke-width="6" stroke-linecap="round" fill="none">
+    <!-- chainstay: rear hub to crank -->
+    <line x1="100" y1="220" x2="190" y2="220"/>
+    <!-- seat tube: crank to saddle -->
+    <line x1="190" y1="220" x2="172" y2="130"/>
+    <!-- seat stay: rear hub to seat area -->
+    <line x1="100" y1="220" x2="176" y2="145"/>
+    <!-- down tube: crank to head tube -->
+    <line x1="190" y1="220" x2="272" y2="145"/>
+    <!-- top tube -->
+    <line x1="176" y1="145" x2="272" y2="145"/>
+    <!-- fork -->
+    <line x1="272" y1="145" x2="300" y2="220"/>
+  </g>
+
+  <!-- Handlebar -->
+  <g stroke="#333" stroke-width="5" fill="none" stroke-linecap="round">
+    <line x1="272" y1="145" x2="270" y2="125"/>
+    <path d="M270 125 q 15 -6 22 4"/>
+  </g>
+
+  <!-- Saddle -->
+  <path d="M152 128 L 194 126 q 6 2 2 7 L 156 134 q -8 0 -4 -6 Z" fill="#333"/>
+
+  <!-- Crank and pedals -->
+  <g stroke="#333" stroke-width="4" stroke-linecap="round">
+    <line x1="190" y1="220" x2="205" y2="240"/>
+    <line x1="190" y1="220" x2="175" y2="200"/>
+    <circle cx="190" cy="220" r="5" fill="#333"/>
+    <line x1="198" y1="240" x2="212" y2="240"/>
+    <line x1="168" y1="200" x2="182" y2="200"/>
+  </g>
+
+  <!-- Pelican legs (wing-feet on pedals) -->
+  <g stroke="#f2a33c" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M192 138 L 180 198"/>
+    <path d="M200 140 L 204 236"/>
+  </g>
+
+  <!-- Pelican tail -->
+  <path d="M150 95 L 112 80 L 128 105 L 112 115 L 150 118 Z" fill="#f5f5f5" stroke="#333" stroke-width="2.5"/>
+
+  <!-- Pelican body -->
+  <ellipse cx="195" cy="105" rx="48" ry="34" fill="#ffffff" stroke="#333" stroke-width="3"/>
+
+  <!-- Wing reaching to handlebar -->
+  <path d="M205 90 Q 240 100 268 122 Q 250 128 235 122 Q 215 116 205 108 Z"
+        fill="#e8e8e8" stroke="#333" stroke-width="2.5"/>
+
+  <!-- Neck -->
+  <path d="M228 88 Q 240 65 250 55 L 268 60 Q 258 80 246 98 Z"
+        fill="#ffffff" stroke="#333" stroke-width="3"/>
+
+  <!-- Head -->
+  <circle cx="262" cy="52" r="16" fill="#ffffff" stroke="#333" stroke-width="3"/>
+
+  <!-- Upper mandible -->
+  <path d="M272 46 L 335 56 Q 337 59 333 61 L 274 58 Z"
+        fill="#f2a33c" stroke="#333" stroke-width="2.5"/>
+
+  <!-- Pouch -->
+  <path d="M274 58 Q 300 92 325 62 L 333 61 L 274 58 Z"
+        fill="#f7c163" stroke="#333" stroke-width="2.5"/>
+
+  <!-- Eye -->
+  <circle cx="266" cy="47" r="3" fill="#333"/>
+  <circle cx="267" cy="46" r="1" fill="#fff"/>
+
+  <!-- Little crest tuft -->
+  <path d="M258 37 Q 260 30 266 28" stroke="#333" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Motion lines -->
+  <g stroke="#7a98a8" stroke-width="3" stroke-linecap="round">
+    <line x1="20" y1="150" x2="55" y2="150"/>
+    <line x1="10" y1="175" x2="50" y2="175"/>
+    <line x1="22" y1="200" x2="52" y2="200"/>
+  </g>
+</svg>

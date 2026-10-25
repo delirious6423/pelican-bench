@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 640 420" width="640" height="420">
+  <defs>
+    <g id="wheel" stroke="#2b2d42" stroke-width="2">
+      <circle cx="0" cy="0" r="70" fill="#ffffff" stroke="#2b2d42" stroke-width="8"/>
+      <circle cx="0" cy="0" r="54" fill="none" stroke="#2b2d42" stroke-width="2"/>
+      <line x1="0" y1="-54" x2="0" y2="54"/>
+      <line x1="-54" y1="0" x2="54" y2="0"/>
+      <line x1="-38" y1="-38" x2="38" y2="38"/>
+      <line x1="-38" y1="38" x2="38" y2="-38"/>
+      <line x1="-50" y1="-22" x2="50" y2="22"/>
+      <line x1="-50" y1="22" x2="50" y2="-22"/>
+      <line x1="-22" y1="-50" x2="22" y2="50"/>
+      <line x1="22" y1="-50" x2="-22" y2="50"/>
+      <circle cx="0" cy="0" r="8" fill="#2b2d42" stroke="none"/>
+    </g>
+  </defs>
+
+  <rect x="0" y="0" width="640" height="420" fill="#eaf6ff"/>
+  <ellipse cx="320" cy="385" rx="195" ry="10" fill="#cfd8dc"/>
+
+  <use href="#wheel" xlink:href="#wheel" transform="translate(140,310)"/>
+  <use href="#wheel" xlink:href="#wheel" transform="translate(430,310)"/>
+
+  <g id="frame" stroke="#e63946" stroke-width="9" stroke-linecap="round" fill="none">
+    <line x1="140" y1="310" x2="250" y2="310"/>
+    <line x1="140" y1="310" x2="220" y2="165"/>
+    <line x1="220" y1="165" x2="250" y2="310"/>
+    <line x1="220" y1="165" x2="355" y2="185"/>
+    <line x1="250" y1="310" x2="360" y2="210"/>
+    <line x1="355" y1="185" x2="360" y2="210"/>
+    <path d="M360 210 C 375 235 400 260 430 310"/>
+  </g>
+
+  <g id="seat-handlebars" stroke="#2b2d42" stroke-width="5" fill="#2b2d42" stroke-linecap="round">
+    <line x1="220" y1="165" x2="220" y2="178"/>
+    <ellipse cx="220" cy="160" rx="38" ry="9"/>
+    <line x1="355" y1="185" x2="335" y2="170"/>
+    <line x1="355" y1="185" x2="380" y2="170"/>
+    <circle cx="335" cy="170" r="6"/>
+    <circle cx="380" cy="170" r="6"/>
+  </g>
+
+  <g id="crank" stroke="#2b2d42" stroke-width="7" fill="none" stroke-linecap="round">
+    <circle cx="250" cy="310" r="14" fill="#2b2d42" stroke="none"/>
+    <line x1="250" y1="310" x2="278" y2="346"/>
+    <rect x="262" y="342" width="36" height="10" rx="3" fill="#2b2d42" stroke="none"/>
+    <line x1="250" y1="310" x2="222" y2="274"/>
+    <rect x="202" y="270" width="36" height="10" rx="3" fill="#2b2d42" stroke="none"/>
+  </g>
+
+  <g id="pelican" stroke="#2b2d42" stroke-width="3" stroke-linejoin="round">
+    <path d="M135 195 C115 180 108 215 138 220 C128 206 138 198 150 205 Z" fill="#ffffff"/>
+    <path d="M130 195 C125 155 165 135 205 155 C222 118 250 102 272 112 C278 132 255 158 225 176 C225 215 185 240 150 228 C138 223 130 212 130 195 Z" fill="#ffffff"/>
+
+    <g stroke="#ff9f43" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M165 230 C175 250 200 268 222 276"/>
+      <path d="M205 225 C230 265 250 310 275 340"/>
+    </g>
+
+    <g fill="#ff9f43" stroke="#2b2d42" stroke-width="2">
+      <ellipse cx="224" cy="278" rx="15" ry="6"/>
+      <ellipse cx="284" cy="347" rx="17" ry="7"/>
+    </g>
+
+    <path d="M210 155 C250 135 295 150 335 170 C312 190 270 178 245 172 C225 168 202 166 210 155 Z" fill="#d8d8d8"/>
+
+    <ellipse cx="278" cy="112" rx="34" ry="28" fill="#ffffff"/>
+
+    <path d="M288 117 C294 170 348 178 380 130 C350 142 315 134 288 117 Z" fill="#ff9f43"/>
+    <path d="M293 100 L390 122 L382 133 L282 117 Z" fill="#ffd166"/>
+
+    <circle cx="274" cy="106" r="5" fill="#2b2d42" stroke="none"/>
+
+    <path d="M245 108 C255 80 295 80 305 108 C292 92 268 92 245 108 Z" fill="#e63946"/>
+  </g>
+</svg>

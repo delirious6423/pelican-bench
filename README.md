@@ -12,7 +12,24 @@ is extracted by a fixed rule and rendered in a sandbox, and you grade a shuffled
 <img src="docs/images/sc-exl3-3.05-h8-high-s44.png" width="200">
 </p>
 
-Example: [docs/RESULTS.md](docs/RESULTS.md), 8 quants, 120 pelicans graded blind.
+## Explore the recorded experiment
+
+**8 quants × 3 efforts × 5 seeds = 120 outcomes**, graded blind by one human. The saved experiment also
+includes **595 AI ratings of the 119 completed images**. This is an independent local comparison, not a model-card
+benchmark or a general capability ranking. No new inference was run for this data release.
+
+| Start here | Evidence |
+|---|---|
+| [Results and limitations](docs/RESULTS.md) | Observed quality/time tradeoffs, completion rates and the ceiling-hit case |
+| [Every seed](docs/SEEDS.md) | All scores alongside individual times; all three efforts, not just the best setting |
+| [Full gallery](docs/GALLERY.md) / [blind view](docs/BLIND-GALLERY.md) | Every image and the failed outcome |
+| [Human versus AI judging](docs/JUDGING.md) | Five judges, original sub-scores/explanations and matched-image comparisons |
+| [Existing non-pelican tests](docs/QUICK-EVAL.md) | 480 quick-eval responses and 120 effort probes |
+| [Methods](docs/METHODS.md) / [data and downloads](docs/data/README.md) | Requests, responses, timing/resources, configs, provenance, checksums and offline reproduction |
+| [Release notes](CHANGELOG.md) | Data transparency and AI judgment updates |
+
+The images above are selected examples, not a representative sample; use the full gallery to assess variation.
+The public data includes model-generated text and SVG source: treat it as untrusted input, not instructions or executable code.
 
 ## Built on
 
@@ -41,6 +58,8 @@ Example: [docs/RESULTS.md](docs/RESULTS.md), 8 quants, 120 pelicans graded blind
 | `harness/gallery.py` | blind PNG gallery, empty scoring sheet, separate reveal key |
 | `harness/grade.py` | the grading game: phone page, tap 1-10, autosaves to the PC |
 | `harness/report.py` | per-run CSV/JSONL and model x effort tables (latency, tokens, decode speed, resources) |
+| `harness/analyze.py` | joins human grades to scored runs; prints per-seed score/time and truncation tables |
+| `harness/publish.py`, `test_publish.py` | offline saved-evidence export, human/AI reports, galleries and integrity checks; no model server needed |
 | `harness/test_harness.py` | unit tests against a fake streaming server |
 | `quick-eval/` | short machine-scored probes (recall, arithmetic, format, repetition, effort) |
 
@@ -103,8 +122,16 @@ model names and the reveal key are never served. Scores land in `runs/<run>/grad
   re-sent. After a server restart the page asks for a reload; unsent edits stay on the phone.
 - Saves need a per-session token, so other websites can't post grades.
 
-Afterwards, join the scores with `runs/<run>/reveal/reveal-key.csv`. No analysis script is included;
-[docs/RESULTS.md](docs/RESULTS.md) describes ours.
+Afterwards, join the scores with `runs/<run>/reveal/reveal-key.csv` using `harness/analyze.py`.
+The recorded example includes its data, so inspection needs no GPU or server:
+
+```sh
+python3 -I harness/publish.py --check
+python3 -I harness/test_publish.py
+```
+
+See [offline reproduction and export](docs/data/README.md#reproduce-and-check). The published AI judge results
+remain separate from the human grades; the incomplete output has no imputed AI rating.
 
 ## Rules
 
@@ -116,4 +143,6 @@ Afterwards, join the scores with `runs/<run>/reveal/reveal-key.csv`. No analysis
 
 ## License
 
-MIT, see [LICENSE](LICENSE). Images in `docs/images/` are outputs of the models named in their file names.
+MIT, see [LICENSE](LICENSE). The original example images name their producing models in their file names.
+The complete gallery uses opaque codes; producing models are identified in the
+[scored CSV](docs/data/sweep-1-cells.csv). Model weights and engines are not redistributed.

@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <!-- Sky background -->
+  <rect width="640" height="480" fill="#cfe8f5"/>
+  <circle cx="560" cy="70" r="40" fill="#ffd94d"/>
+  <ellipse cx="110" cy="60" rx="60" ry="25" fill="#ffffff" opacity="0.8"/>
+  <ellipse cx="300" cy="40" rx="50" ry="20" fill="#ffffff" opacity="0.7"/>
+
+  <!-- Ground -->
+  <rect x="0" y="420" width="640" height="60" fill="#9ccc65"/>
+  <line x1="0" y1="420" x2="640" y2="420" stroke="#6b8e23" stroke-width="3"/>
+
+  <!-- ===================== BICYCLE ===================== -->
+  <g stroke="#333" stroke-width="5" fill="none">
+    <!-- Rear wheel -->
+    <circle cx="170" cy="350" r="70" stroke-width="7"/>
+    <circle cx="170" cy="350" r="8" fill="#333" stroke="none"/>
+    <!-- Rear spokes -->
+    <g stroke="#999" stroke-width="2">
+      <line x1="170" y1="350" x2="170" y2="282"/>
+      <line x1="170" y1="350" x2="170" y2="418"/>
+      <line x1="170" y1="350" x2="102" y2="350"/>
+      <line x1="170" y1="350" x2="238" y2="350"/>
+      <line x1="170" y1="350" x2="122" y2="302"/>
+      <line x1="170" y1="350" x2="218" y2="398"/>
+      <line x1="170" y1="350" x2="218" y2="302"/>
+      <line x1="170" y1="350" x2="122" y2="398"/>
+    </g>
+
+    <!-- Front wheel -->
+    <circle cx="470" cy="350" r="70" stroke-width="7"/>
+    <circle cx="470" cy="350" r="8" fill="#333" stroke="none"/>
+    <!-- Front spokes -->
+    <g stroke="#999" stroke-width="2">
+      <line x1="470" y1="350" x2="470" y2="282"/>
+      <line x1="470" y1="350" x2="470" y2="418"/>
+      <line x1="470" y1="350" x2="402" y2="350"/>
+      <line x1="470" y1="350" x2="538" y2="350"/>
+      <line x1="470" y1="350" x2="422" y2="302"/>
+      <line x1="470" y1="350" x2="518" y2="398"/>
+      <line x1="470" y1="350" x2="518" y2="302"/>
+      <line x1="470" y1="350" x2="422" y2="398"/>
+    </g>
+
+    <!-- Frame -->
+    <g stroke="#c62828" stroke-width="8" stroke-linecap="round">
+      <line x1="170" y1="350" x2="300" y2="350"/>   <!-- chainstay -->
+      <line x1="170" y1="350" x2="250" y2="250"/>   <!-- seat stay -->
+      <line x1="300" y1="350" x2="250" y2="250"/>   <!-- seat tube -->
+      <line x1="300" y1="350" x2="440" y2="250"/>   <!-- down tube -->
+      <line x1="250" y1="250" x2="440" y2="250"/>   <!-- top tube -->
+      <line x1="440" y1="250" x2="470" y2="350"/>   <!-- fork -->
+    </g>
+
+    <!-- Handlebars -->
+    <g stroke="#555" stroke-width="6" stroke-linecap="round">
+      <line x1="440" y1="250" x2="430" y2="222"/>
+      <line x1="430" y1="222" x2="400" y2="215"/>
+    </g>
+
+    <!-- Seat post + seat -->
+    <line x1="250" y1="250" x2="245" y2="225" stroke="#555" stroke-width="6"/>
+    <path d="M222 222 q25 -12 46 2 q-22 10 -46 -2 z" fill="#5d4037" stroke="none"/>
+
+    <!-- Chain ring & crank -->
+    <circle cx="300" cy="350" r="18" stroke="#777" stroke-width="4"/>
+    <line x1="300" y1="350" x2="285" y2="378" stroke="#777" stroke-width="5"/>
+    <rect x="272" y="376" width="26" height="8" rx="2" fill="#777" stroke="none"/>
+    <path d="M170 350 m0 18 a18 18 0 0 0 0 -36" stroke="#777" stroke-width="2" fill="none"/>
+    <line x1="188" y1="332" x2="318" y2="332" stroke="#777" stroke-width="3"/>
+    <line x1="188" y1="368" x2="318" y2="368" stroke="#777" stroke-width="3"/>
+  </g>
+
+  <!-- ===================== PELICAN ===================== -->
+  <!-- Back leg -->
+  <line x1="265" y1="245" x2="280" y2="330" stroke="#ff9800" stroke-width="8" stroke-linecap="round"/>
+  <path d="M278 360 q15 -25 10 -32 q-15 -8 -22 18 z" fill="#ff9800"/>
+
+  <!-- Body -->
+  <path d="M205 230
+           q-15 -50 35 -60
+           q60 -12 95 25
+           q25 28 5 55
+           q-25 35 -70 35
+           q-55 0 -70 -40 z"
+        fill="#f5f5f5" stroke="#455a64" stroke-width="4"/>
+
+  <!-- Tail feathers -->
+  <path d="M200 200 l-28 -18 M200 215 l-32 -8 M202 230 l-30 2" stroke="#455a64" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Wing gripping handlebar -->
+  <path d="M265 205
+           q70 -25 140 12
+           q8 5 0 12
+           q-60 -10 -135 8 z"
+        fill="#e0e0e0" stroke="#455a64" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M290 205 q60 -15 115 12" stroke="#455a64" stroke-width="2" fill="none"/>
+  <path d="M300 214 q55 -10 105 12" stroke="#455a64" stroke-width="2" fill="none"/>
+  <!-- Wing tips curling over handlebar -->
+  <path d="M400 212 q18 2 14 16 q-10 8 -18 -4 z" fill="#e0e0e0" stroke="#455a64" stroke-width="4"/>
+
+  <!-- Neck -->
+  <path d="M290 190 q35 -45 65 -30 q18 10 8 35"
+        fill="none" stroke="#455a64" stroke-width="16" stroke-linecap="round"/>
+  <path d="M290 190 q35 -45 65 -30 q18 10 8 35"
+        fill="none" stroke="#f5f5f5" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Head -->
+  <circle cx="362" cy="178" r="24" fill="#f5f5f5" stroke="#455a64" stroke-width="4"/>
+  <!-- Eye -->
+  <circle cx="372" cy="172" r="5" fill="#263238"/>
+  <circle cx="373.5" cy="170.5" r="1.6" fill="#fff"/>
+  <!-- Head tuft -->
+  <path d="M348 158 q10 -18 22 -10" stroke="#455a64" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Beak: upper mandible -->
+  <path d="M382 172 q55 -6 78 12 q-30 4 -72 6 z"
+        fill="#ffb300" stroke="#e65100" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Pouch (lower mandible) -->
+  <path d="M382 186 q10 22 35 26 q28 4 43 -6 q-18 -14 -60 -20 z"
+        fill="#ffca28" stroke="#e65100" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Nostril -->
+  <line x1="410" y1="174" x2="420" y2="176" stroke="#e65100" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Front leg (pedaling, higher) -->
+  <line x1="280" y1="248" x2="316" y2="322" stroke="#ff9800" stroke-width="8" stroke-linecap="round"/>
+  <path d="M310 336 q18 -22 14 -30 q-16 -6 -24 20 z" fill="#ff9800"/>
+
+  <!-- Small motion lines -->
+  <g stroke="#607d8b" stroke-width="3" stroke-linecap="round" opacity="0.7">
+    <line x1="60" y1="330" x2="95" y2="330"/>
+    <line x1="50" y1="350" x2="90" y2="350"/>
+    <line x1="62" y1="370" x2="98" y2="370"/>
+  </g>
+</svg>

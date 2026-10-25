@@ -1,0 +1,100 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" width="500">
+  <!-- Sky background -->
+  <rect width="400" height="300" fill="#cfe8f5"/>
+  <circle cx="350" cy="45" r="25" fill="#ffe066"/>
+  <ellipse cx="80" cy="50" rx="35" ry="14" fill="#ffffff"/>
+  <ellipse cx="200" cy="70" rx="40" ry="15" fill="#ffffff"/>
+
+  <!-- Ground -->
+  <rect x="0" y="265" width="400" height="35" fill="#8fbf6f"/>
+  <rect x="0" y="262" width="400" height="6" fill="#6f6f6f"/>
+
+  <!-- ===== BICYCLE ===== -->
+  <g stroke="#333" stroke-width="5" fill="none" stroke-linecap="round">
+    <!-- Wheels -->
+    <circle cx="100" cy="220" r="45" fill="#fff" stroke="#222" stroke-width="6"/>
+    <circle cx="300" cy="220" r="45" fill="#fff" stroke="#222" stroke-width="6"/>
+    <!-- Spokes -->
+    <g stroke="#999" stroke-width="2">
+      <line x1="100" y1="180" x2="100" y2="260"/>
+      <line x1="60" y1="220" x2="140" y2="220"/>
+      <line x1="72" y1="192" x2="128" y2="248"/>
+      <line x1="128" y1="192" x2="72" y2="248"/>
+      <line x1="300" y1="180" x2="300" y2="260"/>
+      <line x1="260" y1="220" x2="340" y2="220"/>
+      <line x1="272" y1="192" x2="328" y2="248"/>
+      <line x1="328" y1="192" x2="272" y2="248"/>
+    </g>
+    <!-- Hubs -->
+    <circle cx="100" cy="220" r="5" fill="#333"/>
+    <circle cx="300" cy="220" r="5" fill="#333"/>
+    <!-- Frame -->
+    <g stroke="#d33" stroke-width="6">
+      <line x1="100" y1="220" x2="165" y2="150"/>  <!-- seat stay -->
+      <line x1="100" y1="220" x2="190" y2="220"/>  <!-- chain stay -->
+      <line x1="165" y1="150" x2="190" y2="220"/>  <!-- seat tube -->
+      <line x1="190" y1="220" x2="275" y2="150"/>  <!-- down tube -->
+      <line x1="165" y1="150" x2="275" y2="150"/>  <!-- top tube -->
+      <line x1="275" y1="150" x2="300" y2="220"/>  <!-- fork -->
+    </g>
+    <!-- Handlebars -->
+    <path d="M275 150 L272 125 Q272 115 285 115 L300 118" stroke="#333"/>
+    <!-- Seat post + seat -->
+    <line x1="165" y1="150" x2="163" y2="132"/>
+    <path d="M148 132 Q163 122 180 132" stroke-width="8"/>
+    <!-- Crank & pedals -->
+    <circle cx="190" cy="220" r="12" stroke="#333"/>
+    <line x1="190" y1="220" x2="176" y2="240"/>
+    <line x1="190" y1="220" x2="204" y2="200"/>
+    <line x1="168" y1="242" x2="184" y2="242" stroke-width="5"/>
+    <line x1="196" y1="198" x2="212" y2="198" stroke-width="5"/>
+  </g>
+
+  <!-- ===== PELICAN ===== -->
+  <g>
+    <!-- Legs (behind body, pedaling) -->
+    <path d="M175 145 Q172 185 178 238" stroke="#f4a836" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M185 145 Q196 175 204 199" stroke="#f4a836" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+    <!-- Tail feathers -->
+    <path d="M120 110 L95 95 L118 100 L92 108 L120 112 Z" fill="#e8e8e8" stroke="#999" stroke-width="2"/>
+
+    <!-- Body -->
+    <ellipse cx="165" cy="115" rx="50" ry="34" fill="#fdfdfd" stroke="#bbb" stroke-width="2"/>
+
+    <!-- Wing gripping handlebars -->
+    <path d="M175 100 Q230 105 268 122 Q275 126 268 132 Q225 135 180 128 Q168 118 175 100 Z"
+          fill="#e8e8e8" stroke="#aaa" stroke-width="2"/>
+    <path d="M200 108 Q230 114 255 124" stroke="#bbb" stroke-width="2" fill="none"/>
+    <path d="M195 118 Q225 123 250 129" stroke="#bbb" stroke-width="2" fill="none"/>
+
+    <!-- Neck -->
+    <path d="M200 95 Q215 60 235 55 L250 70 Q225 85 215 105 Z" fill="#fdfdfd" stroke="#bbb" stroke-width="2"/>
+
+    <!-- Head -->
+    <circle cx="243" cy="62" r="20" fill="#fdfdfd" stroke="#bbb" stroke-width="2"/>
+
+    <!-- Beak with pouch -->
+    <path d="M258 55 L330 62 L262 72 Z" fill="#f4a836" stroke="#d98b1f" stroke-width="2"/>
+    <path d="M260 68 Q300 100 328 64 Q300 82 262 74 Z" fill="#f7c06a" stroke="#d98b1f" stroke-width="2"/>
+
+    <!-- Eye -->
+    <circle cx="248" cy="56" r="4" fill="#222"/>
+    <circle cx="249.5" cy="54.5" r="1.3" fill="#fff"/>
+
+    <!-- Little cap for style -->
+    <path d="M226 50 Q243 34 260 50 Q243 42 226 50 Z" fill="#3a6ea5" stroke="#2b537d" stroke-width="1.5"/>
+    <path d="M258 49 L276 46 L258 53 Z" fill="#3a6ea5"/>
+
+    <!-- Scarf fluttering -->
+    <path d="M212 92 Q190 88 172 96 Q186 100 196 98 Q182 104 168 108 Q190 106 210 100 Z"
+          fill="#e05a4e" stroke="#b8402f" stroke-width="1.5"/>
+  </g>
+
+  <!-- Motion lines -->
+  <g stroke="#7ba7c7" stroke-width="3" stroke-linecap="round">
+    <line x1="20" y1="120" x2="55" y2="120"/>
+    <line x1="10" y1="145" x2="50" y2="145"/>
+    <line x1="22" y1="170" x2="52" y2="170"/>
+  </g>
+</svg>

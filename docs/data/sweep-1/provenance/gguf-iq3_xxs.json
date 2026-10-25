@@ -1,0 +1,122 @@
+{
+  "model_id": "gguf-iq3_xxs",
+  "engine": "official",
+  "config_sha256": "b280cbbf7a678a7378576d1ad48e7cdd90cee65ac8f6f55d7333fb34c64d501b",
+  "effort_table_ok": true,
+  "effort_table": "EFFORT = {\"none\": None, \"off\": None, \"minimal\": None, \"disabled\": None, \"false\": None,\n          \"low\": \"low\", \"medium\": \"medium\", \"high\": \"xhigh\", \"xhigh\": \"xhigh\", \"max\": \"xhigh\", \"maximum\": \"xhigh\"}",
+  "files": {
+    "engine_exe": {
+      "path": "${EXPERIMENT}/engines/strata-0.2.3-engine/strata",
+      "sha256": "211a908426a4ac90b5add11c6326db6132700df5035d9559073f55e78b47ad38"
+    },
+    "server_py": {
+      "path": "${EXPERIMENT}/engines/strata-0.2.3-src/serve/server.py",
+      "sha256": "49618f0e930c5e8c1d2c5dd01f15641393ac477c36ac59d93ce19e69dedd626e"
+    },
+    "frontend_py": {
+      "path": "${EXPERIMENT}/engines/strata-0.2.3-src/serve/frontend.py",
+      "sha256": "d206ba0c5bf616f92f929f91215041a2b671132d29f4bbee36de5ed1aecd7595"
+    },
+    "template": {
+      "path": "${EXPERIMENT}/packs/iq3_xxs/tokenizer/chat_template.jinja",
+      "sha256": "12827f24b742ea4e80cdc12dbcf9622227056b9f797252a3149263d4f9aaadce"
+    },
+    "tokenizer_json": {
+      "path": "${EXPERIMENT}/packs/iq3_xxs/tokenizer/tokenizer.json",
+      "sha256": "c0bd435efbc6c3b28964b47999afe16c4ad268c7c7c4e8cb3af410796a6f30bf"
+    },
+    "mtp_dense_txt": {
+      "path": "${ARTIFACTS}/Strata-data/mtp/rt/dense.txt",
+      "sha256": "991456cf4eb266eb8a888c349e548d11bc640f5dbd9149439aa9786af0f732fd"
+    },
+    "mtp_draft_vocab": {
+      "path": "${ARTIFACTS}/Strata-data/mtp/rt/draft_vocab.bin",
+      "sha256": "b1e1d3a7a9e4bf862dcd5923ce661fb59bbd07907e594df5cf86a62ac235cb91"
+    },
+    "expert_profile": {
+      "path": "${EXPERIMENT}/engines/strata-0.2.3-src/data/expert-profile.bin",
+      "sha256": "8f59b4aa8873209dff11c11e37bcda9529a1335b724a1afeea37bf6388975baf"
+    },
+    "pack_index": {
+      "path": "${EXPERIMENT}/packs/iq3_xxs/index.txt",
+      "sha256": "1afe12b36cd2d13bf122b741fa0e81e1f751319cc3c451e54ba75524d825f148"
+    },
+    "pack_native_experts": {
+      "path": "${EXPERIMENT}/packs/iq3_xxs/native_experts.txt",
+      "sha256": "ae28cf7a2a1c9063c4b55d6c8cf86d4d079dcddcf597f9e8697c9157d462c0ee"
+    },
+    "pack_conversions": {
+      "path": "${EXPERIMENT}/packs/iq3_xxs/conversions.json",
+      "sha256": "68beec784ea64aeecace591b33debb8ba331a9ad257a3e1b68c5c701dd22b267"
+    }
+  },
+  "engine_version": "strata 0.1.48",
+  "config_flags": {
+    "reasoning_effort": null,
+    "reasoning_budget_tokens": null,
+    "effort_position": null,
+    "reasoning_loop_recovery": null,
+    "reasoning_close_retry": null,
+    "sampling": null
+  },
+  "official_git": {
+    "head": "5c8dd322528cc84f68f461ad54a506b9da8fa8d4",
+    "dirty": false,
+    "engine_build": {
+      "version": "0.1.48",
+      "source": "f-023-rel 6f8800aefe27",
+      "archs": [
+        75,
+        86,
+        89,
+        120
+      ],
+      "vision_archs": "75;86;89;120",
+      "ptx": true,
+      "cuda": "13.0",
+      "portable": true,
+      "vision": "cuda13.0"
+    }
+  },
+  "load": {
+    "t_listen_s": 68.02480877499329,
+    "t_ready_s": 68.02946695999708,
+    "vram_tier_override": null
+  },
+  "engine_info": {
+    "model": "gguf-iq3_xxs",
+    "max_context": 65536,
+    "images": false,
+    "version": "0.1.48",
+    "logit_bias": 1,
+    "context": 65536,
+    "kv": "int8",
+    "kv_resident": 0,
+    "expert_slots": 5343,
+    "expert_cache_mib": 8864,
+    "expert_slots_primary": 5343,
+    "expert_cache_primary_mib": 8864,
+    "spec": 6,
+    "mtp_max": 4,
+    "lookup": 3,
+    "vram_free_mib": 439,
+    "cvec": 0,
+    "arena_mib": 40925,
+    "pool_workers": 15,
+    "pcie_frac": "0.24",
+    "spec_min_p": "0.50",
+    "conversation_cache_mib": 4096,
+    "conversation_cache_slots": 4,
+    "conversation_cache_min_free_mib": 2560,
+    "conversation_cache_min_tokens": 0,
+    "tail_role_token": -1,
+    "vram_elastic": 0,
+    "prefill_cap": 8192,
+    "prefill_stages": 1,
+    "stream_all_min": 1024,
+    "prefill_pipe": 0,
+    "engine": "0.1.48",
+    "drafting": "mtp",
+    "drafting_note": ""
+  }
+}

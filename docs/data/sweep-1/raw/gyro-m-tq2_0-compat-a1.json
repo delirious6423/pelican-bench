@@ -1,0 +1,225 @@
+{
+  "run": "sweep-1",
+  "harness": "pelican-harness-1",
+  "phase": "compat",
+  "model_id": "gyro-m-tq2_0",
+  "engine": "official",
+  "cell_id": "gyro-m-tq2_0-compat",
+  "attempt": 1,
+  "requested_effort": "low",
+  "resolved_effort": "low",
+  "seed": 7,
+  "sampling": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "repetition_penalty": 1.0
+  },
+  "max_tokens": 512,
+  "budget_sent": 0,
+  "deadline_s": 2700.0,
+  "idle_timeout_s": 600,
+  "request": {
+    "model": "gyro-m-tq2_0",
+    "stream": true,
+    "max_tokens": 512,
+    "seed": 7,
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "reasoning_effort": "low",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate an SVG of a pelican riding a bicycle"
+      }
+    ],
+    "reasoning_budget_tokens": 0
+  },
+  "t_wall_start": 19032.136157,
+  "t_wall_end": 19041.014063,
+  "finish_reason": "length",
+  "cap_hit": true,
+  "abort": null,
+  "error": null,
+  "done_seen": true,
+  "inline_think": false,
+  "t_first_byte_s": 0.005787956004496664,
+  "ttft_s": 0.8346362580050481,
+  "t_first_reasoning_s": 0.8346362580050481,
+  "t_first_answer_s": 6.311756334995152,
+  "wall_s": 8.877761348005151,
+  "thinking_phase_s": 5.477120076990104,
+  "answer_phase_s": 2.566005013009999,
+  "prompt_tokens": 50,
+  "completion_tokens": 512,
+  "total_tokens": 562,
+  "cached_tokens": 0,
+  "reasoning_chars": 1150,
+  "answer_chars": 359,
+  "server_timings": {
+    "cache_n": 0,
+    "prompt_n": 50,
+    "prompt_ms": 790.9,
+    "prompt_per_token_ms": 15.818,
+    "prompt_per_second": 63.2,
+    "predicted_n": 512,
+    "predicted_ms": 8079.4,
+    "predicted_per_token_ms": 15.78,
+    "predicted_per_second": 63.4,
+    "draft_n": 457,
+    "draft_n_accepted": 321
+  },
+  "engine_decode_tok_s": 63.4,
+  "engine_prefill_tok_s": 63.2,
+  "prefill_ms": 790.9,
+  "decode_ms": 8079.4,
+  "prompt_cache_n": 0,
+  "draft_n": 457,
+  "draft_accepted": 321,
+  "metrics_match": "time+tokens",
+  "metrics_reason": null,
+  "metrics_entry": {
+    "projection": null,
+    "time": 19032.141773,
+    "duration_s": 8.9,
+    "finish": "length",
+    "prompt_tokens": 50,
+    "reused": 0,
+    "output_tokens": 512,
+    "first_engine_token_s": 0.829,
+    "prompt_total": 50,
+    "prompt_read": 50,
+    "reasoning_recoveries": 0,
+    "reasoning_repeat_coverage": 0.0,
+    "engine_generated": 512,
+    "prompt_ms": 790.9,
+    "decode_ms": 8079.4,
+    "decode_tok_s": 63.4,
+    "hit_rate": 0.831,
+    "pcie_share": 0.03,
+    "ram_blobs": 0,
+    "file_blobs": 0,
+    "file_mb": 0,
+    "drafts_offered": 457,
+    "drafts_accepted": 321
+  },
+  "history_decode_tok_s": 63.4,
+  "engine_generated": 512,
+  "first_engine_token_s": 0.829,
+  "reasoning_recoveries": 0,
+  "client_tok_s_after_first_text": 63.66,
+  "client_tok_s_wall": 57.67,
+  "gate": {
+    "paused_hot_s": 0.0,
+    "paused_foreign_s": 0.0,
+    "contention": []
+  },
+  "resources": {
+    "n_samples": 9,
+    "interval_ms": 1000,
+    "t0": 19032.615303,
+    "t1": 19040.648462,
+    "gpu_util_pct": {
+      "min": 0.0,
+      "max": 100.0,
+      "mean": 83.56
+    },
+    "vram_used_mib": {
+      "min": 15511.0,
+      "max": 15579.0,
+      "mean": 15571.44
+    },
+    "gpu_temp_c": {
+      "min": 45.0,
+      "max": 54.0,
+      "mean": 51.44
+    },
+    "gpu_power_w": {
+      "min": 34.12,
+      "max": 108.32,
+      "mean": 91.54
+    },
+    "gpu_sm_mhz": {
+      "min": 1815.0,
+      "max": 2340.0,
+      "mean": 2215.0
+    },
+    "gpu_mem_mhz": {
+      "min": 9001.0,
+      "max": 9001.0,
+      "mean": 9001.0
+    },
+    "gpu_clock_event_reasons": {
+      "0x0000000000000001": 1,
+      "0x0000000000000000": 3,
+      "0x0000000000000004": 5
+    },
+    "cpu_util_pct": {
+      "min": 36.4,
+      "max": 70.6,
+      "mean": 65.66
+    },
+    "server_cpu_cores": 15.78,
+    "other_cpu_cores": 0.79,
+    "cpu_pkg_c": {
+      "min": 62.0,
+      "max": 68.0,
+      "mean": 65.33
+    },
+    "mem_available_gib": {
+      "min": 21.455841064453125,
+      "max": 21.634719848632812,
+      "mean": 21.51
+    },
+    "swap_used_gib": {
+      "min": 8.528820037841797,
+      "max": 8.528877258300781,
+      "mean": 8.53
+    },
+    "swap_in_pages": 1,
+    "swap_out_pages": 0,
+    "major_faults": 310,
+    "data_disk_read_gb": 1.152610304,
+    "data_disk_write_gb": 6.144e-05,
+    "sys_disk_read_gb": 0.035971072,
+    "server_cgroup_read_gb": 0.0,
+    "server_rss_gib": {
+      "min": 32.63868713378906,
+      "max": 32.80678939819336,
+      "mean": 32.79
+    },
+    "server_cgroup_mem_gib": {
+      "min": 41.98459243774414,
+      "max": 42.19011306762695,
+      "mean": 42.07
+    },
+    "load1": {
+      "min": 9.02490234375,
+      "max": 10.8662109375,
+      "mean": 10.17
+    },
+    "nvme1_states": [
+      "live"
+    ],
+    "foreign_gpu_seen": []
+  },
+  "post_abort_idle": null,
+  "svg_status": "unclosed",
+  "svg_n_starts": 1,
+  "svg_flags": {
+    "has_xmlns_svg": true,
+    "bytes": 352
+  },
+  "svg_unsafe": [],
+  "extraction_rule": "v1-first-balanced-svg",
+  "reasoning": "The user wants an SVG illustration of a pelican riding a bicycle. Let me think about how to create this.\n\nI need to draw:\n1. A bicycle - wheels, frame, handlebars, pedals, seat\n2. A pelican - body, wings, distinctive large beak with pouch, eye, legs positioned on pedals\n\nLet me think about the composition:\n- The bicycle should be roughly centered\n- The pelican sits on the seat, with feet on pedals\n- The pelican's beak should face forward (to the right, suggesting motion)\n- Wings could be slightly spread for balance\n\nLet me plan coordinates on a canvas of about 400x300.\n\nBicycle:\n- Rear wheel: center at (120, 220), radius 50\n- Front wheel: center at (280, 220), radius 50\n- Frame connecting wheels to seat and handlebars\n- Seat around (160, 150)\n- Handlebars around (270, 140)\n- Pedals/crank at (200, 220)\n\nPelican:\n- Body sitting on seat, centered around (170, 120)\n- Neck going up and forward to the head\n- Head around (230, 80)\n- Large beak extending forward from head\n- Wings on body\n- Legs going down to pedals\n\nLet me refine this and make it look nice with some colors.\n\nI'll use a viewBox of 400x300 and create a charming illustration.\n",
+  "answer": "```svg\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" width=\"400\" height=\"300\">\n  <!-- Sky/background -->\n  <rect width=\"400\" height=\"300\" fill=\"#e8f4f8\"/>\n  \n  <!-- Ground -->\n  <rect x=\"0\" y=\"270\" width=\"400\" height=\"30\" fill=\"#8bc34a\"/>\n  \n  <!-- Bicycle -->\n  <!-- Rear wheel -->\n  <circle cx=\"130\" cy=\"225\" r=\"45\" fill=\"none\" stroke=\"#333\""
+}

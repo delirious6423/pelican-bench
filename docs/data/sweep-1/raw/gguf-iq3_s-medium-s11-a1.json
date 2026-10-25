@@ -1,0 +1,225 @@
+{
+  "run": "sweep-1",
+  "harness": "pelican-harness-1",
+  "phase": "scored",
+  "model_id": "gguf-iq3_s",
+  "engine": "official",
+  "cell_id": "gguf-iq3_s-medium-s11",
+  "attempt": 1,
+  "requested_effort": "medium",
+  "resolved_effort": "medium",
+  "seed": 11,
+  "sampling": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "repetition_penalty": 1.0
+  },
+  "max_tokens": 49152,
+  "budget_sent": 0,
+  "deadline_s": 2700.0,
+  "idle_timeout_s": 600,
+  "request": {
+    "model": "gguf-iq3_s",
+    "stream": true,
+    "max_tokens": 49152,
+    "seed": 11,
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "reasoning_effort": "medium",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Generate an SVG of a pelican riding a bicycle"
+      }
+    ],
+    "reasoning_budget_tokens": 0
+  },
+  "t_wall_start": 30375.675391,
+  "t_wall_end": 30430.456406,
+  "finish_reason": "stop",
+  "cap_hit": false,
+  "abort": null,
+  "error": null,
+  "done_seen": true,
+  "inline_think": false,
+  "t_first_byte_s": 0.0029437530029099435,
+  "ttft_s": 0.4169956919940887,
+  "t_first_reasoning_s": 0.4169956919940887,
+  "t_first_answer_s": 27.129281911998987,
+  "wall_s": 54.78078700999322,
+  "thinking_phase_s": 26.7122862200049,
+  "answer_phase_s": 27.65150509799423,
+  "prompt_tokens": 20,
+  "completion_tokens": 4105,
+  "total_tokens": 4125,
+  "cached_tokens": 15,
+  "reasoning_chars": 4882,
+  "answer_chars": 4320,
+  "server_timings": {
+    "cache_n": 15,
+    "prompt_n": 5,
+    "prompt_ms": 381.2,
+    "prompt_per_token_ms": 76.24,
+    "prompt_per_second": 13.1,
+    "predicted_n": 4105,
+    "predicted_ms": 54395.4,
+    "predicted_per_token_ms": 13.251,
+    "predicted_per_second": 75.5,
+    "draft_n": 3515,
+    "draft_n_accepted": 2676
+  },
+  "engine_decode_tok_s": 75.5,
+  "engine_prefill_tok_s": 13.1,
+  "prefill_ms": 381.2,
+  "decode_ms": 54395.4,
+  "prompt_cache_n": 15,
+  "draft_n": 3515,
+  "draft_accepted": 2676,
+  "metrics_match": "time+tokens",
+  "metrics_reason": null,
+  "metrics_entry": {
+    "projection": null,
+    "time": 30375.678266,
+    "duration_s": 54.8,
+    "finish": "stop",
+    "prompt_tokens": 20,
+    "reused": 15,
+    "output_tokens": 4105,
+    "first_engine_token_s": 0.414,
+    "prompt_total": 20,
+    "prompt_read": 5,
+    "reasoning_recoveries": 0,
+    "reasoning_repeat_coverage": 0.0,
+    "engine_generated": 4105,
+    "prompt_ms": 381.2,
+    "decode_ms": 54395.4,
+    "decode_tok_s": 75.5,
+    "hit_rate": 0.83,
+    "pcie_share": 0.005,
+    "ram_blobs": 0,
+    "file_blobs": 0,
+    "file_mb": 0,
+    "drafts_offered": 3515,
+    "drafts_accepted": 2676
+  },
+  "history_decode_tok_s": 75.5,
+  "engine_generated": 4105,
+  "first_engine_token_s": 0.414,
+  "reasoning_recoveries": 0,
+  "client_tok_s_after_first_text": 75.51,
+  "client_tok_s_wall": 74.94,
+  "gate": {
+    "paused_hot_s": 0.0,
+    "paused_foreign_s": 0.0,
+    "contention": []
+  },
+  "resources": {
+    "n_samples": 55,
+    "interval_ms": 1000,
+    "t0": 30376.068471,
+    "t1": 30430.378346,
+    "gpu_util_pct": {
+      "min": 39.0,
+      "max": 100.0,
+      "mean": 98.8
+    },
+    "vram_used_mib": {
+      "min": 15607.0,
+      "max": 15607.0,
+      "mean": 15607.0
+    },
+    "gpu_temp_c": {
+      "min": 59.0,
+      "max": 64.0,
+      "mean": 62.13
+    },
+    "gpu_power_w": {
+      "min": 82.75,
+      "max": 123.0,
+      "mean": 111.78
+    },
+    "gpu_sm_mhz": {
+      "min": 1575.0,
+      "max": 2340.0,
+      "mean": 2119.36
+    },
+    "gpu_mem_mhz": {
+      "min": 9001.0,
+      "max": 9001.0,
+      "mean": 9001.0
+    },
+    "gpu_clock_event_reasons": {
+      "0x0000000000000000": 17,
+      "0x0000000000000001": 1,
+      "0x0000000000000004": 37
+    },
+    "cpu_util_pct": {
+      "min": 47.1,
+      "max": 98.9,
+      "mean": 72.04
+    },
+    "server_cpu_cores": 15.45,
+    "other_cpu_cores": 1.86,
+    "cpu_pkg_c": {
+      "min": 59.0,
+      "max": 68.0,
+      "mean": 61.73
+    },
+    "mem_available_gib": {
+      "min": 4.250301361083984,
+      "max": 5.360347747802734,
+      "mean": 5.12
+    },
+    "swap_used_gib": {
+      "min": 10.10507583618164,
+      "max": 10.105247497558594,
+      "mean": 10.11
+    },
+    "swap_in_pages": 35,
+    "swap_out_pages": 0,
+    "major_faults": 331,
+    "data_disk_read_gb": 3.140366336,
+    "data_disk_write_gb": 0.00059392,
+    "sys_disk_read_gb": 0.21407744,
+    "server_cgroup_read_gb": 0.0,
+    "server_rss_gib": {
+      "min": 48.873870849609375,
+      "max": 48.87391662597656,
+      "mean": 48.87
+    },
+    "server_cgroup_mem_gib": {
+      "min": 49.34481430053711,
+      "max": 49.34627914428711,
+      "mean": 49.35
+    },
+    "load1": {
+      "min": 17.26806640625,
+      "max": 19.21533203125,
+      "mean": 18.07
+    },
+    "nvme1_states": [
+      "live"
+    ],
+    "foreign_gpu_seen": []
+  },
+  "post_abort_idle": null,
+  "svg_status": "complete",
+  "svg_n_starts": 1,
+  "svg_flags": {
+    "has_xmlns_svg": true,
+    "bytes": 3887
+  },
+  "svg_unsafe": [],
+  "extraction_rule": "v1-first-balanced-svg",
+  "reasoning": "The user wants an SVG of a pelican riding a bicycle. Let me create a fun, simple SVG drawing combining a bicycle with a pelican sitting on it. Let me think about the layout:\n\nBicycle: two wheels (circles), frame (lines/polygons), handlebars, seat, pedals\nPelican: body, long beak with pouch, wing reaching to handlebars, legs on pedals\n\nI'll make it a bit cartoonish. Canvas maybe 400x300.\n\nBicycle placement: wheels at (100, 220) and (300, 220), radius 45. Frame: from rear wheel hub to seat tube, top tube, down tube to front hub, head tube, handlebars.\n\nFrame coordinates:\n- Rear hub: (100, 220)\n- Front hub: (300, 220)\n- Bottom bracket (crank): (195, 225)\n- Top of seat tube: (175, 150)\n- Top of head tube: (270, 140)\n- Handlebars: (270, 135) curving back to (250, 130)\n\nFrame lines: rear hub → top of seat tube, top of seat tube → top of head tube (top tube), top of seat tube → bottom bracket, bottom bracket → rear hub (chainstay), bottom bracket → front hub (down tube... actually down tube is bottom bracket → bottom of head tube). Good enough as cartoon.\n\nWheels with spokes (simplify: circles + a few lines, or just dashed circles). Spokes as lines.\n\nPelican on seat around (170, 150): body is an ellipse around (150, 120)? Pelican sits above the saddle at (170, 145). Body: ellipse cx=150, cy=110, rx=45, ry=35. Tail on the left. Neck curving up from the front of the body: from (185, 95) to head at (220, 60)? Beak long, pointing right/down toward handlebars, with pouch. Head circle at (215, 55) r=14. Beak: long shape from (225, 55) to (300, 75), pouch bulging downward.\n\nWing/arm from body to handlebars: path from (185, 110) to (255, 132).\n\nLegs from bottom of body to pedals: two lines from (160,140) to crank (195, 225), with small feet. Pedals: crank circle at (195,225) r=6, crank arms to (180, 210) and (210, 240)? Feet on the pedal positions.\n\nEye: small circle on the head.\n\nColor scheme: pelican white body with orange beak/pouch, blue frame, black wheels.\n\nAdd a ground line, maybe put in motion lines to show speed.\n\nLet me write the SVG carefully.\n\nWheels: spokes — lines every 45 degrees from the hub. Just draw a few.\n\nPelican body with webbed feet. Keep it simple.\n\nFull SVG:\n\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 320\" width=\"400\" height=\"320\">\n  Background optionally a light sky rectangle.\n  Ground line at y=270.\n\n  Bike wheels:\n  circle cx=100 cy=225 r=45 fill none stroke black stroke-width 5\n  inner circle r=38? Spokes as lines.\n  same for cx=300.\n\n  Frame stroke #1565c0 stroke-width 6, fill none, lines:\n  M100,225 L175,150 L270,145 L195,225 L100,225 (rear triangle-ish)\n  M175,150 L195,225 (seat tube... actually 175,150 to bottom bracket 195,225)\n  M195,225 L270,145 already covered. down tube: M195,225 L275,150 close to head tube.\n  Seat stays: M100,225 L175,150. Chainstay: M100,225 L195,225.\n\n  Saddle: small ellipse/path at (170,145).\n  Handlebar: from top of head tube (270,145) up to (270,130), then curve back: path M270,148 L272,128 Q272,120 260,122 L248,126.\n\n  Crank: circle at (195,225) r=8 fill gray; pedal arms line (195,225)-(215,240) and (175,210), pedal small rects.\n\n  Pelican:\n  Body: ellipse cx=145 cy=115 rx=48 ry=34 fill white stroke #333.\n  Tail: polygon (95,105) (70,95) (95,125).\n  Wing: path inside the body, maybe M120,100 Q150,135 175,120 (wing line) or raised wing.\n  Neck: path from (180,95) to (210,60), thick stroke white with outline? Simpler: use head circle and neck as a thick stroke path with white stroke width 16 and dark outline. Easier: draw neck as a filled path.\n\n  Simple: white stroke width 16 path M178,100 Q200,80 208,62, then same path dark stroke width 18 underneath for outline. Two-path trick.\n\n  Head: circle cx=212 cy=55 r=14 fill white stroke #333.\n  Beak: path M222,50 L305,62 L300,72 L224,66 with pouch: big pouch path M224,60 Q265,95 300,66 L305,62? Let me design: upper mandible line from (222,52) to (305,60). Pouch: path from (224,64) curving down Q(265,92)(302,62). Fill pouch with orange #f4a41f, stroke with darker color.\n\n  Let's make the beak one group:\n  upper: path M220,52 L305,62 L302,68 L222,60 Z fill #f4a41f\n  pouch: path M222,60 L302,68 Q265,95 226,70 Z fill #f28c28\n\n  Eye: circle cx=214 cy=51 r=2.5 fill black.\n\n  Arm/wing to handlebar: path M175,110 Q215,125 250,126 stroke white width 12, with dark outline underneath width 14. Grip on handlebar.\n\n  Legs: two lines from (155,145) and (165,147) to pedals: front pedal (215,238) and rear pedal (175,212). Draw white stroke width 8, dark width 10 outline. Webbed foot: small triangle at pedal.\n\n  Motion lines behind: lines at y=100, 120, from x=20 to x=60.\n\nOrder matters: draw bike frame, then pelican legs behind? Draw legs after frame so feet on top of pedals. Draw pelican body above the saddle.\n\nAlso add spokes: lines through hub of the wheel at 0°, 45°, 90°, 135°.\n\nLet me write it out.\n",
+  "answer": "Here's a cheerful pelican pedaling away! 🚲\n\n```svg\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 320\" width=\"400\" height=\"320\">\n  <!-- Sky & ground -->\n  <rect width=\"400\" height=\"320\" fill=\"#dff1fb\"/>\n  <line x1=\"10\" y1=\"272\" x2=\"390\" y2=\"272\" stroke=\"#4a7c59\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n\n  <!-- Motion lines -->\n  <g stroke=\"#8aa8b8\" stroke-width=\"3\" stroke-linecap=\"round\">\n    <line x1=\"20\" y1=\"90\" x2=\"60\" y2=\"90\"/>\n    <line x1=\"10\" y1=\"115\" x2=\"55\" y2=\"115\"/>\n    <line x1=\"25\" y1=\"140\" x2=\"60\" y2=\"140\"/>\n  </g>\n\n  <!-- Bicycle wheels -->\n  <g fill=\"none\" stroke=\"#222\" stroke-width=\"5\">\n    <circle cx=\"100\" cy=\"225\" r=\"45\"/>\n    <circle cx=\"300\" cy=\"225\" r=\"45\"/>\n  </g>\n  <g stroke=\"#555\" stroke-width=\"1.5\">\n    <line x1=\"58\" y1=\"225\" x2=\"142\" y2=\"225\"/>\n    <line x1=\"100\" y1=\"183\" x2=\"100\" y2=\"267\"/>\n    <line x1=\"70\" y1=\"195\" x2=\"130\" y2=\"255\"/>\n    <line x1=\"130\" y1=\"195\" x2=\"70\" y2=\"255\"/>\n    <line x1=\"258\" y1=\"225\" x2=\"342\" y2=\"225\"/>\n    <line x1=\"300\" y1=\"183\" x2=\"300\" y2=\"267\"/>\n    <line x1=\"270\" y1=\"195\" x2=\"330\" y2=\"255\"/>\n    <line x1=\"330\" y1=\"195\" x2=\"270\" y2=\"255\"/>\n  </g>\n  <circle cx=\"100\" cy=\"225\" r=\"5\" fill=\"#222\"/>\n  <circle cx=\"300\" cy=\"225\" r=\"5\" fill=\"#222\"/>\n\n  <!-- Bicycle frame -->\n  <g fill=\"none\" stroke=\"#1565c0\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n    <path d=\"M100,225 L175,150 L270,148\"/>\n    <path d=\"M100,225 L195,225 L272,150\"/>\n    <path d=\"M175,150 L195,225\"/>\n    <path d=\"M195,225 L300,225\"/>\n    <path d=\"M270,148 L275,128\"/>\n  </g>\n\n  <!-- Saddle -->\n  <path d=\"M158,147 L188,145 Q190,151 180,152 L162,152 Z\" fill=\"#333\"/>\n\n  <!-- Handlebars -->\n  <path d=\"M275,130 Q276,118 262,120 L250,125\" fill=\"none\" stroke=\"#222\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n\n  <!-- Crank and pedals -->\n  <line x1=\"178\" y1=\"211\" x2=\"212\" y2=\"239\" stroke=\"#222\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n  <circle cx=\"195\" cy=\"225\" r=\"8\" fill=\"#777\" stroke=\"#222\" stroke-width=\"2\"/>\n  <rect x=\"204\" y=\"237\" width=\"18\" height=\"5\" rx=\"2\" fill=\"#222\"/>\n  <rect x=\"166\" y=\"206\" width=\"18\" height=\"5\" rx=\"2\" fill=\"#222\"/>\n\n  <!-- Pelican legs (outline then fill) -->\n  <g fill=\"none\" stroke-linecap=\"round\">\n    <path d=\"M158,146 Q170,185 178,208\" stroke=\"#333\" stroke-width=\"10\"/>\n    <path d=\"M168,148 Q195,195 210,236\" stroke=\"#333\" stroke-width=\"10\"/>\n    <path d=\"M158,146 Q170,185 178,208\" stroke=\"#f2b134\" stroke-width=\"6\"/>\n    <path d=\"M168,148 Q195,195 210,236\" stroke=\"#f2b134\" stroke-width=\"6\"/>\n  </g>\n  <!-- Webbed feet -->\n  <path d=\"M170,208 L186,204 L184,212 Z\" fill=\"#f2b134\" stroke=\"#333\" stroke-width=\"1.5\"/>\n  <path d=\"M204,234 L222,232 L216,240 Z\" fill=\"#f2b134\" stroke=\"#333\" stroke-width=\"1.5\"/>\n\n  <!-- Pelican tail -->\n  <path d=\"M100,105 L68,92 L98,128 Z\" fill=\"#f5f5f5\" stroke=\"#333\" stroke-width=\"2.5\"/>\n\n  <!-- Neck (outline trick) -->\n  <path d=\"M178,102 Q200,82 208,62\" fill=\"none\" stroke=\"#333\" stroke-width=\"19\" stroke-linecap=\"round\"/>\n  <path d=\"M178,102 Q200,82 208,62\" fill=\"none\" stroke=\"#f5f5f5\" stroke-width=\"14\" stroke-linecap=\"round\"/>\n\n  <!-- Body -->\n  <ellipse cx=\"148\" cy=\"115\" rx=\"50\" ry=\"35\" fill=\"#f5f5f5\" stroke=\"#333\" stroke-width=\"2.5\"/>\n  <!-- Wing detail -->\n  <path d=\"M112,112 Q145,140 182,118\" fill=\"none\" stroke=\"#333\" stroke-width=\"2\"/>\n\n  <!-- Beak with pouch -->\n  <path d=\"M221,50 L308,60 L305,67 L223,60 Z\" fill=\"#f2a71b\" stroke=\"#333\" stroke-width=\"2\"/>\n  <path d=\"M223,60 L305,67 Q268,98 227,68 Z\" fill=\"#ef7d1f\" stroke=\"#333\" stroke-width=\"2\"/>\n\n  <!-- Head -->\n  <circle cx=\"212\" cy=\"53\" r=\"15\" fill=\"#f5f5f5\" stroke=\"#333\" stroke-width=\"2.5\"/>\n  <!-- Eye -->\n  <circle cx=\"216\" cy=\"49\" r=\"2.8\" fill=\"#222\"/>\n\n  <!-- Wing reaching to handlebar -->\n  <path d=\"M180,112 Q215,128 252,126\" fill=\"none\" stroke=\"#333\" stroke-width=\"14\" stroke-linecap=\"round\"/>\n  <path d=\"M180,112 Q215,128 252,126\" fill=\"none\" stroke=\"#e8e8e8\" stroke-width=\"10\" stroke-linecap=\"round\"/>\n</svg>\n```\n\n**Features of the drawing:**\n- 🚗 A blue bicycle frame with spoked wheels, saddle, handlebars, and pedals\n- 🐦 A plump white pelican with its signature oversized orange throat pouch\n- 🦶 Webbed feet pumping the pedals, wings gripping the handlebars\n- 💨 Speed lines suggesting it's cruising along happily\n\nJust save it as a `.svg` file (or paste it into any HTML page) to view it!"
+}

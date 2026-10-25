@@ -1,0 +1,43 @@
+{
+  "engine_src": "${EXPERIMENT}/engines/strata-0.2.3-src",
+  "template": "${EXPERIMENT}/packs/gyro-s/tokenizer/chat_template.jinja",
+  "template_sha256": "12827f24b742ea4e80cdc12dbcf9622227056b9f797252a3149263d4f9aaadce",
+  "frontend_sha256": "d206ba0c5bf616f92f929f91215041a2b671132d29f4bbee36de5ed1aecd7595",
+  "effort_table": {
+    "none": null,
+    "off": null,
+    "minimal": null,
+    "disabled": null,
+    "false": null,
+    "low": "low",
+    "medium": "medium",
+    "high": "xhigh",
+    "xhigh": "xhigh",
+    "max": "xhigh",
+    "maximum": "xhigh"
+  },
+  "renders": {
+    "low": {
+      "template_kwargs": {
+        "reasoning_effort": "low"
+      },
+      "prompt": "<|im_start|>system\nReasoning effort is set to low. Keep your thinking brief and focused, moving directly to the conclusion without unnecessary elaboration.<|im_end|>\n<|im_start|>user\nGenerate an SVG of a pelican riding a bicycle<|im_end|>\n<|im_start|>assistant\n<think>\n",
+      "sha256": "849860e1e67a15acb302b1c48f4f8856325f70a791efeda7729e4b09177791c3"
+    },
+    "medium": {
+      "template_kwargs": {
+        "reasoning_effort": "medium"
+      },
+      "prompt": "<|im_start|>user\nGenerate an SVG of a pelican riding a bicycle<|im_end|>\n<|im_start|>assistant\n<think>\n",
+      "sha256": "4b8c6f53615e50a805f5f3d2143d68d2034db5bbb95e6242513c886bffe96434"
+    },
+    "high": {
+      "template_kwargs": {
+        "reasoning_effort": "xhigh"
+      },
+      "prompt": "<|im_start|>system\nReasoning effort is set to xhigh. Please think carefully through the task, validate key assumptions, consider plausible alternatives, and prioritize correctness, consistency, and clarity in the final answer.<|im_end|>\n<|im_start|>user\nGenerate an SVG of a pelican riding a bicycle<|im_end|>\n<|im_start|>assistant\n<think>\n",
+      "sha256": "2859ba611ddd62df15a57a234d2a4815480ed7e72f825390afb6942ab0af4be6"
+    }
+  },
+  "distinct_renders": 3
+}

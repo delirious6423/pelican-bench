@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican riding a bicycle</title>
+  <desc id="desc">A cartoon pelican sitting on a bicycle, holding the handlebars with its wings.</desc>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="#eaf6ff"/>
+  <ellipse cx="300" cy="380" rx="230" ry="20" fill="#00000022"/>
+
+  <!-- Bicycle -->
+  <g id="bicycle">
+    <!-- Rear wheel -->
+    <circle cx="150" cy="320" r="60" fill="#ffffff" stroke="#222222" stroke-width="7"/>
+    <g stroke="#999999" stroke-width="2">
+      <line x1="150" y1="272" x2="150" y2="368"/>
+      <line x1="102" y1="320" x2="198" y2="320"/>
+      <line x1="116" y1="286" x2="184" y2="354"/>
+      <line x1="184" y1="286" x2="116" y2="354"/>
+    </g>
+    <circle cx="150" cy="320" r="8" fill="#333333"/>
+
+    <!-- Front wheel -->
+    <circle cx="430" cy="320" r="60" fill="#ffffff" stroke="#222222" stroke-width="7"/>
+    <g stroke="#999999" stroke-width="2">
+      <line x1="430" y1="272" x2="430" y2="368"/>
+      <line x1="382" y1="320" x2="478" y2="320"/>
+      <line x1="396" y1="286" x2="464" y2="354"/>
+      <line x1="464" y1="286" x2="396" y2="354"/>
+    </g>
+    <circle cx="430" cy="320" r="8" fill="#333333"/>
+
+    <!-- Bicycle frame -->
+    <g fill="none" stroke="#167b9e" stroke-width="9" stroke-linecap="round">
+      <line x1="150" y1="320" x2="285" y2="320"/>       <!-- chainstay -->
+      <line x1="150" y1="320" x2="285" y2="238"/>       <!-- seatstay -->
+      <line x1="285" y1="238" x2="285" y2="320"/>       <!-- seat tube -->
+      <line x1="285" y1="320" x2="395" y2="252"/>       <!-- down tube -->
+      <line x1="285" y1="238" x2="395" y2="242"/>       <!-- top tube -->
+      <line x1="395" y1="252" x2="430" y2="320"/>       <!-- front fork -->
+      <line x1="395" y1="252" x2="397" y2="238"/>       <!-- stem -->
+    </g>
+
+    <!-- Handlebars -->
+    <path d="M362 234 Q397 226 436 244" fill="none" stroke="#222222" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Saddle -->
+    <path d="M262 238 Q285 225 312 236 Q298 245 262 238 Z" fill="#333333"/>
+
+    <!-- Crank, chainring, and pedal -->
+    <circle cx="285" cy="320" r="18" fill="none" stroke="#444444" stroke-width="4"/>
+    <circle cx="285" cy="320" r="12" fill="#333333"/>
+    <line x1="285" y1="320" x2="272" y2="295" stroke="#333333" stroke-width="8" stroke-linecap="round"/>
+    <rect x="258" y="292" width="28" height="6" rx="3" fill="#555555"/>
+  </g>
+
+  <!-- Pelican -->
+  <g id="pelican">
+    <!-- Tail -->
+    <path d="M238 220 L200 208 L212 240 Z" fill="#ffffff" stroke="#555555" stroke-width="3"/>
+
+    <!-- Neck -->
+    <path d="M300 214 Q342 152 384 190" fill="none" stroke="#555555" stroke-width="34" stroke-linecap="round"/>
+    <path d="M300 214 Q342 152 384 190" fill="none" stroke="#ffffff" stroke-width="30" stroke-linecap="round"/>
+
+    <!-- Body -->
+    <ellipse cx="280" cy="222" rx="54" ry="36" fill="#ffffff" stroke="#555555" stroke-width="3"/>
+
+    <!-- Head -->
+    <circle cx="384" cy="190" r="22" fill="#ffffff" stroke="#555555" stroke-width="3"/>
+
+    <!-- Beak -->
+    <path d="M404 186 C446 168 482 182 490 200 C470 212 428 208 402 202 Z" fill="#eab65a" stroke="#7c4b00" stroke-width="3"/>
+    <path d="M402 202 C440 230 460 250 436 256 C408 252 396 232 390 208 Z" fill="#f7cd78" stroke="#7c4b00" stroke-width="3"/>
+
+    <!-- Eye -->
+    <circle cx="378" cy="188" r="4" fill="#222222"/>
+    <circle cx="379" cy="187" r="1.5" fill="#ffffff"/>
+
+    <!-- Leg -->
+    <path d="M302 248 Q290 272 272 295" fill="none" stroke="#e8a637" stroke-width="11" stroke-linecap="round"/>
+    <path d="M272 295 L260 298" fill="none" stroke="#e8a637" stroke-width="9" stroke-linecap="round"/>
+
+    <!-- Wing holding the handlebar -->
+    <path d="M318 208 Q368 190 442 238 L434 256 Q374 214 318 232 Z" fill="#f0f0f0" stroke="#555555" stroke-width="3"/>
+    <ellipse cx="438" cy="247" rx="10" ry="7" fill="#e8c66a" stroke="#7c4b00" stroke-width="3"/>
+  </g>
+</svg>
